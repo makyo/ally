@@ -1,0 +1,12 @@
+_site/*
+*.aux
+*.log
+*.out
+*.toc
+.jekyll-metadata
+.DS_Store
+.~*
+*.sw[po]
+.bundle
+/public
+/resources

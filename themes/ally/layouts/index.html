@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main id="main">
+    {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.date" "!=" nil) 1 }}
+    {{ range $paginator.Pages.ByWeight }}
+    {{ .Content }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</main>
+{{end}}
