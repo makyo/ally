@@ -110,6 +110,13 @@ blockquote em {
     white-space: pre-wrap;
     margin-top: 0;
 }
+.cw {
+    color: #800;
+    text-align: right;
+}
+.cw:before, .cw:after {
+    content: '⚠';
+}
 pre {
     white-space: pre-wrap;
     font-family: 'Ubuntu Mono', monospace;
