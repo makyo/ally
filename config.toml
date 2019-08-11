@@ -1,4 +1,4 @@
-baseURL = "//ally.drab-makyo.com/"
+baseURL = "https://ally.drab-makyo.com/"
 languageCode = "en-us"
 title = "ally"
 theme= "ally"
