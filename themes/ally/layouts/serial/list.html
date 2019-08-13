@@ -6,5 +6,8 @@
     {{ .Content }}
     {{ end }}
     {{ template "_internal/pagination.html" . }}
+    {{ if (isset .Params "back") }}
+    <div style="text-align: center;"><a href="{{ .Params.back }}" class="pulse">&laquo; back to where we left off</a></div>
+    {{ end }}
 </main>
 {{end}}

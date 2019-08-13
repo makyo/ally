@@ -11,4 +11,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    {{ if (isset .Params "background") }}
+    <style>
+    * {
+        background-color: {{.Params.background}};
+        color: {{.Params.color}};
+    }
+    blockquote {
+        color: {{.Params.quote}};
+    }
+    </style>
+    {{end}}
 </head>

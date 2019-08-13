@@ -1,5 +1,4 @@
 ---
-type: serial
 ---
 
 *ally* is an autobiographical project. A lot of the information contained within is real, some of it isn't. Each page is structured as a conversation between myself and my ally, a mirror reflection of myself. The idea was originally cribbed from Dale Pendell's wonderful *Pharmako/\** trilogy back in my late teens, but has since taken on a life of its own.

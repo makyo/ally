@@ -75,6 +75,12 @@ a {
 body {
     color: #222;
     font-size: 16pt;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 header {
     font-family: 'Merriweather Sans', sans-serif;
@@ -87,7 +93,7 @@ h1 {
 h1 a {
     border: none;
 }
-main, footer {
+main {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -95,9 +101,11 @@ main, footer {
 }
 footer {
     color: #888;
-    margin-top: 5rem;
+    padding-top: 2rem;
     font-size: 12pt;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    font-family: 'Gentium Book Basic', serif;
+    margin: 0;
 }
 blockquote {
     font-family: 'Merriweather Sans', sans-serif;
@@ -119,15 +127,38 @@ blockquote em {
 .cw {
     color: #800;
     text-align: right;
+    display: inline-block;
 }
-.cw:before, .cw:after {
+.cw:before {
     content: '⚠';
+    display: block;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 pre {
     border: 1px solid #eee;
     padding: 1em;
     white-space: pre-wrap;
     font-family: 'Ubuntu Mono', monospace;
+}
+
+
+@keyframes flash {
+    from {
+        background-color: rgba(128, 128, 128, 0.1);
+    }
+
+    to {
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+}
+.pulse {
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding: 0 3px;
 }
 
 /* pagination */
