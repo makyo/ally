@@ -127,7 +127,6 @@ blockquote em {
 .cw {
     color: #800;
     text-align: right;
-    display: inline-block;
 }
 .cw:before {
     content: '⚠';
