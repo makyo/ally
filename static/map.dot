@@ -19,10 +19,13 @@ graph {
     "Core 14" [href="/core/page/14"];
     "Core 15" [href="/core/page/15"];
     "Core 16" [href="/core/page/16"];
+    "Core 17" [href="/core/page/17"];
+    "Core 18" [href="/core/page/18"];
+    "Core 19" [href="/core/page/19"];
     "To be continued..." [shape="oval"];
     node[group=""]
 
-    Home -- "Core 1" -- "Core 2" -- "Core 3" -- "Core 4" -- "Core 5" -- "Core 6" -- "Core 7" -- "Core 8" -- "Core 9" -- "Core 10" -- "Core 11" -- "Core 12" -- "Core 13" -- "Core 14" -- "Core 15" -- "Core 16" -- "To be continued...";
+    Home -- "Core 1" -- "Core 2" -- "Core 3" -- "Core 4" -- "Core 5" -- "Core 6" -- "Core 7" -- "Core 8" -- "Core 9" -- "Core 10" -- "Core 11" -- "Core 12" -- "Core 13" -- "Core 14" -- "Core 15" -- "Core 16" -- "Core 17" -- "Core 18" -- "Core 19" -- "To be continued...";
 
     node[group="mania"]
     "Manic notes 1" [href="/mania/"];
