@@ -141,6 +141,9 @@ pre {
     white-space: pre-wrap;
     font-family: 'Ubuntu Mono', monospace;
 }
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
 
 
 @keyframes flash {
