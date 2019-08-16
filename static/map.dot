@@ -1,5 +1,4 @@
 graph {
-    rankdir = "LR";
     node[shape="box"]
     node[group="core"];
     Home [href="/"];
