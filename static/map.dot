@@ -1,6 +1,6 @@
 graph Map {
     node[shape="box"]
-    label="Map"
+    label=""
 
     node[group="koan"]
     "Koan 1" [href="/koan/"]
@@ -42,8 +42,8 @@ graph Map {
     "Core 17" [href="/core/page/17"]
     "Core 18" [href="/core/page/18"]
     "Core 19" [href="/core/page/19"]
-    "Core 19" [href="/core/page/20"]
-    "Core 19" [href="/core/page/21"]
+    "Core 20" [href="/core/page/20"]
+    "Core 21" [href="/core/page/21"]
     "To be continued..." [shape="oval"]
     node[group=""]
 
@@ -93,6 +93,5 @@ graph Map {
     "Margaras 4" [href="/margaras/page/4"]
     "Margaras 5" [href="/margaras/page/5"]
     node[group=""]
-    "Core 20" -- "Margaras 1" [minlen=2]
-    "Margaras 1" -- "Margaras 2" -- "Margaras 3" -- "Margaras 4" -- "Margaras 5" -- "Core 21"
+    "Core 20" -- "Margaras 1" -- "Margaras 2" -- "Margaras 3" -- "Margaras 4" -- "Margaras 5" -- "Core 21"
 }
