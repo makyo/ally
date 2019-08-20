@@ -26,6 +26,7 @@ graph Map {
     "Birds 2" [href="/birds/page/2"]
     "Birds 3" [href="/birds/page/3"]
     "Birds 4" [href="/birds/page/4"]
+    "Birds 5" [href="/birds/page/5"]
     node[group=""]
 
     node[group="core"]
@@ -67,7 +68,7 @@ graph Map {
 
     "Core 7" -- "Manic notes 1" -- "Manic notes 2" -- "Manic notes 3" -- "Manic notes 4" -- "Manic notes 5" -- "Manic notes 6" -- "Manic notes 7"
 
-    "Core 8" -- "Birds 1" -- "Birds 2" -- "Birds 3" -- "Birds 4"
+    "Core 8" -- "Birds 1" -- "Birds 2" -- "Birds 3" -- "Birds 4" -- "Birds 5"
 
     node[group="jay"]
     "Jay 1" [href="/jay/"]
