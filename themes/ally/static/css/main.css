@@ -36,7 +36,9 @@ body,
 p + p,
 blockquote + p,
 pre + p,
-p + pre {
+p + pre,
+.verse + p,
+p + .verse {
     margin-top: 0.75rem;
 }
 .priority {
