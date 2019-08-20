@@ -1,0 +1,24 @@
+---
+date: 2019-08-19
+weight: 29
+---
+
+<pre>
+                    ( <a class="pulse huh" href="/aside/1">...</a> )
+                  O
+                o
+              .
+_____,,,_^..^_,,,_____
+</pre>
+
+<script type="text/javascript">
+const grawlix = [
+    ',,,', '///', '???', '!!!', '@@@', '###', '$$$',
+    '%%%', '^^^', '***', '---', '+++', '+++', '...'];
+let curr = 0
+let el = document.querySelector('.huh');
+window.setInterval(() => {
+    el.innerHTML = grawlix[curr];
+    curr = (curr + 1) % grawlix.length;
+}, 250);
+</script>

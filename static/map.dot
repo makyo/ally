@@ -62,10 +62,11 @@ graph Map {
     "Core 30" [href="/30"]
     "Core 31" [href="/31"]
     "Core 32" [href="/32"]
+    "Core 33" [href="/33"]
     "To be continued..." [shape="none"]
     node[group=""]
 
-    Home -- "Core 1" -- "Core 2" -- "Core 3" -- "Core 4" -- "Core 5" -- "Core 6" -- "Core 7" -- "Core 8" -- "Core 9" -- "Core 10" -- "Core 11" -- "Core 12" -- "Core 13" -- "Core 14" -- "Core 15" -- "Core 16" -- "Core 17" -- "Core 18" -- "Core 19" -- "Core 20" -- "Core 21" -- "Core 22" -- "Core 23" -- "Core 24" -- "Core 25" -- "Core 26" -- "Core 27" -- "Core 28" -- "Core 29" -- "Core 30" -- "Core 31" -- "Core 32" -- "To be continued..."
+    Home -- "Core 1" -- "Core 2" -- "Core 3" -- "Core 4" -- "Core 5" -- "Core 6" -- "Core 7" -- "Core 8" -- "Core 9" -- "Core 10" -- "Core 11" -- "Core 12" -- "Core 13" -- "Core 14" -- "Core 15" -- "Core 16" -- "Core 17" -- "Core 18" -- "Core 19" -- "Core 20" -- "Core 21" -- "Core 22" -- "Core 23" -- "Core 24" -- "Core 25" -- "Core 26" -- "Core 27" -- "Core 28" -- "Core 29" -- "Core 30" -- "Core 31" -- "Core 32" -- "Core 33" -- "To be continued..."
 
     "Core 8" -- "Manic notes 1" -- "Manic notes 2" -- "Manic notes 3" -- "Manic notes 4" -- "Manic notes 5" -- "Manic notes 6" -- "Manic notes 7"
 
@@ -114,4 +115,10 @@ graph Map {
     "Margaras 6" [href="/margaras/6"]
     node[group=""]
     "Core 21" -- "Margaras 1" -- "Margaras 2" -- "Margaras 3" -- "Margaras 4" -- "Margaras 5" -- "Margaras 6" -- "Core 22"
+
+    "Aside 1" [href="/aside/1"]
+    "Aside 2" [href="/aside 2"]
+
+    "Core 29" -- "Aside 1"
+    "Core 33" -- "Aside 2"
 }
