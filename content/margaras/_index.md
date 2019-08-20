@@ -1,4 +1,4 @@
 ---
 type: serial
-back: /core/page/21/
+back: /21
 ---

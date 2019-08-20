@@ -14,9 +14,9 @@ It's not because of this.
 
 > It's not because of me.
 
-This is part of it, but this is not because of it.
+This is part of hypomania, but this is not because of it.
 
-> I am part of it, but I am not because of it.
+> I am part of hypomania, but I am not because of it.
 
 I'm sorry.
 
