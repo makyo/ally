@@ -9,16 +9,38 @@ weight: 29
                 o
               .
 _____,,,_^..^_,,,_____
+__|____|____|____|____
+____|____|____|____|__
 </pre>
 
 <script type="text/javascript">
-const grawlix = [
-    ',,,', '///', '???', '!!!', '@@@', '###', '$$$',
-    '%%%', '^^^', '***', '---', '+++', '+++', '...'];
-let curr = 0
-let el = document.querySelector('.huh');
+/*
+    You know this is also very Maddy, right?
+
+Of course it is.
+
+    Alright, just making sure you knew that was the case.
+
+Honestly, at this point, would you expect anything less?
+
+    I guess not.
+*/
+
+const grawlix = ',/?!@#$%^*-+.'.split('');
+el = document.querySelector('.huh');
+el.innerHTML = '';
+el.insertAdjacentHTML('beforeend', '<em><span class="i1"></span><span class="i2"></span><span class="i3"></span><span class="i4"></span><span class="i5"></span><span class="i6"></span><span class="i7"></span><span class="i8"></span><span class="i9"></span><span class="i10"></span></em>');
+let filled = 0;
 window.setInterval(() => {
-    el.innerHTML = grawlix[curr];
-    curr = (curr + 1) % grawlix.length;
+    let inner = document.querySelector('.huh .i' + (Math.floor(Math.random() * 10) + 1));
+    if (Math.floor(Math.random() * 10) % 3 == 0 && filled > 3) {
+        inner.textContent = '';
+        filled--;
+    } else {
+        if (inner.textContent == '') {
+            filled++;
+        }
+        inner.textContent = grawlix[Math.floor(Math.random() * grawlix.length)];
+    }
 }, 250);
 </script>
