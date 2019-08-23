@@ -121,7 +121,7 @@ graph Map {
     "Core 21" -- "Margaras 1" -- "Margaras 2" -- "Margaras 3" -- "Margaras 4" -- "Margaras 5" -- "Margaras 6" -- "Core 22"
 
     "Aside 1" [href="/aside/1"]
-    "Aside 2" [href="/aside 2"]
+    "Aside 2" [href="/aside/2"]
 
     "Core 29" -- "Aside 1"
     "Core 33" -- "Aside 2"

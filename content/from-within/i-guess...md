@@ -22,4 +22,4 @@ I'm sorry.
 
 > I'm sorry.
 
-<a href="/core/page/14">Let's go back, please</a>.
+<a href="/15">Let's go back, please</a>.
