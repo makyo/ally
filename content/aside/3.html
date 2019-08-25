@@ -1,0 +1,157 @@
+---
+type: single
+---
+
+<style>
+.vis {
+    font-size: 20pt;
+    line-height: 2;
+    height: 400px;
+    overflow: scroll;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+}
+audio {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+<div class="vis"></div>
+<audio autoplay loop controls src="/confusion.mp3"></audio>
+
+<script type="text/javascript">
+document.body.style.transition = '0.5s all linear';
+const induction = [
+    {
+        speed: 100,
+        bg: '#fff',
+        color: '#222',
+        text: "Let's think about a hypnosis session with you lying down and me sitting next to you and just how it feels to hear your feelings and how it works to let go of what you know as we think about a hypnosis session with you lying down and me sitting next to you. "
+    },
+    {
+        speed: 90,
+        bg: '#666',
+        color: '#fff',
+        text: "Let's dream about the words we use for the numbers we count to relax the mind which focuses so readily on those numbers, counting slowly down from ten, your mind immediately reaching for "
+    },
+    {
+        speed: 125,
+        bg: '#aaa',
+        color: '#000',
+        text: "nine, which is a fine number but always looked hungry to me and so follows eight which knows just what it ate to feel full, and down onto seven lucky seven which is what you need to get what you need but take away one and you get three plus three or three times two which is six and after that five, five fingers on each hand and toes on each foot, five the sum of the Trinity and the duality, "
+    },
+    {
+        speed: 100,
+        bg: '#fff',
+        color: '#222',
+        text: "and lets take a look at a hypnosis session as seen from above with you laying down and me sitting next to you ",
+    },
+    {
+        speed: 125,
+        bg: '#666',
+        color: '#fff',
+        text: "speaking in words like tangled coils of repetition hidden beneath sibilant esses and susurrating syllables that tug at you this way and that with tangled coils of repetition beneath murmured words and suggestions and half sentences that double back on each other in tangled coils of repetition reinforcing small hints that have you letting go and then we can move on "
+    },
+    {
+        speed: 150,
+        bg: '#555',
+        color: '#eee',
+        text: "to four but not two fours as that'd be eight whom we already met, but you can think of it as two twos or two to the power of two, too, if that helps you "
+    },
+    {
+        speed: 150,
+        bg: '#444',
+        color: '#ddd',
+        text: "and now we're relaxing into a hypnosis session with you lying down and me sitting next to you where we're starting to feel our breath slow and our muscles relax, feeling calm and still, feeling ourselves light upon the bed. "
+    },
+    {
+        speed: 175,
+        bg: '#333',
+        color: '#ccc',
+        text: "And now we're at three, a Trinity, the trilogy of relaxation, calmness, and lightness, feeling each of those rise up in intensity until we get down to "
+    },
+    {
+        speed: 200,
+        bg: '#222',
+        color: '#bbb',
+        text: "two, a duality that forms the outer self that moves in the world and the inner self which is at peace, calmness and light and relaxation reaching for a plateau, and then cresting to find "
+    },
+    {
+        speed: 225,
+        bg: '#111',
+        color: '#aaa',
+        text: "one, the unity of all things, and now we're so light and calm and relaxed that we can feel whole, as a singular consciousness, and also at one with the greatness that surrounds us day by day."
+    }
+];
+let corruptionsA = [
+    '\u030d', '\u030e', '\u0304', '\u0305', '\u033f', '\u0311',
+    '\u0306', '\u0310', '\u0352', '\u0357', '\u0351', '\u0307',
+    '\u0308', '\u030a', '\u0342', '\u0343', '\u0344', '\u034a',
+    '\u034b', '\u034c', '\u0303', '\u0302', '\u030c', '\u0350',
+    '\u0300', '\u0301', '\u030b', '\u030f', '\u0312', '\u0313',
+    '\u0314', '\u033d', '\u0309', '\u0363', '\u0364', '\u0365',
+    '\u0366', '\u0367', '\u0368', '\u0369', '\u036a', '\u036b',
+    '\u036c', '\u036d', '\u036e', '\u036f', '\u033e', '\u035b',
+    '\u0346', '\u031a'
+]
+let corruptionsB = [
+    '\u0316', '\u0317', '\u0318', '\u0319', '\u031c', '\u031d',
+    '\u031e', '\u031f', '\u0320', '\u0324', '\u0325', '\u0326',
+    '\u0329', '\u032a', '\u032b', '\u032c', '\u032d', '\u032e',
+    '\u032f', '\u0330', '\u0331', '\u0332', '\u0333', '\u0339',
+    '\u033a', '\u033b', '\u033c', '\u0345', '\u0347', '\u0348',
+    '\u0349', '\u034d', '\u034e', '\u0353', '\u0354', '\u0355',
+    '\u0356', '\u0359', '\u035a', '\u0323'
+]
+let corruptionsC = [
+    '\u0315', '\u031b', '\u0340', '\u0341', '\u0358', '\u0321',
+    '\u0322', '\u0327', '\u0328', '\u0334', '\u0335', '\u0336',
+    '\u034f', '\u035c', '\u035d', '\u035e', '\u035f', '\u0360',
+    '\u0362', '\u0338', '\u0337', '\u0361', '\u0489'
+]
+const el = document.querySelector('.vis');
+let phraseIdx = 0,
+characterIdx = 0,
+characterID = null,
+i = 0;
+const spans = []
+
+function eachPhrase() {
+    if (phraseIdx >= induction.length) {
+        return;
+    }
+    characterIdx = 0;
+    const phrase = induction[phraseIdx++];
+    document.body.style['background-color'] = phrase.bg;
+    document.body.style['color'] = phrase.color;
+    characterID = window.setInterval(
+        eachCharacter,
+        phrase.speed,
+        phrase.text,
+        phrase.speed);
+}
+
+function eachCharacter(text, finalDelay) {
+    if (characterIdx == text.length - 1) {
+        window.clearInterval(characterID)
+        window.setTimeout(eachPhrase, finalDelay);
+    }
+    let inner = el.textContent + text[characterIdx++];
+    const chance = Math.floor(Math.random() * 100);
+    const affected = Math.floor(Math.random() * inner.length)
+    if (phraseIdx > 1 && Math.floor(Math.random() * induction.length) <= phraseIdx) {
+        if (chance % 3 === 0) {
+            inner = inner.substring(0, affected) + corruptionsA[Math.floor(Math.random() * corruptionsA.length)] + inner.substring(affected);
+        } else if (chance % 5 === 0) {
+            inner = inner.substring(0, affected) + corruptionsB[Math.floor(Math.random() * corruptionsB.length)] + inner.substring(affected);
+        } else if (chance % 7 === 0) {
+            inner = inner.substring(0, affected) + corruptionsC[Math.floor(Math.random() * corruptionsC.length)] + inner.substring(affected);
+        }
+    }
+    el.textContent = inner;
+    el.scrollTop = el.scrollTopMax;
+}
+
+eachPhrase();
+    </script>
