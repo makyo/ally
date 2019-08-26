@@ -152,7 +152,7 @@ function eachCharacter(text, finalDelay) {
         window.setTimeout(eachPhrase, finalDelay);
     }
     el.textContent += text[characterIdx++];
-    el.scrollTop = el.scrollTopMax;
+    el.scrollTop = el.scrollHeight;
 }
 
 function corrupt() {
