@@ -15,9 +15,15 @@ audio {
     display: block;
     margin: 0 auto;
 }
+.moving-on {
+    display: none;
+    margin: 1rem;
+    text-align: center;
+}
 </style>
 
 <div class="vis"></div>
+<div class="moving-on"><a class="pulse" href="/46">And so we come to a place between.</a></div>
 <audio autoplay loop controls src="/confusion.mp3"></audio>
 
 <script type="text/javascript">
@@ -119,6 +125,7 @@ const spans = []
 
 function eachPhrase() {
     if (phraseIdx >= induction.length) {
+        document.querySelector('.moving-on').style['display'] = 'block';
         return;
     }
     if (corruptID) {
