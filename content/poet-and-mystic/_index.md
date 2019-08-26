@@ -1,6 +1,6 @@
 ---
 type: serial
-background: '#1f183a'
+background: '#2f082a'
 color: '#ccd'
 quote: '#eef'
 back: /38
