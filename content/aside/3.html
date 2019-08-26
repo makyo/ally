@@ -18,7 +18,7 @@ audio {
 </style>
 
 <div class="vis"></div>
-<audio autoplay loop controls src="/confusion.mp3"></audio>
+<!--<audio autoplay loop controls src="/confusion.mp3"></audio>-->
 
 <script type="text/javascript">
 document.body.style.transition = '0.5s all linear';
@@ -112,14 +112,17 @@ let corruptionsC = [
 ]
 const el = document.querySelector('.vis');
 let phraseIdx = 0,
-characterIdx = 0,
-characterID = null,
-i = 0;
+    characterIdx = 0,
+    characterID = null,
+    corruptID = null;
 const spans = []
 
 function eachPhrase() {
     if (phraseIdx >= induction.length) {
         return;
+    }
+    if (corruptID) {
+        window.clearInterval(corruptID)
     }
     characterIdx = 0;
     const phrase = induction[phraseIdx++];
@@ -130,6 +133,9 @@ function eachPhrase() {
         phrase.speed,
         phrase.text,
         phrase.speed);
+    corruptID = window.setInterval(
+        corrupt,
+        150 - phraseIdx * 10);
 }
 
 function eachCharacter(text, finalDelay) {
@@ -137,9 +143,15 @@ function eachCharacter(text, finalDelay) {
         window.clearInterval(characterID)
         window.setTimeout(eachPhrase, finalDelay);
     }
-    let inner = el.textContent + text[characterIdx++];
+    el.textContent += text[characterIdx++];
+    el.scrollTop = el.scrollTopMax;
+}
+
+function corrupt() {
+    let inner = el.textContent;
     const chance = Math.floor(Math.random() * 100);
     const affected = Math.floor(Math.random() * inner.length)
+
     if (phraseIdx > 1 && Math.floor(Math.random() * induction.length) <= phraseIdx) {
         if (chance % 3 === 0) {
             inner = inner.substring(0, affected) + corruptionsA[Math.floor(Math.random() * corruptionsA.length)] + inner.substring(affected);
@@ -150,7 +162,6 @@ function eachCharacter(text, finalDelay) {
         }
     }
     el.textContent = inner;
-    el.scrollTop = el.scrollTopMax;
 }
 
 eachPhrase();
