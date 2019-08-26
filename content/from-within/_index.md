@@ -5,6 +5,7 @@ background: '#333a18'
 color: '#cdc'
 quote: '#efe'
 type: single
+pulse_light: true
 ---
 
 Somewhere around 2014, a friend of mine went mad.

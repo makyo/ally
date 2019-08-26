@@ -157,11 +157,13 @@ code {
         background-color: rgba(128, 128, 128, 0.2);
     }
 }
-.pulse {
+.pulse, .pulse span {
     animation-name: flash;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+.pulse {
     padding: 0 3px;
 }
 

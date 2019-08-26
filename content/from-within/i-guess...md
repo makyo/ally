@@ -4,6 +4,7 @@ weight: 20
 background: "#001a06"
 color: '#aba'
 quote: '#cdc'
+pulse_light: true
 ---
 
 I'm hypomanic now.
