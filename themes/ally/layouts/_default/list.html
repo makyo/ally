@@ -5,6 +5,6 @@
     {{ range $paginator.Pages.ByWeight }}
     {{ .Content }}
     {{ end }}
-    {{ template "_internal/pagination.html" . }}
+    {{ partial "pagination.html" . }}
 </main>
 {{end}}

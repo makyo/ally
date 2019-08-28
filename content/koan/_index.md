@@ -4,5 +4,5 @@ background: '#1f183a'
 color: '#ccd'
 quote: '#eef'
 pulse_light: true
-back: /16
+back: /furry
 ---
