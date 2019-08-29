@@ -23,4 +23,4 @@ I'm sorry.
 
 > I'm sorry.
 
-<a href="/15">Let's go back, please</a>.
+<a class="pulse" href="/12">Let's go back, please</a>.

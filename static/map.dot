@@ -1,135 +1,45 @@
-graph Map {
+digraph Map {
     node[shape="box"]
     label=""
 
-    node[group="koan"]
-    "Koan 1" [href="/koan/"]
-    "Koan 2" [href="/koan/2"]
-    "Koan 3" [href="/koan/3"]
-    "Koan 4" [href="/koan/4"]
-    "Koan 5" [href="/koan/5"]
-    "Koan 6" [href="/koan/6"]
-    node[group=""]
+    node[group="aside",style="",fontcolor="#111111"]
+    "Aside 1" [href="/aside/1"]
+    "Aside 2" [href="/aside/2"]
+    "Aside 3" [href="/aside/3"]
 
-    node[group="mania"]
-    "Manic notes 1" [href="/mania/"]
-    "Manic notes 2" [href="/mania/2"]
-    "Manic notes 3" [href="/mania/3"]
-    "Manic notes 4" [href="/mania/4"]
-    "Manic notes 5" [href="/mania/5"]
-    "Manic notes 6" [href="/mania/6"]
-    "Manic notes 7" [href="/mania/7"]
-    node[group=""]
-
-    node[group="birds"]
+    node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
     "Birds 2" [href="/birds/2"]
     "Birds 3" [href="/birds/3"]
     "Birds 4" [href="/birds/4"]
     "Birds 5" [href="/birds/5"]
-    node[group=""]
+    "Birds 1" -> "Birds 2" -> "Birds 3" -> "Birds 4" -> "Birds 5"
 
-    node[group="core"]
-    "Core 1" [href="/"]
-    "Core 2" [href="/2"]
-    "Core 3" [href="/3"]
-    "Core 4" [href="/4"]
-    "Core 5" [href="/5"]
-    "Core 6" [href="/6"]
-    "Core 7" [href="/7"]
-    "Core 8" [href="/8"]
-    "Core 9" [href="/9"]
-    "Core 10" [href="/10"]
-    "Core 11" [href="/11"]
-    "Core 12" [href="/12"]
-    "Core 13" [href="/13"]
-    "Core 14" [href="/14"]
-    "Core 15" [href="/15"]
-    "Core 16" [href="/16"]
-    "Core 17" [href="/17"]
-    "Core 18" [href="/18"]
-    "Core 19" [href="/19"]
-    "Core 20" [href="/20"]
-    "Core 21" [href="/21"]
-    "Core 22" [href="/22"]
-    "Core 23" [href="/23"]
-    "Core 24" [href="/24"]
-    "Core 25" [href="/25"]
-    "Core 26" [href="/26"]
-    "Core 27" [href="/27"]
-    "Core 28" [href="/28"]
-    "Core 29" [href="/29"]
-    "Core 30" [href="/30"]
-    "Core 31" [href="/31"]
-    "Core 32" [href="/32"]
-    "Core 33" [href="/33"]
-    "Core 34" [href="/34"]
-    "Core 35" [href="/35"]
-    "Core 36" [href="/36"]
-    "Core 37" [href="/37"]
-    "Core 38" [href="/38"]
-    "Core 39" [href="/39"]
+    node[group="ally",style="",fontcolor="#111111"] // `core` folder
+    "ally 1" [href="/"]
+    "ally 2" [href="/2"]
+    "ally 3" [href="/3"]
+    "ally 4" [href="/4"]
+    "ally 5" [href="/5"]
+    "ally 6" [href="/6"]
+    "ally 7" [href="/7"]
+    "ally 8" [href="/8"]
+    "ally 9" [href="/9"]
+    "ally 10" [href="/10"]
+    "ally 11" [href="/11"]
+    "ally 12" [href="/12"]
+    "ally 13" [href="/13"]
+    "ally 14" [href="/14"]
+    "ally 15" [href="/15"]
+    "ally 16" [href="/16"]
+    "ally 17" [href="/17"]
     "To be continued..." [shape="none"]
-    node[group=""]
+    "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
+    "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
+    "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
+    "ally 16" -> "ally 17" -> "To be continued..."
 
-    Home -- "Core 1" -- "Core 2" -- "Core 3" -- "Core 4" -- "Core 5" -- "Core 6" -- "Core 7" -- "Core 8" -- "Core 9" -- "Core 10" -- "Core 11" -- "Core 12" -- "Core 13" -- "Core 14" -- "Core 15" -- "Core 16" -- "Core 17" -- "Core 18" -- "Core 19" -- "Core 20" -- "Core 21" -- "Core 22" -- "Core 23" -- "Core 24" -- "Core 25" -- "Core 26" -- "Core 27" -- "Core 28" -- "Core 29" -- "Core 30" -- "Core 31" -- "Core 32" -- "Core 33" -- "Core 34" -- "Core 35" -- "Core 36" -- "Core 37" -- "Core 38" -- "Core 39" -- "To be continued..."
-
-    "Core 8" -- "Manic notes 1" -- "Manic notes 2" -- "Manic notes 3" -- "Manic notes 4" -- "Manic notes 5" -- "Manic notes 6" -- "Manic notes 7"
-
-    "Core 9" -- "Birds 1" -- "Birds 2" -- "Birds 3" -- "Birds 4" -- "Birds 5"
-
-    node[group="jay"]
-    "Jay 1" [href="/jay/"]
-    "Jay 2" [href="/jay/2"]
-    "Jay 3" [href="/jay/3"]
-    "Jay 4" [href="/jay/4"]
-    "Jay 5" [href="/jay/5"]
-    "Jay 6" [href="/jay/6"]
-    node[group=""]
-    "Core 11" -- "Jay 1" -- "Jay 2" -- "Jay 3" -- "Jay 4" -- "Jay 5" -- "Jay 6"
-
-    node[group="from-within"]
-    "From within 1" [href="/from-within/"]
-    "From within 2" [href="/from-within/2"]
-    "From within 3" [href="/from-within/3"]
-    "From within 4" [href="/from-within/4"]
-    "From within 5" [href="/from-within/5"]
-    "From within 6" [href="/from-within/i-guess.."]
-    node[group=""]
-    "Core 14" -- "From within 1" -- "From within 2" -- "From within 3" -- "From within 4" -- "From within 5" -- "From within 6" -- "Core 15"
-
-    "Core 16" -- "Koan 1" -- "Koan 2" -- "Koan 3" -- "Koan 4" -- "Koan 5" -- "Koan 6"
-
-    node[group="fursona"]
-    "Fursoñas 1" [href="/fursona/"]
-    "Fursoñas 2" [href="/fursona/2"]
-    "Fursoñas 3" [href="/fursona/3"]
-    "Fursoñas 4" [href="/fursona/4"]
-    "Fursoñas 5" [href="/fursona/5"]
-    "Fursoñas 6" [href="/fursona/6"]
-    "Fursoñas 7" [href="/fursona/7"]
-    "Fursoñas 8" [href="/fursona/8"]
-    node[group=""]
-    "Core 17" -- "Fursoñas 1" -- "Fursoñas 2" -- "Fursoñas 3" -- "Fursoñas 4" -- "Fursoñas 5" -- "Fursoñas 6" -- "Fursoñas 7" -- "Fursoñas 8"
-
-    node[group="margaras"]
-    "Margaras 1" [href="/margaras"]
-    "Margaras 2" [href="/margaras/2"]
-    "Margaras 3" [href="/margaras/3"]
-    "Margaras 4" [href="/margaras/4"]
-    "Margaras 5" [href="/margaras/5"]
-    "Margaras 6" [href="/margaras/6"]
-    node[group=""]
-    "Core 21" -- "Margaras 1" -- "Margaras 2" -- "Margaras 3" -- "Margaras 4" -- "Margaras 5" -- "Margaras 6" -- "Core 22"
-
-    "Aside 1" [href="/aside/1"]
-    "Aside 2" [href="/aside/2"]
-    "Aside 3" [href="/aside/3"]
-
-    "Core 29" -- "Aside 1"
-    "Core 33" -- "Aside 2"
-
-    node[group="dad"]
+    node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
     "Dad 1" [href="/dad/1"]
     "Dad 2" [href="/dad/2"]
     "Dad 3" [href="/dad/3"]
@@ -141,10 +51,121 @@ graph Map {
     "Dad 9" [href="/dad/9"]
     "Dad 10" [href="/dad/10"]
     "Dad 11" [href="/dad/11"]
-    node[group=""]
-    "Core 37" -- "Dad 1" -- "Dad 2" -- "Dad 3" -- "Dad 4" -- "Dad 5" -- "Dad 6" -- "Dad 7" -- "Dad 8" -- "Dad 9" -- "Dad 10" -- "Dad 11" -- "Core 38"
+    "Dad 1" -> "Dad 2" -> "Dad 3" -> "Dad 4" -> "Dad 5" ->
+    "Dad 6" -> "Dad 7" -> "Dad 8" -> "Dad 9" -> "Dad 10" ->
+    "Dad 11"
 
-    node[group="pnm"]
+    node[group="from-within",style="filled",fillcolor="#333a18",fontcolor="#ccddcc"]
+    "From within 1" [href="/from-within/"]
+    "From within 2" [href="/from-within/2"]
+    "From within 3" [href="/from-within/3",fillcolor="#283a26"]
+    "From within 4" [href="/from-within/4",fillcolor="#082a16",fontcolor="#bbccbb"]
+    "From within 5" [href="/from-within/5",fillcolor="#082010",fontcolor="#aabbaa"]
+    "From within 6" [href="/from-within/i-guess..",fillcolor="#001a06",fontcolor="#aabbaa"]
+    "From within 1" -> "From within 2" -> "From within 3" -> "From within 4" ->
+    "From within 5" -> "From within 6"
+
+    node[group="furry",style="",fontcolor="#111111"]
+    "Furry 1" [href="/furry"]
+    "Furry 2" [href="/furry/2"]
+    "Furry 3" [href="/furry/3"]
+    "Furry 4" [href="/furry/4"]
+    "Furry 5" [href="/furry/5"]
+    "Furry 6" [href="/furry/6"]
+    "Furry 7" [href="/furry/7"]
+    "Furry 1" -> "Furry 2" -> "Furry 3" -> "Furry 4" -> "Furry 5" ->
+    "Furry 6" -> "Furry 7"
+
+        node[group="fursona"]
+        "Fursoñas 1" [href="/furry/fursona/"]
+        "Fursoñas 2" [href="/furry/fursona/2"]
+        "Fursoñas 3" [href="/furry/fursona/3"]
+        "Fursoñas 4" [href="/furry/fursona/4"]
+        "Fursoñas 5" [href="/furry/fursona/5"]
+        "Fursoñas 6" [href="/furry/fursona/6"]
+        "Fursoñas 7" [href="/furry/fursona/7"]
+        "Fursoñas 8" [href="/furry/fursona/8"]
+        "Fursoñas 1" -> "Fursoñas 2" -> "Fursoñas 3" -> "Fursoñas 4" ->
+        "Fursoñas 5" -> "Fursoñas 6" -> "Fursoñas 7" -> "Fursoñas 8"
+
+        node[group="margaras"]
+        "Margaras 1" [href="/furry/margaras"]
+        "Margaras 2" [href="/furry/margaras/2"]
+        "Margaras 3" [href="/furry/margaras/3"]
+        "Margaras 4" [href="/furry/margaras/4"]
+        "Margaras 5" [href="/furry/margaras/5"]
+        "Margaras 6" [href="/furry/margaras/6"]
+        "Margaras 1" -> "Margaras 2" -> "Margaras 3" -> "Margaras 4" ->
+        "Margaras 5" -> "Margaras 6"
+
+        node[group="younes"]
+        "Younes 1" [href="/furry/younes"]
+        "Younes 2" [href="/furry/younes/2"]
+        "Younes 3" [href="/furry/younes/3"]
+        "Younes 1" -> "Younes 2" -> "Younes 3"
+
+    node[group="jay",style="filled",fillcolor="#eeddff",fontcolor="#222288"]
+    "Jay 1" [href="/jay/"]
+    "Jay 2" [href="/jay/2"]
+    "Jay 3" [href="/jay/3"]
+    "Jay 4" [href="/jay/4"]
+    "Jay 5" [href="/jay/5"]
+    "Jay 6" [href="/jay/6"]
+    "Jay 1" -> "Jay 2" -> "Jay 3" -> "Jay 4" -> "Jay 5" -> "Jay 6"
+
+    node[group="koan",style="filled",fillcolor="#1f183a",fontcolor="#ccccdd"]
+    "Koan 1" [href="/koan/"]
+    "Koan 2" [href="/koan/2"]
+    "Koan 3" [href="/koan/3"]
+    "Koan 4" [href="/koan/4"]
+    "Koan 5" [href="/koan/5"]
+    "Koan 6" [href="/koan/6"]
+    "Koan 1" -> "Koan 2" -> "Koan 3" -> "Koan 4" -> "Koan 5" -> "Koan 6"
+
+    node[group="liminal",style="",fontcolor="#111111"]
+    "Liminal 1" [href="/liminal"]
+    "Liminal 2" [href="/liminal/2"]
+    "Liminal 3" [href="/liminal/3"]
+    "Liminal 4" [href="/liminal/4"]
+    "Liminal 5" [href="/liminal/5"]
+    "Liminal 6" [href="/liminal/6"]
+    "Liminal 7" [href="/liminal/7"]
+    "Liminal 8" [href="/liminal/8"]
+    "Liminal 1" -> "Liminal 2" -> "Liminal 3" -> "Liminal 4" ->
+    "Liminal 5" -> "Liminal 6" -> "Liminal 7" -> "Liminal 8"
+
+    node[group="mania",style="filled",fillcolor="#000000",fontcolor="#dddddd"]
+    "Manic notes 1" [href="/mania/"]
+    "Manic notes 2" [href="/mania/2"]
+    "Manic notes 3" [href="/mania/3"]
+    "Manic notes 4" [href="/mania/4"]
+    "Manic notes 5" [href="/mania/5"]
+    "Manic notes 1" -> "Manic notes 2" -> "Manic notes 3" -> "Manic notes 4" ->
+    "Manic notes 5"
+
+    node[group="mp",style="",fontcolor="#111111"]
+    "Manifesto Project 1" [href="/manifesto-project"]
+    "Manifesto Project 2" [href="/manifesto-project/2"]
+    "Manifesto Project 3" [href="/manifesto-project/3"]
+    "Manifesto Project 4" [href="/manifesto-project/4"]
+    "Manifesto Project 5" [href="/manifesto-project/5"]
+    "Manifesto Project 6" [href="/manifesto-project/6"]
+    "Manifesto Project 7" [href="/manifesto-project/7"]
+    "Manifesto Project 8" [href="/manifesto-project/8"]
+    "Manifesto Project 9" [href="/manifesto-project/9"]
+    "Manifesto Project 10" [href="/manifesto-project/10"]
+    "Manifesto Project 11" [href="/manifesto-project/11"]
+    "Manifesto Project 12" [href="/manifesto-project/12"]
+    "Manifesto Project 13" [href="/manifesto-project/13"]
+    "Manifesto Project 14" [href="/manifesto-project/14"]
+    "Manifesto Project 1" -> "Manifesto Project 2" -> "Manifesto Project 3" ->
+    "Manifesto Project 4" -> "Manifesto Project 5" -> "Manifesto Project 6" ->
+    "Manifesto Project 7" -> "Manifesto Project 8" -> "Manifesto Project 9" ->
+    "Manifesto Project 10" -> "Manifesto Project 11" ->
+    "Manifesto Project 12" -> "Manifesto Project 13" ->
+    "Manifesto Project 14"
+
+    node[group="pnm",style="filled",fillcolor="#2f082a",fontcolor="#ccccdd"]
     "Poet and Mystic 1" [href="/poet-and-mystic"]
     "Poet and Mystic 2" [href="/poet-and-mystic/2"]
     "Poet and Mystic 3" [href="/poet-and-mystic/3"]
@@ -157,7 +178,100 @@ graph Map {
     "Poet and Mystic 10" [href="/poet-and-mystic/10"]
     "Poet and Mystic 11" [href="/poet-and-mystic/11"]
     "Poet and Mystic 12" [href="/poet-and-mystic/21"]
-    node[group=""]
-    "Core 38" -- "Poet and Mystic 1" -- "Poet and Mystic 2" -- "Poet and Mystic 3" -- "Poet and Mystic 4" -- "Poet and Mystic 5" -- "Poet and Mystic 6" -- "Poet and Mystic 7" -- "Poet and Mystic 8" -- "Poet and Mystic 9" -- "Poet and Mystic 10" -- "Poet and Mystic 11" -- "Poet and Mystic 12"
-    "Poet and Mystic 7" -- "Aside 3" -- "Poet and Mystic 8"
+    "Poet and Mystic 1" -> "Poet and Mystic 2" -> "Poet and Mystic 3" ->
+    "Poet and Mystic 4" -> "Poet and Mystic 5" -> "Poet and Mystic 6" ->
+    "Poet and Mystic 7" -> "Poet and Mystic 8" -> "Poet and Mystic 9" ->
+    "Poet and Mystic 10" -> "Poet and Mystic 11" -> "Poet and Mystic 12"
+
+    node[group="poly",style="",fontcolor="#111111"]
+    "Poly 1" [href="/poly"]
+    "Poly 2" [href="/poly/2"]
+    "Poly 3" [href="/poly/3"]
+    "Poly 1" -> "Poly 2" -> "Poly 3"
+
+    node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
+    "Self-harm 1" [href="/self-harm"]
+    "Self-harm 2" [href="/self-harm/2"]
+    "Self-harm 3" [href="/self-harm/3"]
+    "Self-harm 1" -> "Self-harm 2" -> "Self-harm 3"
+
+    node[group="transition"]
+
+    node[group="writing",style="",fontcolor="#111111"]
+    "Writing 1" [href="/writing"]
+    "Writing 2" [href="/writing/2"]
+    "Writing 3" [href="/writing/3"]
+    "Writing 1" -> "Writing 2" -> "Writing 3"
+
+    /***** Connections *****/
+
+    // Asides
+    "ally 14" -> "Aside 1"
+    "Liminal 4" -> "Aside 2"
+    "Poet and Mystic 7" -> "Aside 3"
+
+    // Birds
+    /* none */
+
+    // ally
+    "ally 8" -> "Manic notes 1"
+    "ally 9" -> "Birds 1"
+    "ally 10" -> "Poly 1"
+    "ally 11" -> "From within 1"
+    "ally 13" -> "Furry 1"
+    "ally 15" -> "Liminal 1"
+    "ally 16" -> "Poet and Mystic 1"
+    "ally 17" -> "Writing 1"
+
+    // Dad
+    "Dad 11" -> "ally 16"
+
+    // From within
+    "From within 6" -> "ally 12"
+
+    // Furry
+        // Fursona
+        /* none */
+
+        // Margaras
+        /* none */
+
+        // Younes
+        "Younes 3" -> "Self-harm 1"
+    "Furry 1" -> "Koan 1"
+    "Furry 2" -> "Fursoñas 1"
+    "Furry 6" -> "Margaras 1"
+    "Furry 7" -> "Younes 1"
+
+    // Jay
+    /* none */
+
+    // Koan
+    /* none */
+
+    // Liminal
+    "Liminal 8" -> "Dad 1"
+
+    // Manic notes
+    "Manic notes 4" -> "Manifesto Project 1"
+
+    // Manifesto Project
+    /* none */
+
+    // Poet and Mystic
+    "Poet and Mystic 1" -> "Manifesto Project 1"
+
+    // Poly
+    "Poly 1" -> "Jay 1"
+
+    // Self-harm
+    "Self-harm 1" -> "Margaras 1"
+
+    // Writing
+    "Writing 2" -> "Koans 1"
+    "Writing 2" -> "Birds 1"
+    "Writing 2" -> "Margaras 1"
+    "Writing 2" -> "Dad 1"
+    "Writing 2" -> "Fursoñas 1"
+    "Writing 2" -> "Poet and Mystic 1"
 }
