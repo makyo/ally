@@ -4,6 +4,9 @@ title = "ally"
 theme= "ally"
 paginatePath = ""
 
+[permalinks]
+  news = "/:year/:month/:day/:slug/"
+
 [taxonomies]
   tag = "tags"
   category = "categories"
