@@ -177,11 +177,22 @@ digraph Map {
     "Poet and Mystic 9" [href="/poet-and-mystic/9"]
     "Poet and Mystic 10" [href="/poet-and-mystic/10"]
     "Poet and Mystic 11" [href="/poet-and-mystic/11"]
-    "Poet and Mystic 12" [href="/poet-and-mystic/21"]
+    "Poet and Mystic 12" [href="/poet-and-mystic/12"]
+    "Poet and Mystic 13" [href="/poet-and-mystic/13"]
     "Poet and Mystic 1" -> "Poet and Mystic 2" -> "Poet and Mystic 3" ->
     "Poet and Mystic 4" -> "Poet and Mystic 5" -> "Poet and Mystic 6" ->
     "Poet and Mystic 7" -> "Poet and Mystic 8" -> "Poet and Mystic 9" ->
-    "Poet and Mystic 10" -> "Poet and Mystic 11" -> "Poet and Mystic 12"
+    "Poet and Mystic 10" -> "Poet and Mystic 11" -> "Poet and Mystic 12" ->
+    "Poet and Mystic 13"
+
+        node[group="ane",style="",fontcolor="#111111"]
+        "Agony and Ecstasy" [href="/poet-and-mystic/agony-and-ecstasy"]
+        "Audio" [href="/poet-and-mystic/agony-and-ecstasy/audio"]
+        "Video" [href="/poet-and-mystic/agony-and-ecstasy/video"]
+        "Text" [href="/poet-and-mystic/agony-and-ecstasy/text"]
+        "Agony and Ecstasy" -> "Audio"
+        "Agony and Ecstasy" -> "Video"
+        "Agony and Ecstasy" -> "Text"
 
     node[group="poly",style="",fontcolor="#111111"]
     "Poly 1" [href="/poly"]
@@ -201,9 +212,20 @@ digraph Map {
     "Writing 1" [href="/writing"]
     "Writing 2" [href="/writing/2"]
     "Writing 3" [href="/writing/3"]
-    "Writing 1" -> "Writing 2" -> "Writing 3"
+    "Writing 4" [href="/writing/4"]
+    "Writing 5" [href="/writing/5"]
+    "Writing 1" -> "Writing 2" -> "Writing 3" -> "Writing 4" -> "Writing 5"
 
-    /***** Connections *****/
+    /**
+     Connections
+
+     Connections should only lead from one quest to another the first time that
+     link appears. No need to link to a quest a second time.
+
+        Wasn't the point of this to be intentionally confusing?
+
+     Yeah, but it was grating on me. All of those lines crossing, all those curves, side-quests pushed way down the page because I linked to them too many times.
+     */
 
     // Asides
     "ally 14" -> "Aside 1"
@@ -259,19 +281,20 @@ digraph Map {
     /* none */
 
     // Poet and Mystic
-    "Poet and Mystic 1" -> "Manifesto Project 1"
+    /*"Poet and Mystic 1" -> "Manifesto Project 1"*/
+    "Poet and Mystic 13" -> "Agony and Ecstasy"
 
     // Poly
     "Poly 1" -> "Jay 1"
 
     // Self-harm
-    "Self-harm 1" -> "Margaras 1"
+    /*"Self-harm 1" -> "Margaras 1"*/
 
     // Writing
-    "Writing 2" -> "Koans 1"
+    /*"Writing 2" -> "Koans 1"
     "Writing 2" -> "Birds 1"
     "Writing 2" -> "Margaras 1"
     "Writing 2" -> "Dad 1"
     "Writing 2" -> "Fursoñas 1"
-    "Writing 2" -> "Poet and Mystic 1"
+    "Writing 2" -> "Poet and Mystic 1"*/
 }
