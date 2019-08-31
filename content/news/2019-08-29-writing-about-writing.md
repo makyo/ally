@@ -14,6 +14,8 @@ I'm not totally convinced that's true, but it's at least providing more fodder.
 * [Writing 4](/writing/4)
 * [Writing 5](/writing/5)
 * [Writing 6](/writing/6)
+* [Writing 7](/writing/7)
+* [Music](/writing/music)
 * [Agony and Ecstasy](/poet-and-mystic/agony-and-ecstasy)
 
 ### Updated content
