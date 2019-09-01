@@ -17,9 +17,11 @@ I'm not totally convinced that's true, but it's at least providing more fodder.
 * [Writing 7](/writing/7)
 * [Music](/writing/music)
 * [Agony and Ecstasy](/poet-and-mystic/agony-and-ecstasy)
+* [Ally 18](/18)
 
 ### Updated content
 
 * The [map](/map) has been updated to be a *bit* less confusing.
 * [Birds 4](/birds/4) and [Birds 5](/birds/5) have swapped places.
+* [Ally 4](/4), [Ally 5](/5), and [Ally 6](/6) have cycled positions.
 * [Poet and Mystic 13](/poet-and-mystic/13) updated to link to Agony and Ecstasy.
