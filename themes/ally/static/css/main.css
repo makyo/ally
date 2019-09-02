@@ -146,6 +146,10 @@ pre {
 code {
     font-family: 'Ubuntu Mono', monospace;
 }
+audio {
+    display: block;
+    margin: 0 auto;
+}
 
 
 @keyframes flash {
