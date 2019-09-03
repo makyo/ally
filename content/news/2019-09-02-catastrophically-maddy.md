@@ -1,5 +1,6 @@
 ---
 date: 2019-09-02
+title: Catastrophically Maddy
 ---
 
 > You seem to be working ever close to some platonic perfection of what means to be Maddy.
