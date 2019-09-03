@@ -30,5 +30,8 @@ Give it time.
 
 ### New content
 
-* [Ally 18](/18)
 * [Software](https://github.com/makyo/ally.drab-makyo.com/pull/4)
+
+### Updated content
+
+* [Ally 18](/18)
