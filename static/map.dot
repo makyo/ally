@@ -208,12 +208,12 @@ digraph Map {
     "Self-harm 1" -> "Self-harm 2" -> "Self-harm 3"
 
     node[group="software",style="filled",fillcolor="#eaf5ff",fontcolor="#05264c"]
-    "Software 1" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
-    "Software 2" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/04b7300615386bccbb331caebcf396077f6fc9ea"]
-    "Software 3" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/d73e63f3fdc0bce89f06334959ade28888a2f7b2"]
-    "Software 4" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/90acc199cd80944f6c5eb6834a2fa67783db4d7d"]
-    "Software 5" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/49f83b2148f70151c43f8ef77a061e7252d9b1d4"]
-    "Software 6" [href="https://github.com/makyo/ally.drab-makyo.com/pull/4/commits/ab8302ca2f6ca00c0a5bdfebcb4b2f2291ec9833"]
+    "Software 1" [href="https://github.com/makyo/ally/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
+    "Software 2" [href="https://github.com/makyo/ally/pull/4/commits/04b7300615386bccbb331caebcf396077f6fc9ea"]
+    "Software 3" [href="https://github.com/makyo/ally/pull/4/commits/d73e63f3fdc0bce89f06334959ade28888a2f7b2"]
+    "Software 4" [href="https://github.com/makyo/ally/pull/4/commits/90acc199cd80944f6c5eb6834a2fa67783db4d7d"]
+    "Software 5" [href="https://github.com/makyo/ally/pull/4/commits/49f83b2148f70151c43f8ef77a061e7252d9b1d4"]
+    "Software 6" [href="https://github.com/makyo/ally/pull/4/commits/ab8302ca2f6ca00c0a5bdfebcb4b2f2291ec9833"]
     "Software 1" -> "Software 2" -> "Software 3" -> "Software 4" ->
     "Software 5" -> "Software 6"
 

@@ -1,4 +1,4 @@
 ---
 type: serial
-permalink: /
+url: /
 ---
