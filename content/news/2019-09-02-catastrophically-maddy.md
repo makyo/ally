@@ -5,6 +5,8 @@ title: Catastrophically Maddy
 
 > You seem to be working ever close to some platonic perfection of what means to be Maddy.
 
+<!--more-->
+
 Yeah, this is one of those things where I seem to have looped all the way around from being proud of a work to being vaguely ashamed of it.
 
 > It's not bad, it's just very Maddy. Intensely Maddy. Catastrophically Maddy.

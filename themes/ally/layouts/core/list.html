@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="main">
     {{ .Content }}
-    {{ $paginator := .Paginate (and (where .Pages ".Params.date" "!=" nil) (where .Pages ".Type" "==" "core")) 1 }}
+    {{ $paginator := .Paginate (and (where .Pages ".Params.date" "!=" nil) (where .Pages ".Type" "==" "ally")) 1 }}
     {{ range $paginator.Pages.ByWeight }}
     {{ .Content }}
     {{ end }}
