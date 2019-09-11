@@ -2,19 +2,6 @@ digraph Map {
     node[shape="box"]
     label=""
 
-    node[group="aside",style="",fontcolor="#111111"]
-    "Aside 1" [href="/aside/1"]
-    "Aside 2" [href="/aside/2"]
-    "Aside 3" [href="/aside/3"]
-
-    node[group="birds",style="",fontcolor="#111111"]
-    "Birds 1" [href="/birds"]
-    "Birds 2" [href="/birds/2"]
-    "Birds 3" [href="/birds/3"]
-    "Birds 4" [href="/birds/4"]
-    "Birds 5" [href="/birds/5"]
-    "Birds 1" -> "Birds 2" -> "Birds 3" -> "Birds 4" -> "Birds 5"
-
     node[group="ally",style="",fontcolor="#111111"] // `core` folder
     "ally 1" [href="/"]
     "ally 2" [href="/2"]
@@ -34,11 +21,28 @@ digraph Map {
     "ally 16" [href="/16"]
     "ally 17" [href="/17"]
     "ally 18" [href="/18"]
+    "ally 19" [href="/19"]
+    "ally 20" [href="/20"]
+    "ally 21" [href="/21"]
+    "ally 22" [href="/22"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
-    "ally 16" -> "ally 17" -> "ally 18" -> "To be continued..."
+    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "To be continued..."
+
+    node[group="aside",style="",fontcolor="#111111"]
+    "Aside 1" [href="/aside/1"]
+    "Aside 2" [href="/aside/2"]
+    "Aside 3" [href="/aside/3"]
+
+    node[group="birds",style="",fontcolor="#111111"]
+    "Birds 1" [href="/birds"]
+    "Birds 2" [href="/birds/2"]
+    "Birds 3" [href="/birds/3"]
+    "Birds 4" [href="/birds/4"]
+    "Birds 5" [href="/birds/5"]
+    "Birds 1" -> "Birds 2" -> "Birds 3" -> "Birds 4" -> "Birds 5"
 
     node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
     "Dad 1" [href="/dad/1"]
