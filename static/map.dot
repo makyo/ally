@@ -25,11 +25,13 @@ digraph Map {
     "ally 20" [href="/20"]
     "ally 21" [href="/21"]
     "ally 22" [href="/22"]
+    "ally 23" [href="/23"]
+    "ally 24" [href="/24"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
-    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "To be continued..."
+    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "To be continued..."
 
     node[group="aside",style="",fontcolor="#111111"]
     "Aside 1" [href="/aside/1"]
@@ -242,7 +244,19 @@ digraph Map {
         "Music 5" [href="/writing/music/5"]
         "Music 1" -> "Music 2" -> "Music 3" -> "Music 4" -> "Music 5"
 
-
+    node[group="movement",style="filled",fillcolor="#ddbbff",fontcolor="#220000"]
+    "Movement 1" [href="/movement"]
+    "Movement 2" [href="/movement/2"]
+    "Movement 3" [href="/movement/3"]
+    "Movement 4" [href="/movement/4"]
+    "Movement 5" [href="/movement/5"]
+    "Movement 6" [href="/movement/6"]
+    "Movement 7" [href="/movement/7"]
+    "Movement 8" [href="/movement/8"]
+    "Movement 9" [href="/movement/9"]
+    "Movement 1" -> "Movement 2" -> "Movement 3" -> "Movement 4" ->
+    "Movement 5" -> "Movement 6" -> "Movement 7" -> "Movement 8" ->
+    "Movement 9"
 
     /**
      Connections
@@ -273,6 +287,7 @@ digraph Map {
     "ally 16" -> "Poet and Mystic 1"
     "ally 17" -> "Writing 1"
     "ally 18" -> "Software 1"
+    "ally 23" -> "Movement 1"
 
     // Dad
     "Dad 11" -> "ally 16"
