@@ -244,7 +244,7 @@ digraph Map {
         "Music 5" [href="/writing/music/5"]
         "Music 1" -> "Music 2" -> "Music 3" -> "Music 4" -> "Music 5"
 
-    node[group="movement",style="filled",fillcolor="#eeccff",fontcolor="#220000"]
+    node[group="movement",style="filled",fillcolor="#e6e6fa",fontcolor="#220000"]
     "Movement 1" [href="/movement"]
     "Movement 2" [href="/movement/2"]
     "Movement 3" [href="/movement/3"]
