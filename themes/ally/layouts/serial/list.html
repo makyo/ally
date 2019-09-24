@@ -3,6 +3,7 @@
     {{ .Content }}
     {{ $paginator := .Paginate (where .Pages ".Params.date" "!=" nil) 1 }}
     {{ range $paginator.Pages.ByWeight }}
+    <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
     {{ .Content }}
     {{ end }}
     {{ partial "pagination.html" . }}

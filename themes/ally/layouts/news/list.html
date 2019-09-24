@@ -4,7 +4,7 @@
     {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.date" "!=" nil) 10 }}
     {{ range $paginator.Pages.ByPublishDate.Reverse }}
     <h2><a href="{{ .URL }}">{{ .Params.title }}</a> </h2>
-    <small>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
+    <small>{{ .Date.Format "Monday, Jan 2, 2006" }}</small>
     <p>{{ .Summary }}</p>
     {{ end }}
     {{ partial "pagination.html" . }}

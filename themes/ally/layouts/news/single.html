@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="main">
     <h2>{{ .Params.title }}</h2>
-    <small>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
+    <small>{{ .Date.Format "Monday, Jan 2, 2006" }}</small>
     {{ .Content }}
 </main>
 {{end}}

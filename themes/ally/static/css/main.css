@@ -76,6 +76,12 @@ main {
     padding: 1rem;
     font-family: 'Gentium Book Basic', serif;
 }
+.date {
+    font-size: 10pt;
+    opacity: 0.3;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+}
 footer {
     color: #888;
     font-size: 12pt;
@@ -177,13 +183,13 @@ ul.pagination li:first-of-type {
 }
 
 ul.pagination .page-item.too-many {
-    color: #666;
+    opacity: 0.5;
     margin: 0 14px 0 7px;
     font-style: italic;
 }
 
 ul.pagination .page-item.disabled a {
-    color: #666;
+    opacity: 0.4;
     border: none;
     cursor: text;
 }
