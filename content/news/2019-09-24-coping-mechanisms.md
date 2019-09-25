@@ -22,6 +22,7 @@ Fair enough.
 * [ally 25](/25) through 27
 * [Polyamory 4](/poly/4) through 6
 * [Sex](/sex)
+* You can now view content posted [chronologically](/chronological)
 
 ### Updated content
 

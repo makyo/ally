@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main id="main">
+    {{ .Content }}
+    {{ $paginator := .Paginate (where (where .Site.RegularPages ".Type" "!=" "news") ".Date.Year" ">=" 2019).ByPublishDate 1 }}
+    {{ range $paginator.Pages.ByPublishDate }}
+    <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ .Content }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+</main>
+{{end}}
