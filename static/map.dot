@@ -27,11 +27,13 @@ digraph Map {
     "ally 22" [href="/22"]
     "ally 23" [href="/23"]
     "ally 24" [href="/24"]
+    "ally 25" [href="/25"]
+    "ally 26" [href="/26"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
-    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "To be continued..."
+    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" -> "ally 26" -> "To be continued..."
 
     node[group="aside",style="",fontcolor="#111111"]
     "Aside 1" [href="/aside/1"]
@@ -205,13 +207,27 @@ digraph Map {
     "Poly 1" [href="/poly"]
     "Poly 2" [href="/poly/2"]
     "Poly 3" [href="/poly/3"]
-    "Poly 1" -> "Poly 2" -> "Poly 3"
+    "Poly 4" [href="/poly/4"]
+    "Poly 5" [href="/poly/5"]
+    "Poly 6" [href="/poly/6"]
+    "Poly 1" -> "Poly 2" -> "Poly 3" -> "Poly 4" -> "Poly 5" -> "Poly 6"
 
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
     "Self-harm 2" [href="/self-harm/2"]
     "Self-harm 3" [href="/self-harm/3"]
     "Self-harm 1" -> "Self-harm 2" -> "Self-harm 3"
+
+    node[group="sex",style="",fontcolor="#111111"]
+    "Sex 1" [href="/sex"]
+    "Sex 2" [href="/sex/2"]
+    "Sex 3" [href="/sex/3"]
+    "Sex 4" [href="/sex/4"]
+    "Sex 1" -> "Sex 2" -> "Sex 3" -> "Sex 4"
+
+        node[group="kink"]
+        "Kink 1" [href="/sex/kink"]
+
 
     node[group="software",style="filled",fillcolor="#eaf5ff",fontcolor="#05264c"]
     "Software 1" [href="https://github.com/makyo/ally/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
@@ -330,9 +346,13 @@ digraph Map {
 
     // Poly
     "Poly 1" -> "Jay 1"
+    "Poly 6" -> "Sex 1"
 
     // Self-harm
     /*"Self-harm 1" -> "Margaras 1"*/
+
+    // Sex
+    "Sex 4" -> "Kink 1"
 
     // Writing
     /*"Writing 2" -> "Koans 1"

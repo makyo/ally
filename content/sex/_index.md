@@ -1,14 +1,15 @@
 ---
 type: serial
+back: /poly/6
 ---
 
 <!--
 Things to talk about:
 
-* Rape
-* Masturbation
-* Phone sex
-* Typefucking
-* Asexuality
-* After surgery
+* Rape (started)
+* Masturbation (done)
+* Phone sex (done)
+* Typefucking (started; talk about the rhythm, etc)
+* Asexuality (done?)
+* After surgery (to do; include masturbation)
 -->

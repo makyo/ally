@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="main">
     <h2>{{ .Params.title }}</h2>
-    <small>{{ .Date.Format "Monday, Jan 2, 2006" }}</small>
+    {{ if (ge .Date.Year 2019) }}<p class="date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
     {{ .Content }}
 </main>
 {{end}}
