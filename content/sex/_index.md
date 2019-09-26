@@ -1,7 +1,12 @@
 ---
 type: serial
 back: /poly/6
+background: '#eeeef8'
+color: '#111111'
+quote: '#333333'
 ---
+
+<div class="cw">Frank discussions of sex and sexuality</div>
 
 <!--
 Things to talk about:

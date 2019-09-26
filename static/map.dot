@@ -2,6 +2,94 @@ digraph Map {
     node[shape="box"]
     label=""
 
+    // The following must appear before the ally group in order to position them
+    // on the left side.
+    node[group="aside",style="",fontcolor="#111111"]
+    "Aside 1" [href="/aside/1"]
+    "Aside 2" [href="/aside/2"]
+    "Aside 3" [href="/aside/3"]
+
+    node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
+    "Dad 1" [href="/dad/1"]
+    "Dad 2" [href="/dad/2"]
+    "Dad 3" [href="/dad/3"]
+    "Dad 4" [href="/dad/4"]
+    "Dad 5" [href="/dad/5"]
+    "Dad 6" [href="/dad/6"]
+    "Dad 7" [href="/dad/7"]
+    "Dad 8" [href="/dad/8"]
+    "Dad 9" [href="/dad/9"]
+    "Dad 10" [href="/dad/10"]
+    "Dad 11" [href="/dad/11"]
+    "Dad 1" -> "Dad 2" -> "Dad 3" -> "Dad 4" -> "Dad 5" ->
+    "Dad 6" -> "Dad 7" -> "Dad 8" -> "Dad 9" -> "Dad 10" ->
+    "Dad 11"
+
+    node[group="from-within",style="filled",fillcolor="#333a18",fontcolor="#ccddcc"]
+    "From within 1" [href="/from-within/"]
+    "From within 2" [href="/from-within/2"]
+    "From within 3" [href="/from-within/3",fillcolor="#283a26"]
+    "From within 4" [href="/from-within/4",fillcolor="#082a16",fontcolor="#bbccbb"]
+    "From within 5" [href="/from-within/5",fillcolor="#082010",fontcolor="#aabbaa"]
+    "From within 6" [href="/from-within/i-guess..",fillcolor="#001a06",fontcolor="#aabbaa"]
+    "From within 1" -> "From within 2" -> "From within 3" -> "From within 4" ->
+    "From within 5" -> "From within 6"
+
+    node[group="jay",style="filled",fillcolor="#eeddff",fontcolor="#222288"]
+    "Jay 1" [href="/jay/"]
+    "Jay 2" [href="/jay/2"]
+    "Jay 3" [href="/jay/3"]
+    "Jay 4" [href="/jay/4"]
+    "Jay 5" [href="/jay/5"]
+    "Jay 6" [href="/jay/6"]
+    "Jay 1" -> "Jay 2" -> "Jay 3" -> "Jay 4" -> "Jay 5" -> "Jay 6"
+
+    node[group="liminal",style="",fontcolor="#111111"]
+    "Liminal 1" [href="/liminal"]
+    "Liminal 2" [href="/liminal/2"]
+    "Liminal 3" [href="/liminal/3"]
+    "Liminal 4" [href="/liminal/4"]
+    "Liminal 5" [href="/liminal/5"]
+    "Liminal 6" [href="/liminal/6"]
+    "Liminal 7" [href="/liminal/7"]
+    "Liminal 8" [href="/liminal/8"]
+    "Liminal 1" -> "Liminal 2" -> "Liminal 3" -> "Liminal 4" ->
+    "Liminal 5" -> "Liminal 6" -> "Liminal 7" -> "Liminal 8"
+
+    node[group="poly",style="",fontcolor="#111111"]
+    "Poly 1" [href="/poly"]
+    "Poly 2" [href="/poly/2"]
+    "Poly 3" [href="/poly/3"]
+    "Poly 4" [href="/poly/4"]
+    "Poly 5" [href="/poly/5"]
+    "Poly 6" [href="/poly/6"]
+    "Poly 1" -> "Poly 2" -> "Poly 3" -> "Poly 4" -> "Poly 5" -> "Poly 6"
+
+    node[group="sex",style="filled",fillcolor="#eeeef8",fontcolor="#111111"]
+    "Sex 1" [href="/sex"]
+    "Sex 2" [href="/sex/2"]
+    "Sex 3" [href="/sex/3"]
+    "Sex 4" [href="/sex/4"]
+    "Sex 1" -> "Sex 2" -> "Sex 3" -> "Sex 4"
+
+        node[group="kink",style="filled",fillcolor="#17111a",fontcolor="#ffffff"]
+        "Kink 1" [href="/sex/kink"]
+        "Kink 2" [href="/sex/kink/2"]
+        "Kink 3" [href="/sex/kink/3"]
+        "Kink 4" [href="/sex/kink/4"]
+        "Kink 1" -> "Kink 2" -> "Kink 3" -> "Kink 4"
+
+    node[group="software",style="filled",fillcolor="#eaf5ff",fontcolor="#05264c"]
+    "Software 1" [href="https://github.com/makyo/ally/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
+    "Software 2" [href="https://github.com/makyo/ally/pull/4/commits/04b7300615386bccbb331caebcf396077f6fc9ea"]
+    "Software 3" [href="https://github.com/makyo/ally/pull/4/commits/d73e63f3fdc0bce89f06334959ade28888a2f7b2"]
+    "Software 4" [href="https://github.com/makyo/ally/pull/4/commits/90acc199cd80944f6c5eb6834a2fa67783db4d7d"]
+    "Software 5" [href="https://github.com/makyo/ally/pull/4/commits/49f83b2148f70151c43f8ef77a061e7252d9b1d4"]
+    "Software 6" [href="https://github.com/makyo/ally/pull/4/commits/ab8302ca2f6ca00c0a5bdfebcb4b2f2291ec9833"]
+    "Software 1" -> "Software 2" -> "Software 3" -> "Software 4" ->
+    "Software 5" -> "Software 6"
+
+    // This is the central axis
     node[group="ally",style="",fontcolor="#111111"] // `core` folder
     "ally 1" [href="/"]
     "ally 2" [href="/2"]
@@ -35,11 +123,6 @@ digraph Map {
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
     "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" -> "ally 26" -> "To be continued..."
 
-    node[group="aside",style="",fontcolor="#111111"]
-    "Aside 1" [href="/aside/1"]
-    "Aside 2" [href="/aside/2"]
-    "Aside 3" [href="/aside/3"]
-
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
     "Birds 2" [href="/birds/2"]
@@ -48,31 +131,15 @@ digraph Map {
     "Birds 5" [href="/birds/5"]
     "Birds 1" -> "Birds 2" -> "Birds 3" -> "Birds 4" -> "Birds 5"
 
-    node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
-    "Dad 1" [href="/dad/1"]
-    "Dad 2" [href="/dad/2"]
-    "Dad 3" [href="/dad/3"]
-    "Dad 4" [href="/dad/4"]
-    "Dad 5" [href="/dad/5"]
-    "Dad 6" [href="/dad/6"]
-    "Dad 7" [href="/dad/7"]
-    "Dad 8" [href="/dad/8"]
-    "Dad 9" [href="/dad/9"]
-    "Dad 10" [href="/dad/10"]
-    "Dad 11" [href="/dad/11"]
-    "Dad 1" -> "Dad 2" -> "Dad 3" -> "Dad 4" -> "Dad 5" ->
-    "Dad 6" -> "Dad 7" -> "Dad 8" -> "Dad 9" -> "Dad 10" ->
-    "Dad 11"
-
-    node[group="from-within",style="filled",fillcolor="#333a18",fontcolor="#ccddcc"]
-    "From within 1" [href="/from-within/"]
-    "From within 2" [href="/from-within/2"]
-    "From within 3" [href="/from-within/3",fillcolor="#283a26"]
-    "From within 4" [href="/from-within/4",fillcolor="#082a16",fontcolor="#bbccbb"]
-    "From within 5" [href="/from-within/5",fillcolor="#082010",fontcolor="#aabbaa"]
-    "From within 6" [href="/from-within/i-guess..",fillcolor="#001a06",fontcolor="#aabbaa"]
-    "From within 1" -> "From within 2" -> "From within 3" -> "From within 4" ->
-    "From within 5" -> "From within 6"
+    // Must come before Furry to position it to the left.
+    node[group="koan",style="filled",fillcolor="#1f183a",fontcolor="#ccccdd"]
+    "Koan 1" [href="/koan/"]
+    "Koan 2" [href="/koan/2"]
+    "Koan 3" [href="/koan/3"]
+    "Koan 4" [href="/koan/4"]
+    "Koan 5" [href="/koan/5"]
+    "Koan 6" [href="/koan/6"]
+    "Koan 1" -> "Koan 2" -> "Koan 3" -> "Koan 4" -> "Koan 5" -> "Koan 6"
 
     node[group="furry",style="",fontcolor="#111111"]
     "Furry 1" [href="/furry"]
@@ -112,36 +179,6 @@ digraph Map {
         "Younes 2" [href="/furry/younes/2"]
         "Younes 3" [href="/furry/younes/3"]
         "Younes 1" -> "Younes 2" -> "Younes 3"
-
-    node[group="jay",style="filled",fillcolor="#eeddff",fontcolor="#222288"]
-    "Jay 1" [href="/jay/"]
-    "Jay 2" [href="/jay/2"]
-    "Jay 3" [href="/jay/3"]
-    "Jay 4" [href="/jay/4"]
-    "Jay 5" [href="/jay/5"]
-    "Jay 6" [href="/jay/6"]
-    "Jay 1" -> "Jay 2" -> "Jay 3" -> "Jay 4" -> "Jay 5" -> "Jay 6"
-
-    node[group="koan",style="filled",fillcolor="#1f183a",fontcolor="#ccccdd"]
-    "Koan 1" [href="/koan/"]
-    "Koan 2" [href="/koan/2"]
-    "Koan 3" [href="/koan/3"]
-    "Koan 4" [href="/koan/4"]
-    "Koan 5" [href="/koan/5"]
-    "Koan 6" [href="/koan/6"]
-    "Koan 1" -> "Koan 2" -> "Koan 3" -> "Koan 4" -> "Koan 5" -> "Koan 6"
-
-    node[group="liminal",style="",fontcolor="#111111"]
-    "Liminal 1" [href="/liminal"]
-    "Liminal 2" [href="/liminal/2"]
-    "Liminal 3" [href="/liminal/3"]
-    "Liminal 4" [href="/liminal/4"]
-    "Liminal 5" [href="/liminal/5"]
-    "Liminal 6" [href="/liminal/6"]
-    "Liminal 7" [href="/liminal/7"]
-    "Liminal 8" [href="/liminal/8"]
-    "Liminal 1" -> "Liminal 2" -> "Liminal 3" -> "Liminal 4" ->
-    "Liminal 5" -> "Liminal 6" -> "Liminal 7" -> "Liminal 8"
 
     node[group="mania",style="filled",fillcolor="#000000",fontcolor="#dddddd"]
     "Manic notes 1" [href="/mania/"]
@@ -203,41 +240,11 @@ digraph Map {
         "Agony and Ecstasy" -> "Video"
         "Agony and Ecstasy" -> "Text"
 
-    node[group="poly",style="",fontcolor="#111111"]
-    "Poly 1" [href="/poly"]
-    "Poly 2" [href="/poly/2"]
-    "Poly 3" [href="/poly/3"]
-    "Poly 4" [href="/poly/4"]
-    "Poly 5" [href="/poly/5"]
-    "Poly 6" [href="/poly/6"]
-    "Poly 1" -> "Poly 2" -> "Poly 3" -> "Poly 4" -> "Poly 5" -> "Poly 6"
-
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
     "Self-harm 2" [href="/self-harm/2"]
     "Self-harm 3" [href="/self-harm/3"]
     "Self-harm 1" -> "Self-harm 2" -> "Self-harm 3"
-
-    node[group="sex",style="",fontcolor="#111111"]
-    "Sex 1" [href="/sex"]
-    "Sex 2" [href="/sex/2"]
-    "Sex 3" [href="/sex/3"]
-    "Sex 4" [href="/sex/4"]
-    "Sex 1" -> "Sex 2" -> "Sex 3" -> "Sex 4"
-
-        node[group="kink"]
-        "Kink 1" [href="/sex/kink"]
-
-
-    node[group="software",style="filled",fillcolor="#eaf5ff",fontcolor="#05264c"]
-    "Software 1" [href="https://github.com/makyo/ally/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
-    "Software 2" [href="https://github.com/makyo/ally/pull/4/commits/04b7300615386bccbb331caebcf396077f6fc9ea"]
-    "Software 3" [href="https://github.com/makyo/ally/pull/4/commits/d73e63f3fdc0bce89f06334959ade28888a2f7b2"]
-    "Software 4" [href="https://github.com/makyo/ally/pull/4/commits/90acc199cd80944f6c5eb6834a2fa67783db4d7d"]
-    "Software 5" [href="https://github.com/makyo/ally/pull/4/commits/49f83b2148f70151c43f8ef77a061e7252d9b1d4"]
-    "Software 6" [href="https://github.com/makyo/ally/pull/4/commits/ab8302ca2f6ca00c0a5bdfebcb4b2f2291ec9833"]
-    "Software 1" -> "Software 2" -> "Software 3" -> "Software 4" ->
-    "Software 5" -> "Software 6"
 
     node[group="transition"]
 

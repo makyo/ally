@@ -1,0 +1,47 @@
+---
+date: 2019-09-25
+weight: 3
+---
+
+<blockquote>Why are you doing this?</blockquote>
+
+<p>It's sensitive. It's difficult to talk about. It's my life, it's my site, it's my art. Why would I not?</p>
+
+<blockquote>Because this is supposed to be honest. This is supposed to be you baring your soul to the world. This is supposed to be your memoir.</blockquote>
+
+<p>I suppose. But still, it <em>is</em> mine, first and foremost.</p>
+
+<form id="decrypt-form" onsubmit="decrypt()">
+    <label for="passphrase">
+        <input type="text" name="passphrase" id="passphrase" placeholder="Passphrase" />
+    </label>
+    <button type="submit">Decrypt</button>
+</form>
+
+<div id="decrypted"></div>
+
+<script type="text/javascript" src="/js/sjcl-1.0.6/sjcl.js"></script>
+<script type="text/javascript" src="/js/marked-0.3.6/marked.min.js"></script>
+<script type="text/javascript">
+const encrypted = '{"iv":"BEQzETQyV+L5o6kkkinPfg==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"EaqvxVQMCnY=","ct":"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"}';
+
+function decrypt() {
+    window.event.preventDefault();
+    const passphrase = document.querySelector('#passphrase').value;
+    document.querySelector('#decrypt-form').remove()
+    try {
+        var decrypted = sjcl.decrypt(passphrase, encrypted);
+        document.querySelector('#decrypted').innerHTML = marked(decrypted);
+    } catch(e) {
+        document.getElementById('decrypted').innerHTML = marked(`...
+
+I'm sorry. I'm so sorry.
+
+> To whom are you apologizing?
+
+Myself, perhaps. You. Everyone.
+
+Needless to say, that's not the passphrase. I'm sorry. If you don't know it, if I haven't told you, I'm sorry.`);
+    }
+}
+</script>

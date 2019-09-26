@@ -116,6 +116,17 @@ blockquote em {
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
 }
+.info {
+    color: #008;
+    text-align: right;
+}
+.info:before {
+    content: 'ⓘ';
+    display: block;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
+}
 pre {
     border: 1px solid #eee;
     padding: 1em;

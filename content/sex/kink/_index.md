@@ -1,6 +1,12 @@
 ---
 type: serial
+back: /sex/4
+background: '#17111a'
+color: '#ffffff'
+quote: '#ffffff'
 ---
+
+<div class="cw">Frank discussions of sexuality and kink (along with some problematic ones)</div>
 
 <!--
 Things to talk about:
