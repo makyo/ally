@@ -22,7 +22,7 @@ Fair enough.
 * [ally 25](/25) through 27
 * [Polyamory 4](/poly/4) through 6
 * [Sex](/sex) and [kink](/sex/kink)
-* You can now view content posted [chronologically](/chronological)
+* You can now view content posted [chronologically](/chronology)
 
 ### Updated content
 
