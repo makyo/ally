@@ -1,5 +1,6 @@
 {{ define "main" }}
 <main id="main">
+    {{ if (ge .Date.Year 2019) }}<p class="date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
     {{ .Content }}
 </main>
 {{end}}
