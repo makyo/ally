@@ -25,6 +25,35 @@ digraph Map {
     "Dad 6" -> "Dad 7" -> "Dad 8" -> "Dad 9" -> "Dad 10" ->
     "Dad 11"
 
+    node[group="pnm",style="filled",fillcolor="#2f082a",fontcolor="#ccccdd"]
+    "Poet and Mystic 1" [href="/poet-and-mystic"]
+    "Poet and Mystic 2" [href="/poet-and-mystic/2"]
+    "Poet and Mystic 3" [href="/poet-and-mystic/3"]
+    "Poet and Mystic 4" [href="/poet-and-mystic/4"]
+    "Poet and Mystic 5" [href="/poet-and-mystic/5"]
+    "Poet and Mystic 6" [href="/poet-and-mystic/6"]
+    "Poet and Mystic 7" [href="/poet-and-mystic/7"]
+    "Poet and Mystic 8" [href="/poet-and-mystic/8"]
+    "Poet and Mystic 9" [href="/poet-and-mystic/9"]
+    "Poet and Mystic 10" [href="/poet-and-mystic/10"]
+    "Poet and Mystic 11" [href="/poet-and-mystic/11"]
+    "Poet and Mystic 12" [href="/poet-and-mystic/12"]
+    "Poet and Mystic 13" [href="/poet-and-mystic/13"]
+    "Poet and Mystic 1" -> "Poet and Mystic 2" -> "Poet and Mystic 3" ->
+    "Poet and Mystic 4" -> "Poet and Mystic 5" -> "Poet and Mystic 6" ->
+    "Poet and Mystic 7" -> "Poet and Mystic 8" -> "Poet and Mystic 9" ->
+    "Poet and Mystic 10" -> "Poet and Mystic 11" -> "Poet and Mystic 12" ->
+    "Poet and Mystic 13"
+
+        node[group="ane",style="",fontcolor="#111111"]
+        "Agony and Ecstasy" [href="/poet-and-mystic/agony-and-ecstasy"]
+        "Audio" [href="/poet-and-mystic/agony-and-ecstasy/audio"]
+        "Video" [href="/poet-and-mystic/agony-and-ecstasy/video"]
+        "Text" [href="/poet-and-mystic/agony-and-ecstasy/text"]
+        "Agony and Ecstasy" -> "Audio"
+        "Agony and Ecstasy" -> "Video"
+        "Agony and Ecstasy" -> "Text"
+
     node[group="from-within",style="filled",fillcolor="#333a18",fontcolor="#ccddcc"]
     "From within 1" [href="/from-within/"]
     "From within 2" [href="/from-within/2"]
@@ -211,42 +240,41 @@ digraph Map {
     "Manifesto Project 12" -> "Manifesto Project 13" ->
     "Manifesto Project 14"
 
-    node[group="pnm",style="filled",fillcolor="#2f082a",fontcolor="#ccccdd"]
-    "Poet and Mystic 1" [href="/poet-and-mystic"]
-    "Poet and Mystic 2" [href="/poet-and-mystic/2"]
-    "Poet and Mystic 3" [href="/poet-and-mystic/3"]
-    "Poet and Mystic 4" [href="/poet-and-mystic/4"]
-    "Poet and Mystic 5" [href="/poet-and-mystic/5"]
-    "Poet and Mystic 6" [href="/poet-and-mystic/6"]
-    "Poet and Mystic 7" [href="/poet-and-mystic/7"]
-    "Poet and Mystic 8" [href="/poet-and-mystic/8"]
-    "Poet and Mystic 9" [href="/poet-and-mystic/9"]
-    "Poet and Mystic 10" [href="/poet-and-mystic/10"]
-    "Poet and Mystic 11" [href="/poet-and-mystic/11"]
-    "Poet and Mystic 12" [href="/poet-and-mystic/12"]
-    "Poet and Mystic 13" [href="/poet-and-mystic/13"]
-    "Poet and Mystic 1" -> "Poet and Mystic 2" -> "Poet and Mystic 3" ->
-    "Poet and Mystic 4" -> "Poet and Mystic 5" -> "Poet and Mystic 6" ->
-    "Poet and Mystic 7" -> "Poet and Mystic 8" -> "Poet and Mystic 9" ->
-    "Poet and Mystic 10" -> "Poet and Mystic 11" -> "Poet and Mystic 12" ->
-    "Poet and Mystic 13"
-
-        node[group="ane",style="",fontcolor="#111111"]
-        "Agony and Ecstasy" [href="/poet-and-mystic/agony-and-ecstasy"]
-        "Audio" [href="/poet-and-mystic/agony-and-ecstasy/audio"]
-        "Video" [href="/poet-and-mystic/agony-and-ecstasy/video"]
-        "Text" [href="/poet-and-mystic/agony-and-ecstasy/text"]
-        "Agony and Ecstasy" -> "Audio"
-        "Agony and Ecstasy" -> "Video"
-        "Agony and Ecstasy" -> "Text"
-
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
     "Self-harm 2" [href="/self-harm/2"]
     "Self-harm 3" [href="/self-harm/3"]
     "Self-harm 1" -> "Self-harm 2" -> "Self-harm 3"
 
-    node[group="transition"]
+        node[group="suicide",style="filled",fillcolor="#222222",fontcolor="#aaaaaa"]
+        "Suicide 1" [href="/self-harm/suicide"]
+        "Suicide 2" [href="/self-harm/suicide/2"]
+        "Suicide 3" [href="/self-harm/suicide/3"]
+        "Suicide 4" [href="/self-harm/suicide/4"]
+        "Suicide 5" [href="/self-harm/suicide/5"]
+        "Suicide 6" [href="/self-harm/suicide/6"]
+        "Suicide 7" [href="/self-harm/suicide/7"]
+        "Suicide 8" [href="/self-harm/suicide/8"]
+        "Suicide 1" -> "Suicide 2" -> "Suicide 3" ->
+        "Suicide 4" -> "Suicide 5" -> "Suicide 6" -> "Suicide 7" ->
+        "Suicide 8"
+
+    node[group="gender",style="",fontcolor="#111111"]
+    "Gender 1" [href="/gender"]
+
+        /*node[group="surgery"]
+        "Surgery 1" [href="/gender/surgery"]
+        "Surgery 2" [href="/gender/surgery/2"]
+        "Surgery 3" [href="/gender/surgery/3"]
+        "Surgery 4" [href="/gender/surgery/4"]
+        "Surgery 5" [href="/gender/surgery/5"]
+        "Surgery 6" [href="/gender/surgery/6"]
+        "Surgery 7" [href="/gender/surgery/7"]
+        "Surgery 8" [href="/gender/surgery/8"]
+        "Surgery 9" [href="/gender/surgery/9"]
+        "Surgery 1" -> "Surgery 2" -> "Surgery 3" -> "Surgery 4" ->
+        "Surgery 5" -> "Surgery 6" -> "Surgery 7" -> "Surgery 8" ->
+        "Surgery 9"*/
 
     node[group="writing",style="",fontcolor="#111111"]
     "Writing 1" [href="/writing"]
@@ -357,6 +385,11 @@ digraph Map {
 
     // Self-harm
     /*"Self-harm 1" -> "Margaras 1"*/
+    "Self-harm 3" -> "Suicide 1"
+    "Self-harm 3" -> "Gender 1"
+
+    // Gender
+    /*"Gender 1" -> "Surgery 1"*/
 
     // Sex
     "Sex 4" -> "Kink 1"
