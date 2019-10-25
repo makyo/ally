@@ -88,6 +88,7 @@ In the cedar-limbs.
 * [Winter](https://ericwhitacre.com/music-catalog/winter) by Edward Esch
 * *House of Leaves* by Mark Z Danielewski (of course)
 * *S* by J J Abrams and Doug Dorst
+* [*Post-op Androgyne*](http://www.bisthebox.com/comics/post-op-androgyne/) by Bis Thornton
 * *Love, Dishonor, Marry, Die, Cherish, Perish: a Novel* by David Rakoff
 * *Pattern Recognition* by William Gibson
 * *The Pharmako/ Trilogy* by Dale Pendell

@@ -11,7 +11,7 @@ This took forever to write.
 
 > You had lots going on.
 
-Well, still. Even if I had lots going on, it would have been nice to have actually gotten some more done.
+Well, still. Even if I had lots going on, it would have been nice to have actually gotten some more done. International flights have to be good for something.
 
 > Also, you're depressed.
 
