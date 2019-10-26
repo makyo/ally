@@ -116,6 +116,16 @@ blockquote em {
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
 }
+.news-summary .cw {
+    text-align: left;
+    font-size: 14pt;
+}
+.news-summary .cw:before {
+    display: inline-block;
+    margin-right: 0.25rem;
+    font-size: 28pt;
+    vertical-align: middle;
+}
 .info {
     color: #008;
     text-align: right;
@@ -128,8 +138,8 @@ blockquote em {
     font-family: 'Merriweather Sans', sans-serif;
 }
 pre {
-    border: 1px solid #eee;
     padding: 1em;
+    border: 1px solid #eee;
     white-space: pre-wrap;
     font-family: 'Ubuntu Mono', monospace;
 }

@@ -86,3 +86,13 @@ In the cedar-limbs.
 
 ### See also
 * [Winter](https://ericwhitacre.com/music-catalog/winter) by Edward Esch
+* *House of Leaves* by Mark Z Danielewski (of course)
+* *S* by J J Abrams and Doug Dorst
+* [*Post-op Androgyne*](http://www.bisthebox.com/comics/post-op-androgyne/) by Bis Thornton
+* *Love, Dishonor, Marry, Die, Cherish, Perish: a Novel* by David Rakoff
+* *Pattern Recognition* by William Gibson
+* *The Pharmako/ Trilogy* by Dale Pendell
+* *The Ocean at the End of the Lane* by Neil Gaiman
+* *The Tao Te Ching* by Lao Tzu, translated by Stephen Mitchell
+* *The Bucketrider* by Franz Kafka
+* *Ecclesiastes*
