@@ -146,11 +146,14 @@ digraph Map {
     "ally 24" [href="/24"]
     "ally 25" [href="/25"]
     "ally 26" [href="/26"]
+    "ally 27" [href="/27"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
-    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" -> "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" -> "ally 26" -> "To be continued..."
+    "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" ->
+    "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
+    "ally 26" -> "ally 27" -> "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -255,9 +258,15 @@ digraph Map {
         "Suicide 6" [href="/self-harm/suicide/6"]
         "Suicide 7" [href="/self-harm/suicide/7"]
         "Suicide 8" [href="/self-harm/suicide/8"]
+        "Suicide 9" [href="/self-harm/suicide/9"]
+        "Suicide 10" [href="/self-harm/suicide/10"]
+        "Suicide 11" [href="/self-harm/suicide/11"]
+        "Suicide 12" [href="/self-harm/suicide/12"]
+        "Suicide 13" [href="/self-harm/suicide/13"]
         "Suicide 1" -> "Suicide 2" -> "Suicide 3" ->
         "Suicide 4" -> "Suicide 5" -> "Suicide 6" -> "Suicide 7" ->
-        "Suicide 8"
+        "Suicide 8" -> "Suicide 9" -> "Suicide 10" -> "Suicide 11" ->
+        "Suicide 12" -> "Suicide 13"
 
     node[group="gender",style="",fontcolor="#111111"]
     "Gender 1" [href="/gender"]
