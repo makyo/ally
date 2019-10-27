@@ -1,14 +1,11 @@
 {{ define "main" }}
 <main id="main">
     {{ .Content }}
-    {{ $paginator := .Paginate (and (where .Pages ".Params.date" "!=" nil) (where .Pages ".Type" "==" "ally")) 1 }}
+    {{ $paginator := .Paginate (where .Pages ".Type" "==" "ally") 1 }}
     {{ range $paginator.Pages.ByWeight }}
     <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
     {{ .Content }}
     {{ end }}
     {{ partial "pagination.html" . }}
-    {{ if (isset .Params "back") }}
-    <div style="text-align: center;"><a href="{{ .Params.back }}" class="pulse">&laquo; back to where we left off</a></div>
-    {{ end }}
 </main>
 {{end}}

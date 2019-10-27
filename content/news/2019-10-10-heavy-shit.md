@@ -26,6 +26,7 @@ I'm so tired.
 ### New content
 
 * [Suicide](/self-harm/suicide)
+* [ally 27](/27)
 * I wrote a lot about gender but I'm not ready to show it yet.
 
 ### Updated content
