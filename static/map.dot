@@ -8,7 +8,6 @@ digraph Map {
     "Aside 1" [href="/aside/1"]
     "Aside 2" [href="/aside/2"]
     "Aside 3" [href="/aside/3"]
-    "Aside 4" [href="/aside/4"]
 
     node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
     "Dad 1" [href="/dad/1"]
@@ -148,13 +147,14 @@ digraph Map {
     "ally 25" [href="/25"]
     "ally 26" [href="/26"]
     "ally 27" [href="/27"]
+    "ally 28" [href="/28"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
     "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" ->
     "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
-    "ally 26" -> "ally 27" -> "To be continued..."
+    "ally 26" -> "ally 27" -> "ally 28" -> "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -244,6 +244,13 @@ digraph Map {
     "Manifesto Project 12" -> "Manifesto Project 13" ->
     "Manifesto Project 14"
 
+    node[group="gender",style="",fontcolor="#111111"]
+    "Gender 1" [href="/gender"]
+    "Gender 2" [href="/gender/2"]
+    "Gender 3" [href="/gender/3"]
+    "Gender 4" [href="/gender/4"]
+    "Gender 1" -> "Gender 2" -> "Gender 3" -> "Gender 4"
+
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
     "Self-harm 2" [href="/self-harm/2"]
@@ -268,13 +275,6 @@ digraph Map {
         "Suicide 4" -> "Suicide 5" -> "Suicide 6" -> "Suicide 7" ->
         "Suicide 8" -> "Suicide 9" -> "Suicide 10" -> "Suicide 11" ->
         "Suicide 12" -> "Suicide 13"
-
-    node[group="gender",style="",fontcolor="#111111"]
-    "Gender 1" [href="/gender"]
-    "Gender 2" [href="/gender/2"]
-    "Gender 3" [href="/gender/3"]
-    "Gender 4" [href="/gender/4"]
-    "Gender 1" -> "Gender 2" -> "Gender 3" -> "Gender 4"
 
         /*node[group="surgery"]
         "Surgery 1" [href="/gender/surgery"]
@@ -404,7 +404,6 @@ digraph Map {
 
     // Gender
     /*"Gender 1" -> "Surgery 1"*/
-    "Gender 4" -> "Aside 4"
 
     // Sex
     "Sex 4" -> "Kink 1"
