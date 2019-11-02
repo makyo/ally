@@ -1,0 +1,57 @@
+---
+date: 2019-11-01
+weight: 4
+---
+
+<pre>
+                    ( <a class="pulse huh" href="/aside/4">...</a> )
+                  O
+                o
+              .
+_____,,,_^..^_,,,_____
+__|____|____|____|____
+____|____|____|____|__
+</pre>
+
+<script type="text/javascript">
+/*
+    Do you really need to pull me aside for stuff like this?
+
+It's a bit of a distraction from the topic at hand. Folks can skip these asides if they want, right? They can read this in whatever order they want.
+
+    Yes, but why would you pull this one aside rather than putting it in the index?
+
+I think because you just made me kind of angry at myself.
+
+    I've done that before.
+
+That you have.
+
+    And when I did it then, you put it in the index. Why not now?
+
+Not my department.
+
+    Don't throw my words back at me. They're all I have.
+
+Right. I'm doing it in an aside because It feels like the best way to stay on track at the moment. Perhaps that's different from how it used to be, or how it will be in the future, but that's how I'm feeling now. "Mysticism consists in the mistake of an accidental and individual symbol for an universal one", remember?
+
+    Fair enough. As long as you have a reason.
+*/
+const grawlix = '┌─┬┐││││├─┼┤└─┴┘┏┳━┓┣╋━┫┃┃┃┃┗┻━┛╔╦'.split('');
+el = document.querySelector('.huh');
+el.innerHTML = '';
+el.insertAdjacentHTML('beforeend', '<em><span class="i1"></span><span class="i2"></span><span class="i3"></span><span class="i4"></span><span class="i5"></span><span class="i6"></span><span class="i7"></span><span class="i8"></span><span class="i9"></span><span class="i10"></span></em>');
+let filled = 0;
+window.setInterval(() => {
+    let inner = document.querySelector('.huh .i' + (Math.floor(Math.random() * 10) + 1));
+    if (Math.floor(Math.random() * 10) % 3 == 0 && filled > 3) {
+        inner.textContent = '';
+        filled--;
+    } else {
+        if (inner.textContent == '') {
+            filled++;
+        }
+        inner.textContent = grawlix[Math.floor(Math.random() * grawlix.length)];
+    }
+}, 250);
+</script>

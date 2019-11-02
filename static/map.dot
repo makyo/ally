@@ -8,6 +8,7 @@ digraph Map {
     "Aside 1" [href="/aside/1"]
     "Aside 2" [href="/aside/2"]
     "Aside 3" [href="/aside/3"]
+    "Aside 4" [href="/aside/4"]
 
     node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
     "Dad 1" [href="/dad/1"]
@@ -270,6 +271,10 @@ digraph Map {
 
     node[group="gender",style="",fontcolor="#111111"]
     "Gender 1" [href="/gender"]
+    "Gender 2" [href="/gender/2"]
+    "Gender 3" [href="/gender/3"]
+    "Gender 4" [href="/gender/4"]
+    "Gender 1" -> "Gender 2" -> "Gender 3" -> "Gender 4"
 
         /*node[group="surgery"]
         "Surgery 1" [href="/gender/surgery"]
@@ -399,6 +404,7 @@ digraph Map {
 
     // Gender
     /*"Gender 1" -> "Surgery 1"*/
+    "Gender 4" -> "Aside 4"
 
     // Sex
     "Sex 4" -> "Kink 1"
