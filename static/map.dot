@@ -118,6 +118,13 @@ digraph Map {
     "Software 1" -> "Software 2" -> "Software 3" -> "Software 4" ->
     "Software 5" -> "Software 6"
 
+    node[group="burnout",style="",fontcolor="#111111"]
+    "Burnout 1" [href="/burnout"]
+    "Burnout 2" [href="/burnout/2"]
+    "Burnout 3" [href="/burnout/3"]
+    "Burnout 4" [href="/burnout/4"]
+    "Burnout 1" -> "Burnout 2" -> "Burnout 3" -> "Burnout 4"
+
     // This is the central axis
     node[group="ally",style="",fontcolor="#111111"] // `core` folder
     "ally 1" [href="/"]
@@ -148,13 +155,14 @@ digraph Map {
     "ally 26" [href="/26"]
     "ally 27" [href="/27"]
     "ally 28" [href="/28"]
+    "ally 29" [href="/29"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
     "ally 11" -> "ally 12" -> "ally 13" -> "ally 14" -> "ally 15" ->
     "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" ->
     "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
-    "ally 26" -> "ally 27" -> "ally 28" -> "To be continued..."
+    "ally 26" -> "ally 27" -> "ally 28" -> "ally 29" -> "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -249,7 +257,23 @@ digraph Map {
     "Gender 2" [href="/gender/2"]
     "Gender 3" [href="/gender/3"]
     "Gender 4" [href="/gender/4"]
-    "Gender 1" -> "Gender 2" -> "Gender 3" -> "Gender 4"
+    "Gender 5" [href="/gender/5"]
+    "Gender 6" [href="/gender/6"]
+    "Gender 7" [href="/gender/7"]
+    "Gender 8" [href="/gender/8"]
+    "Gender 9" [href="/gender/9"]
+    "Gender 1" -> "Gender 2" -> "Gender 3" -> "Gender 4" -> "Gender 5" ->
+    "Gender 6" -> "Gender 7" -> "Gender 8" -> "Gender 9"
+
+        node[group="surgery"]
+        "Surgery 1" [href="/gender/surgery"]
+        "Surgery 3" [href="/gender/surgery/2"]
+        "Surgery 5" [href="/gender/surgery/3"]
+        "Surgery 7" [href="/gender/surgery/4"]
+        "Surgery 9" [href="/gender/surgery/5"]
+        "Surgery 1" -> "Surgery 2" -> "Surgery 3" -> "Surgery 4" ->
+        "Surgery 5" -> "Surgery 6" -> "Surgery 7" -> "Surgery 8" ->
+        "Surgery 9"
 
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
@@ -275,20 +299,6 @@ digraph Map {
         "Suicide 4" -> "Suicide 5" -> "Suicide 6" -> "Suicide 7" ->
         "Suicide 8" -> "Suicide 9" -> "Suicide 10" -> "Suicide 11" ->
         "Suicide 12" -> "Suicide 13"
-
-        /*node[group="surgery"]
-        "Surgery 1" [href="/gender/surgery"]
-        "Surgery 2" [href="/gender/surgery/2"]
-        "Surgery 3" [href="/gender/surgery/3"]
-        "Surgery 4" [href="/gender/surgery/4"]
-        "Surgery 5" [href="/gender/surgery/5"]
-        "Surgery 6" [href="/gender/surgery/6"]
-        "Surgery 7" [href="/gender/surgery/7"]
-        "Surgery 8" [href="/gender/surgery/8"]
-        "Surgery 9" [href="/gender/surgery/9"]
-        "Surgery 1" -> "Surgery 2" -> "Surgery 3" -> "Surgery 4" ->
-        "Surgery 5" -> "Surgery 6" -> "Surgery 7" -> "Surgery 8" ->
-        "Surgery 9"*/
 
     node[group="writing",style="",fontcolor="#111111"]
     "Writing 1" [href="/writing"]
@@ -353,6 +363,7 @@ digraph Map {
     "ally 17" -> "Writing 1"
     "ally 18" -> "Software 1"
     "ally 23" -> "Movement 1"
+    "ally 29" -> "Burnout 1"
 
     // Dad
     "Dad 11" -> "ally 16"
@@ -403,7 +414,7 @@ digraph Map {
     "Self-harm 3" -> "Gender 1"
 
     // Gender
-    /*"Gender 1" -> "Surgery 1"*/
+    "Gender 6" -> "Surgery 1"
 
     // Sex
     "Sex 4" -> "Kink 1"
