@@ -5,6 +5,8 @@ title: Genderful
 
 > Finally getting around to this topic, hmm?
 
+<!--more-->
+
 Yes. It only took a few months.
 
 > Right. I was honestly a little shocked that you haven't gotten to it sooner.
