@@ -9,6 +9,10 @@ digraph Map {
     "Aside 2" [href="/aside/2"]
     "Aside 3" [href="/aside/3"]
 
+        "Dreams 1" [href="/aside/dreams/1"]
+        "Dreams 2" [href="/aside/dreams/2"]
+        /* "Dreams 3" [href="/aside/dreams/3"] */
+
     node[group="dad",style="filled",fillcolor="#cccccc",fontcolor="#222222"]
     "Dad 1" [href="/dad/1"]
     "Dad 2" [href="/dad/2"]
@@ -386,7 +390,7 @@ digraph Map {
     "Furry 7" -> "Younes 1"
 
     // Jay
-    /* none */
+    "Jay 3" -> "Dreams 1"
 
     // Koan
     /* none */
@@ -403,6 +407,7 @@ digraph Map {
     // Poet and Mystic
     /*"Poet and Mystic 1" -> "Manifesto Project 1"*/
     "Poet and Mystic 13" -> "Agony and Ecstasy"
+    "Poet and Mystic 8" -> "Dreams 2"
 
     // Poly
     "Poly 1" -> "Jay 1"
