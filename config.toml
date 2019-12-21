@@ -10,3 +10,6 @@ paginatePath = ""
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[markup.goldmark.renderer]
+  unsafe= true
