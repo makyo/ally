@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.date" "!=" nil) 1 }}
+{{ $paginator := .Paginate (where .Pages.ByWeight ".Params.date" "!=" nil) 1 }}
 {{ $content := .Content }}
 {{ range $paginator.Pages.ByWeight }}
 <main id="main"{{ if (isset .Params "fit" )}} class="fit"{{ end }}>
