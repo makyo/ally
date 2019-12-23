@@ -1,10 +1,13 @@
 {{ define "main" }}
-<main id="main">
-    {{ .Content }}
-    {{ $paginator := .Paginate (where .Pages ".Params.date" "!=" nil) 1 }}
-    {{ range $paginator.Pages.ByWeight }}
-    <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
-    {{ .Content }}
+{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.date" "!=" nil) 1 }}
+{{ $content := .Content }}
+{{ range $paginator.Pages.ByWeight }}
+<main id="main"{{ if (isset .Params "fit" )}} class="fit"{{ end }}>
+    {{ $content }}
+    <div class="page">
+        <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+        {{ .Content }}
+    </div>
     {{ end }}
     {{ partial "pagination.html" . }}
     {{ if (isset .Params "back") }}

@@ -29,6 +29,7 @@ a {
 .zoom a {
     border: none;
     font-size: 2em;
+    outline: none !important;
 }
 abbr {
     text-decoration: none;
@@ -86,7 +87,13 @@ main {
 }
 main.full {
     max-width: 100%;
-    text-align: center;
+}
+main.full svg {
+    margin: auto;
+}
+main.fit .page .verse {
+    white-space: pre;
+    overflow-x: scroll;
 }
 main.fit svg {
     max-width: 100%;
@@ -120,6 +127,9 @@ blockquote em {
     padding: 1em;
     white-space: pre-wrap;
     margin-top: 0;
+}
+.verse blockquote {
+    margin-bottom: 0;
 }
 .cw {
     color: #800;
@@ -236,4 +246,13 @@ ul.pagination .page-item.active a {
     font-style: italic;
     border: none;
     cursor: text;
+}
+
+@media only screen and (max-width: 500px) {
+    main.fit .page .verse {
+        font-size: 10pt;
+    }
+    main.fit .page .verse blockquote {
+        font-size: 8pt;
+    }
 }
