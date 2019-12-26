@@ -1,8 +1,8 @@
 ---
 type: serial
 background: '#000'
-color: '#444'
-quote: '#555'
+color: '#666'
+quote: '#777'
 pulse_light: true
-back: /16
+back: /poet-and-mystic/11
 ---
