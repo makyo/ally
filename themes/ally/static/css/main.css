@@ -116,6 +116,7 @@ blockquote em {
     font-style: normal;
 }
 .verse {
+    font-family: 'Gentium Book Basic', serif;
     border: 1px solid #eee;
     padding: 1em;
     white-space: pre-wrap;
