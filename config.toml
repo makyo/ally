@@ -12,4 +12,5 @@ paginatePath = ""
   category = "categories"
 
 [markup.goldmark.renderer]
-  unsafe= true
+  unsafe = true
+  xHTML = true
