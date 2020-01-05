@@ -203,18 +203,7 @@ digraph Map {
     "Koan 6" [href="/koan/6"]
     "Koan 1" -> "Koan 2" -> "Koan 3" -> "Koan 4" -> "Koan 5" -> "Koan 6"
 
-    node[group="furry",style="",fontcolor="#111111"]
-    "Furry 1" [href="/furry"]
-    "Furry 2" [href="/furry/2"]
-    "Furry 3" [href="/furry/3"]
-    "Furry 4" [href="/furry/4"]
-    "Furry 5" [href="/furry/5"]
-    "Furry 6" [href="/furry/6"]
-    "Furry 7" [href="/furry/7"]
-    "Furry 1" -> "Furry 2" -> "Furry 3" -> "Furry 4" -> "Furry 5" ->
-    "Furry 6" -> "Furry 7"
-
-        node[group="fursona"]
+        node[group="fursona",style="",fontcolor="#111111"]
         "Fursoñas 1" [href="/furry/fursona/"]
         "Fursoñas 2" [href="/furry/fursona/2"]
         "Fursoñas 3" [href="/furry/fursona/3"]
@@ -225,6 +214,17 @@ digraph Map {
         "Fursoñas 8" [href="/furry/fursona/8"]
         "Fursoñas 1" -> "Fursoñas 2" -> "Fursoñas 3" -> "Fursoñas 4" ->
         "Fursoñas 5" -> "Fursoñas 6" -> "Fursoñas 7" -> "Fursoñas 8"
+
+    node[group="furry",style="",fontcolor="#111111"]
+    "Furry 1" [href="/furry"]
+    "Furry 2" [href="/furry/2"]
+    "Furry 3" [href="/furry/3"]
+    "Furry 4" [href="/furry/4"]
+    "Furry 5" [href="/furry/5"]
+    "Furry 6" [href="/furry/6"]
+    "Furry 7" [href="/furry/7"]
+    "Furry 1" -> "Furry 2" -> "Furry 3" -> "Furry 4" -> "Furry 5" ->
+    "Furry 6" -> "Furry 7"
 
         node[group="margaras"]
         "Margaras 1" [href="/furry/margaras"]
@@ -288,13 +288,18 @@ digraph Map {
 
         node[group="surgery"]
         "Surgery 1" [href="/gender/surgery"]
-        "Surgery 3" [href="/gender/surgery/2"]
-        "Surgery 5" [href="/gender/surgery/3"]
-        "Surgery 7" [href="/gender/surgery/4"]
-        "Surgery 9" [href="/gender/surgery/5"]
+        "Surgery 2" [href="/gender/surgery/2"]
+        "Surgery 3" [href="/gender/surgery/3"]
+        "Surgery 4" [href="/gender/surgery/4"]
+        "Surgery 5" [href="/gender/surgery/5"]
+        "Surgery 6" [href="/gender/surgery/6"]
+        "Surgery 7" [href="/gender/surgery/7"]
+        "Surgery 8" [href="/gender/surgery/8"]
+        "Surgery 9" [href="/gender/surgery/9"]
+        "Surgery 10" [href="/gender/surgery/10"]
         "Surgery 1" -> "Surgery 2" -> "Surgery 3" -> "Surgery 4" ->
         "Surgery 5" -> "Surgery 6" -> "Surgery 7" -> "Surgery 8" ->
-        "Surgery 9"
+        "Surgery 9" -> "Surgery 10"
 
     node[group="sh",style="filled",fillcolor="#222228",fontcolor="#dddddd"]
     "Self-harm 1" [href="/self-harm"]
