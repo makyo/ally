@@ -72,8 +72,9 @@ digraph Map {
         "Words 5" [href="/poet-and-mystic/overflowing/with/words/5"]
         "Words 6" [href="/poet-and-mystic/overflowing/with/words/6"]
         "Words 7" [href="/poet-and-mystic/overflowing/with/words/7"]
+        "Words 8" [href="/poet-and-mystic/overflowing/with/words/8"]
         "Words 1" -> "Words 2" -> "Words 3" -> "Words 4" -> "Words 5" ->
-        "Words 6" -> "Words 7"
+        "Words 6" -> "Words 7" -> "Words 8"
 
     node[group="from-within",style="filled",fillcolor="#333a18",fontcolor="#ccddcc"]
     "From within 1" [href="/from-within/"]
