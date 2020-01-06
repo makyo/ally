@@ -65,13 +65,13 @@ digraph Map {
         "With" [href="/poet-and-mystic/overflowing/with"]
 
         node[group="words",style="filled",fillcolor="#000000",fontcolor="#777777"]
-        "Words 1" [href="/poet-and-mystic/overflowing/words"]
-        "Words 2" [href="/poet-and-mystic/overflowing/words/2"]
-        "Words 3" [href="/poet-and-mystic/overflowing/words/3"]
-        "Words 4" [href="/poet-and-mystic/overflowing/words/4"]
-        "Words 5" [href="/poet-and-mystic/overflowing/words/5"]
-        "Words 6" [href="/poet-and-mystic/overflowing/words/6"]
-        "Words 7" [href="/poet-and-mystic/overflowing/words/7"]
+        "Words 1" [href="/poet-and-mystic/overflowing/with/words"]
+        "Words 2" [href="/poet-and-mystic/overflowing/with/words/2"]
+        "Words 3" [href="/poet-and-mystic/overflowing/with/words/3"]
+        "Words 4" [href="/poet-and-mystic/overflowing/with/words/4"]
+        "Words 5" [href="/poet-and-mystic/overflowing/with/words/5"]
+        "Words 6" [href="/poet-and-mystic/overflowing/with/words/6"]
+        "Words 7" [href="/poet-and-mystic/overflowing/with/words/7"]
         "Words 1" -> "Words 2" -> "Words 3" -> "Words 4" -> "Words 5" ->
         "Words 6" -> "Words 7"
 
