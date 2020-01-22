@@ -116,12 +116,26 @@ digraph Map {
     "Poly 6" [href="/poly/6"]
     "Poly 1" -> "Poly 2" -> "Poly 3" -> "Poly 4" -> "Poly 5" -> "Poly 6"
 
+        node[group="rape",style="filled",fillcolor="#330000",fontcolor="#dccccc"]
+        "Rape 1" [href="/sex/rape"]
+        "Rape 2" [href="/sex/rape/2"]
+        "Rape 3" [href="/sex/rape/3"]
+        "Rape 4" [href="/sex/rape/4"]
+        "Rape 1" -> "Rape 2" -> "Rape 3" -> "Rape 4"
+
     node[group="sex",style="filled",fillcolor="#eeeef8",fontcolor="#111111"]
     "Sex 1" [href="/sex"]
     "Sex 2" [href="/sex/2"]
     "Sex 3" [href="/sex/3"]
     "Sex 4" [href="/sex/4"]
-    "Sex 1" -> "Sex 2" -> "Sex 3" -> "Sex 4"
+    "Sex 5" [href="/sex/5"]
+    "Sex 6" [href="/sex/6"]
+    "Sex 7" [href="/sex/7"]
+    "Sex 8" [href="/sex/8"]
+    "Sex 9" [href="/sex/9"]
+    "Sex 10" [href="/sex/10"]
+    "Sex 1" -> "Sex 2" -> "Sex 3" -> "Sex 4" -> "Sex 5" -> "Sex 6" -> "Sex 7" ->
+    "Sex 8" -> "Sex 9" -> "Sex 10"
 
         node[group="kink",style="filled",fillcolor="#17111a",fontcolor="#ffffff"]
         "Kink 1" [href="/sex/kink"]
@@ -129,6 +143,9 @@ digraph Map {
         "Kink 3" [href="/sex/kink/3"]
         "Kink 4" [href="/sex/kink/4"]
         "Kink 1" -> "Kink 2" -> "Kink 3" -> "Kink 4"
+
+        node[group="aside",style="",fontcolor="#111111"]
+        "Dreams 3" [href="/aside/dreams/3"]
 
     node[group="software",style="filled",fillcolor="#eaf5ff",fontcolor="#05264c"]
     "Software 1" [href="https://github.com/makyo/ally/pull/4/commits/c7d73fc7a727d34728b353a2c428b0da71788bf0"]
@@ -447,6 +464,8 @@ digraph Map {
 
     // Sex
     "Sex 4" -> "Kink 1"
+    "Sex 8" -> "Rape 1"
+    "Sex 8" -> "Dreams 3"
 
     // Writing
     /*"Writing 2" -> "Koans 1"
