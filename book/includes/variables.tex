@@ -11,9 +11,9 @@
 
 \def\ISBN{XXX-X-XXXXXX-XX-X}
 
-\newcommand\ally[1]{
+\newenvironment{ally}{
+\noindent\ignorespaces
 \begin{quotation}
-    \fontspec[Scale=0.9,Color=444444FF]{Merriweather Sans}
-    \noindent \emph{#1}
-\end{quotation}
-}
+    \allyFont\itshape
+    \noindent}{
+\end{quotation}\ignorespacesafterend }
