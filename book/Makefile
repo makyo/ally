@@ -6,6 +6,9 @@ help: ## This help.
 .PHONY: final
 final: reset toc ## full document of the book for final print
 
+.PHONY: single
+single: reset plain ## full document run once, ensuring everything's reset
+
 .PHONY: proof
 proof: engage-letter engage-frame engage-draft toc reset ## full proof document of the book with frames and watermark
 
