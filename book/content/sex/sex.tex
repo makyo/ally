@@ -1,4 +1,14 @@
-\fontspec{Gentium Book Basic}[Color=111111FF]
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=111111FF]
+
+\backgroundcolor{c[0]}[HTML]{eeeef8}
+\backgroundcolor{C[0](10000pt,10000pt)(0.6\columnsep,10000pt)}[HTML]{eeeef8}
+\backgroundcolor{c[1]}[HTML]{eeeef8}
+\backgroundcolor{C[1](0.6\columnsep,10000pt)(10000pt,10000pt)}[HTML]{eeeef8}
+
+\begin{paracol}{2}
+\begin{leftcolumn}
+
+\fontspec{Gentium Book Basic}[Color=111111FF,Ligatures=TeX]
 \renewfontfamily\allyFont{Merriweather Sans}[Scale=0.9,Color=333333FF,Ligatures=TeX]
 
 \noindent Cathleen Schine writes in \emph{The Evolution of Jane}:
@@ -148,8 +158,11 @@ So, let's talk about kink.
 \end{leftcolumn}
 \end{paracol}
 
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=EEEEEEFF]
+
 \backgroundcolor{c[1]}[rgb]{0.0902,0.0667,0.102}
 \backgroundcolor{C[1](0.5\columnsep,1000pt)(10000pt,10000pt)}[rgb]{0.0902,0.0667,0.102}
+
 \begin{paracol}{2}
 \begin{rightcolumn*}
 \input{content/sex/kink.tex}
@@ -443,3 +456,8 @@ No, I'm not unhappy. I'm happy with this, really. I'm happy with fantasy and art
 
 The only bit I'm really unhappy about is that it keeps me from making others happy.
 \newpage
+\end{leftcolumn}
+\end{paracol}
+\resetbackgroundcolor
+
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=000000FF]
