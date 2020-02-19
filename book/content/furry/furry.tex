@@ -1,4 +1,7 @@
 \label{furry:furry}
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=CCCCDDFF]
+\backgroundcolor{c[1]}[HTML]{1f183a}
+\backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[HTML]{1f183a}
 \begin{paracol}{2}
   \begin{leftcolumn}
 
@@ -20,9 +23,14 @@ Do you not experience irony?
 A friend asks Maddy: what is irony?
 \end{ally}
 \end{leftcolumn}
-\begin{rightcolumn*}
+% XXX Can't use rightcolumn* or there is a white space above it, thus the vspace.
+\begin{rightcolumn}
+  \fontspec{Gentium Book Basic}[Color=CCCCDDFF,Ligatures=TeX]
+  \renewfontfamily\allyFont{Merriweather Sans}[Scale=0.9,Color=EEEEFFFF,Ligatures=TeX]
+  \null
+  \vspace{12.7\baselineskip}
   \input{content/koan.tex}
-\end{rightcolumn*}
+\end{rightcolumn}
 \begin{leftcolumn}
 \newpage
 
@@ -147,7 +155,14 @@ You are a parody of yourself.
 \end{ally}
 And proud of it.
 \newpage
+\end{leftcolumn}
+\end{paracol}
 
+\resetbackgroundcolor
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=000000FF]
+
+\begin{paracol}{2}
+  \begin{leftcolumn}
 \noindent So, I think the order of my entry to furry was as follows:
 
 \begin{enumerate}
@@ -382,3 +397,5 @@ No one said this project would be easy.
 \newpage
 \end{leftcolumn}
 \end{paracol}
+\resetbackgroundcolor
+\renewfontfamily\pagenumfont{Gentium Book Basic}[Color=000000FF]

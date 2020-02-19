@@ -6,6 +6,11 @@
 \newfontfamily\allyFont{Merriweather Sans}[Scale=0.9,Color=444444FF,Ligatures=TeX]
 \newfontfamily\TitleFamily{Inknut Antiqua}
 \newfontface\TitleFont{Inknut Antiqua}
-% \newfontfamily\DisplayFamily{Playfair Display}
-% \newfontface\DisplayFont{Playfair Display}
 \newfontfamily\pagenumfont{Gentium Book Basic}
+
+\makeatletter
+\let\oldfootnoterule\footnoterule
+\renewcommand{\foottextfont}{\pagenumfont\footnotesize}
+\renewcommand*{\@makefnmark}{\hbox{\pagenumfont\textsuperscript{\@thefnmark}}}
+\footmarkstyle{\pagenumfont\textsuperscript{#1}}
+\makeatother
