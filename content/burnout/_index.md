@@ -1,7 +1,7 @@
 ---
 type: serial
 back: /29
-background: "#eaf5ff"
-color: "#05264c"
-quote: "#16375d"
+background: "#ffffff"
+color: "#444444"
+quote: "#666666"
 ---

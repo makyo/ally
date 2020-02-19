@@ -157,7 +157,7 @@ digraph Map {
     "Software 1" -> "Software 2" -> "Software 3" -> "Software 4" ->
     "Software 5" -> "Software 6"
 
-    node[group="burnout",style="",fontcolor="#111111"]
+    node[group="burnout",style="",fontcolor="#444444"]
     "Burnout 1" [href="/burnout"]
     "Burnout 2" [href="/burnout/2"]
     "Burnout 3" [href="/burnout/3"]
