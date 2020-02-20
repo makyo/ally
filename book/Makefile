@@ -21,6 +21,7 @@ plain: ## full document of the book with no proofing marks
 
 .PHONY: toc
 toc: plain ## full book with ToC re-rendering in case of page changes
+	makeindex book
 	xelatex book.tex
 
 .PHONY: ebook
