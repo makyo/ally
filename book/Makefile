@@ -5,6 +5,10 @@ help: ## This help.
 
 .PHONY: final
 final: reset toc ## full document of the book for final print
+	@echo
+	@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	@echo "!Ensure that the index page breaks are okay!"
+	@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 .PHONY: single
 single: reset plain ## full document run once, ensuring everything's reset

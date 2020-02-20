@@ -1,6 +1,6 @@
 This is makeindex, version 2.15 [TeX Live 2019/dev] (kpathsea + Thai support).
-Scanning input file book.idx....done (327 entries accepted, 0 rejected).
-Sorting entries......done (3239 comparisons).
+Scanning input file book.idx....done (329 entries accepted, 0 rejected).
+Sorting entries......done (3291 comparisons).
 Generating output file book.ind....
 ## Warning (input = book.idx, line = 2; output = book.ind, line = 5):
    -- Extra range opening operator (.
@@ -8,22 +8,22 @@ Generating output file book.ind....
 ## Warning (input = book.idx, line = 16; output = book.ind, line = 5):
    -- Unmatched range closing operator ).
 
-## Warning (input = book.idx, line = 280; output = book.ind, line = 7):
+## Warning (input = book.idx, line = 281; output = book.ind, line = 7):
    -- Unmatched range closing operator ).
 
-## Warning (input = book.idx, line = 287; output = book.ind, line = 8):
+## Warning (input = book.idx, line = 288; output = book.ind, line = 8):
    -- Unmatched range closing operator ).
 
-## Warning (input = book.idx, line = 275; output = book.ind, line = 104):
+## Warning (input = book.idx, line = 276; output = book.ind, line = 104):
    -- Unmatched range closing operator ).
 
-## Warning (input = book.idx, line = 274; output = book.ind, line = 105):
+## Warning (input = book.idx, line = 275; output = book.ind, line = 105):
    -- Unmatched range opening operator (.
 
 ## Warning (input = book.idx, line = 92; output = book.ind, line = 126):
    -- Unmatched range closing operator ).
 
-## Warning (input = book.idx, line = 264; output = book.ind, line = 176):
+## Warning (input = book.idx, line = 265; output = book.ind, line = 176):
    -- Extra range opening operator (.
 done (179 lines written, 8 warnings).
 Output written in book.ind.
