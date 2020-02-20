@@ -10,7 +10,6 @@
 \indexentry{Relationships!Judith|hyperpage}{8}
 \indexentry{Numinous!colors|hyperpage}{9}
 \indexentry{Nostalgia|hyperpage}{9}
-\indexentry{Nostalgia\index{Nostalgia}|hyperpage}{9}
 \indexentry{ally|)hyperpage}{11}
 \indexentry{ally!Not my department|hyperpage}{11}
 \indexentry{ally!I am not your friend|hyperpage}{12}
@@ -19,11 +18,11 @@
 \indexentry{Catastrophically Maddy|hyperpage}{18}
 \indexentry{Alcohol|)hyperpage}{20}
 \indexentry{Mental health!anxiety|hyperpage}{20}
-\indexentry{Dad!running away|hyperpage}{20}
+\indexentry{Family!dad!running away|hyperpage}{20}
 \indexentry{Gender|hyperpage}{22}
 \indexentry{Ship of Theseus|hyperpage}{22}
 \indexentry{The Death of Matthew|hyperpage}{22}
-\indexentry{Mania|hyperpage}{22}
+\indexentry{Mental health!bipolar!mania|hyperpage}{22}
 \indexentry{Alcohol|hyperpage}{22}
 \indexentry{Numinous!colors|(hyperpage}{24}
 \indexentry{Journal entries|(hyperpage}{24}
@@ -39,11 +38,11 @@
 \indexentry{Numinous!birds|)hyperpage}{47}
 \indexentry{Relationships!polyamory|(hyperpage}{48}
 \indexentry{Mental health!bipolar!mania|hyperpage}{48}
-\indexentry{Jay|(hyperpage}{50}
-\indexentry{Mom|hyperpage}{50}
-\indexentry{Dad|hyperpage}{50}
-\indexentry{Maddy!Catastrophically Maddy|hyperpage}{51}
-\indexentry{Julie|hyperpage}{52}
+\indexentry{Family!Jay|(hyperpage}{50}
+\indexentry{Family!mom|hyperpage}{50}
+\indexentry{Family!dad|hyperpage}{50}
+\indexentry{Catastrophically Maddy|hyperpage}{52}
+\indexentry{Family!Julie|hyperpage}{52}
 \indexentry{Journal entries|hyperpage}{54}
 \indexentry{Relationships!Michael|hyperpage}{54}
 \indexentry{Gender|hyperpage}{55}
@@ -53,13 +52,18 @@
 \indexentry{ally|hyperpage}{56}
 \indexentry{Relationships!Merlin|hyperpage}{56}
 \indexentry{Ship of Theseus|hyperpage}{57}
-\indexentry{Maddy@Catastrophically Maddy|hyperpage}{58}
+\indexentry{Catastrophically Maddy|hyperpage}{58}
 \indexentry{Journal entries|hyperpage}{59}
 \indexentry{Gender|hyperpage}{62}
 \indexentry{Relationships!Barac|hyperpage}{63}
-\indexentry{Jay|)hyperpage}{64}
+\indexentry{Relationships!Judith|hyperpage}{63}
+\indexentry{Relationships!Colton|hyperpage}{63}
+\indexentry{Relationships!Justin|hyperpage}{63}
+\indexentry{Family!Jay|)hyperpage}{64}
 \indexentry{Relationships!James|hyperpage}{64}
 \indexentry{Relationships!Robin|hyperpage}{64}
+\indexentry{Relationships!Judith|hyperpage}{64}
+\indexentry{Relationships!Justin|hyperpage}{64}
 \indexentry{Relationships!polyamory|)hyperpage}{66}
 \indexentry{Sex|(hyperpage}{67}
 \indexentry{Relationships!Danny|hyperpage}{69}
@@ -72,6 +76,7 @@
 \indexentry{Sex!kink|(hyperpage}{76}
 \indexentry{Sex!TS|hyperpage}{76}
 \indexentry{The Death of Matthew|hyperpage}{78}
+\indexentry{Relationships!Justin|hyperpage}{78}
 \indexentry{Furry|hyperpage}{78}
 \indexentry{Relationships!Michael|(hyperpage}{79}
 \indexentry{ally!throwing stones|hyperpage}{79}
@@ -90,6 +95,7 @@
 \indexentry{Relationships!James|hyperpage}{85}
 \indexentry{Relationships!Robin|hyperpage}{85}
 \indexentry{Relationships!Barac|hyperpage}{85}
+\indexentry{Relationships!Colton|hyperpage}{85}
 \indexentry{Dream|hyperpage}{85}
 \indexentry{Relationships!Judith|hyperpage}{85}
 \indexentry{Sex!TS|hyperpage}{85}
@@ -120,7 +126,7 @@
 \indexentry{Relationships!Danny|hyperpage}{116}
 \indexentry{Relationships!James|hyperpage}{119}
 \indexentry{Writing!Keats|hyperpage}{122}
-\indexentry{Writing![adjective][species]|hyperpage}{122}
+\indexentry{Furry![adjective][species]|hyperpage}{122}
 \indexentry{Furry!Margaras|(hyperpage}{123}
 \indexentry{The Death of Matthew|hyperpage}{123}
 \indexentry{Journal entries|(hyperpage}{124}
@@ -146,7 +152,7 @@
 \indexentry{Furry!fursoñas!Macchi|hyperpage}{151}
 \indexentry{Gender!TIASAP|hyperpage}{152}
 \indexentry{Furry!fursoñas!Younes|)hyperpage}{153}
-\indexentry{Mental Health!self harm|hyperpage}{153}
+\indexentry{Mental health!self harm|hyperpage}{153}
 \indexentry{Mental health!suicide|(hyperpage}{161}
 \indexentry{Nostalgia|hyperpage}{161}
 \indexentry{The Death of Matthew|hyperpage}{161}
@@ -172,7 +178,7 @@
 \indexentry{ally!throwing stones|hyperpage}{189}
 \indexentry{Liminal|hyperpage}{189}
 \indexentry{Furry!fursoñas!Younes|hyperpage}{189}
-\indexentry{Dad|hyperpage}{189}
+\indexentry{Family!dad|hyperpage}{189}
 \indexentry{ally|hyperpage}{189}
 \indexentry{Relationships!James|hyperpage}{191}
 \indexentry{Gender!surgery|hyperpage}{196}
@@ -187,27 +193,41 @@
 \indexentry{The Death of Matthew|hyperpage}{233}
 \indexentry{Furry!Margaras|hyperpage}{237}
 \indexentry{The Death of Matthew|hyperpage}{237}
+\indexentry{Letters|(hyperpage}{238}
+\indexentry{Family!mom|(hyperpage}{238}
+\indexentry{Gender|(hyperpage}{238}
+\indexentry{Letters|)hyperpage}{239}
+\indexentry{Gender!TIASAP|hyperpage}{239}
+\indexentry{Family!mom|)hyperpage}{240}
+\indexentry{Family!dad|hyperpage}{241}
 \indexentry{Liminal|)hyperpage}{246}
-\indexentry{Dad|(hyperpage}{247}
-\indexentry{Julie|hyperpage}{247}
+\indexentry{Gender|)hyperpage}{246}
+\indexentry{Family!dad|(hyperpage}{247}
+\indexentry{Family!Julie|hyperpage}{247}
 \indexentry{Mental health!bipolar!depression|hyperpage}{249}
 \indexentry{Gender|hyperpage}{249}
-\indexentry{Julie|hyperpage}{249}
-\indexentry{Julie|hyperpage}{256}
-\indexentry{Julie|hyperpage}{257}
-\indexentry{Dad!running away|hyperpage}{261}
+\indexentry{Family!Julie|hyperpage}{249}
+\indexentry{Family!Julie|hyperpage}{256}
+\indexentry{Family!Julie|hyperpage}{257}
+\indexentry{Family!dad!running away|(hyperpage}{261}
 \indexentry{Journal entries|hyperpage}{262}
 \indexentry{Mental health!anxiety|hyperpage}{268}
+\indexentry{Family!mom|hyperpage}{271}
 \indexentry{Nostalgia|hyperpage}{274}
+\indexentry{Family!dad!running away|)hyperpage}{276}
 \indexentry{Mental health!movement disorders|hyperpage}{277}
 \indexentry{Alcohol|hyperpage}{279}
 \indexentry{The Death of Matthew|hyperpage}{280}
+\indexentry{Gender|(hyperpage}{281}
 \indexentry{Letters|(hyperpage}{281}
 \indexentry{Letters|)hyperpage}{292}
+\indexentry{Family!dad!running away|hyperpage}{296}
+\indexentry{Gender|)hyperpage}{296}
 \indexentry{Writing!samples!poetry|(hyperpage}{297}
 \indexentry{Dogs|hyperpage}{297}
+\indexentry{Family!mom|hyperpage}{297}
 \indexentry{Writing!samples!poetry|)hyperpage}{298}
-\indexentry{Dad|)hyperpage}{300}
+\indexentry{Family!dad|)hyperpage}{300}
 \indexentry{Numinous|(hyperpage}{301}
 \indexentry{Numinous!seven|hyperpage}{301}
 \indexentry{Writing!samples!poetry|hyperpage}{304}
@@ -216,7 +236,7 @@
 \indexentry{Journal entries|(hyperpage}{305}
 \indexentry{Journal entries|)hyperpage}{309}
 \indexentry{ally|hyperpage}{313}
-\indexentry{Dad|hyperpage}{313}
+\indexentry{Family!dad|hyperpage}{313}
 \indexentry{Mental health!dissociation|hyperpage}{313}
 \indexentry{Writing!samples!poetry|(hyperpage}{315}
 \indexentry{Writing!samples!poetry|)hyperpage}{320}
@@ -235,22 +255,25 @@
 \indexentry{Writing!samples!fiction|(hyperpage}{357}
 \indexentry{Writing!samples!fiction|)hyperpage}{360}
 \indexentry{Thisness|hyperpage}{360}
-\indexentry{Dad|hyperpage}{362}
+\indexentry{Family!dad|hyperpage}{362}
 \indexentry{Mental health!movement disorders|)hyperpage}{366}
-\indexentry{Writing|textbf}{368}
+\indexentry{Writing|(hyperpage}{368}
 \indexentry{The Death of Matthew|hyperpage}{369}
 \indexentry{Writing!samples!poetry|(hyperpage}{377}
 \indexentry{Writing!samples!poetry|hyperpage}{380}
 \indexentry{Writing!samples!poetry|(hyperpage}{382}
 \indexentry{Writing!samples!poetry|)hyperpage}{386}
 \indexentry{Writing!Keats|hyperpage}{386}
-\indexentry{Music|textbf}{394}
-\indexentry{Dad|hyperpage}{394}
+\indexentry{Catastrophically Maddy|hyperpage}{386}
+\indexentry{Writing|)hyperpage}{394}
+\indexentry{Music|(hyperpage}{394}
+\indexentry{Family!dad|hyperpage}{394}
 \indexentry{Music!choir|(hyperpage}{398}
 \indexentry{Gender|hyperpage}{399}
 \indexentry{Music!choir|)hyperpage}{402}
 \indexentry{Music!composition|(hyperpage}{402}
 \indexentry{Music!composing|)hyperpage}{405}
+\indexentry{Music|)hyperpage}{406}
 \indexentry{Software|(hyperpage}{407}
 \indexentry{Software!burnout|hyperpage}{415}
 \indexentry{Software|)hyperpage}{416}
@@ -301,4 +324,4 @@
 \indexentry{Relationships!James|hyperpage}{460}
 \indexentry{Dogs|hyperpage}{460}
 \indexentry{Furry|hyperpage}{460}
-\indexentry{Nostalgia|hyperpage}{462}
+\indexentry{Catastrophically Maddy|hyperpage}{461}
