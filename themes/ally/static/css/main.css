@@ -177,6 +177,10 @@ audio {
     display: block;
     margin: 0 auto;
 }
+.ally-font {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+}
 
 
 @keyframes flash {
