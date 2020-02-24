@@ -198,8 +198,11 @@ audio {
     max-height: 90vh;
     overflow: scroll;
 }
+.ad * {
+    background: #fff;
+    color: #111;
+}
 .ad .close {
-    position: fixed;
     width: 100%;
     background-color: transparent;
     text-align: right;
