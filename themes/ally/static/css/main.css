@@ -180,8 +180,45 @@ audio {
 .ally-font {
     font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
+    font-size: 13pt;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ad {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    max-height: 90vh;
+    overflow: scroll;
+}
+.ad .close {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    text-align: right;
+    padding: 0px 0.5rem;
+}
+.ad a.noborder {
+    border: none;
+}
+.ad h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin-top: -1rem;
+}
+.ad img {
+    max-width: 75%;
+    margin: 0 auto;
+    border: 2px solid #888;
+    display: block;
+}
 
 @keyframes flash {
     from {
