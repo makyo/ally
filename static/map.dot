@@ -29,6 +29,15 @@ digraph Map {
     "Dad 6" -> "Dad 7" -> "Dad 8" -> "Dad 9" -> "Dad 10" ->
     "Dad 11"
 
+        node[group="dad-humanized",style="filled",fillcolor="#dddddd",fontcolor="#111111"]
+        "Humanized 1" [href="/dad/humanized/1"]
+        "Humanized 2" [href="/dad/humanized/2"]
+        "Humanized 3" [href="/dad/humanized/3"]
+        "Humanized 4" [href="/dad/humanized/4"]
+        "Humanized 5" [href="/dad/humanized/5"]
+        "Dad 11" -> "Humanized 1" -> "Humanized 2" -> "Humanized 3" ->
+        "Humanized 4" -> "Humanized 5"
+
     node[group="pnm",style="filled",fillcolor="#2f082a",fontcolor="#ccccdd"]
     "Poet and Mystic 1" [href="/poet-and-mystic"]
     "Poet and Mystic 2" [href="/poet-and-mystic/2"]
