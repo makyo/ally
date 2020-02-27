@@ -423,7 +423,7 @@ digraph Map {
     "ally 29" -> "Burnout 1"
 
     // Dad
-    "Dad 11" -> "ally 16"
+    "As a person 5" -> "ally 16"
 
     // From within
     "From within 6" -> "ally 12"
