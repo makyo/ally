@@ -21,9 +21,9 @@ Based off the interactive project at [<em class="ally-font">ally.id</em>](https:
 
 [![](/book/book2.png)](/book/book2.png)
 
-[![](/book/book3.png)](/book/book1.png)
+[![](/book/book3.png)](/book/book3.png)
 
-[![](/book/book4.png)](/book/book1.png)
+[![](/book/book4.png)](/book/book4.png)
 
 > Have you been at your Maddy-est about it?
 
