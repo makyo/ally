@@ -1,5 +1,5 @@
 (function() {
-  if (document.cookie.indexOf('bookSeen=true') > -1) {
+  if (document.cookie.indexOf('bookSeen=true') > -1 || /book/.test(window.location.pathname)) {
     return;
   }
   document.cookie = `bookSeen=true; ${document.cookie}; path=/; max-age=${60*60*24*7}`;
