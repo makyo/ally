@@ -40,7 +40,7 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 <a href="/book/physical/01-front.s.jpg" target="\_blank"><img src="/book/physical/01-front.s.jpg" /></a>
 <a href="/book/physical/02-stack-front.s.jpg" target="\_blank"><img src="/book/physical/02-stack-front.s.jpg" /></a>
-<a href="/book/physical/03-stack-angle.s.jpg" target="\_blank"><img src="/book/physical/03-stack-angle.s.jpg" /></a>
+<!-- <a href="/book/physical/03-stack-angle.s.jpg" target="\_blank"><img src="/book/physical/03-stack-angle.s.jpg" /></a> -->
 <a href="/book/physical/04-two-parts.s.jpg" target="\_blank"><img src="/book/physical/04-two-parts.s.jpg" /></a>
 <a href="/book/physical/05-master-sigil.s.jpg" target="\_blank"><img src="/book/physical/05-master-sigil.s.jpg" /></a>
 <a href="/book/physical/06-speak-to-me.s.jpg" target="\_blank"><img src="/book/physical/06-speak-to-me.s.jpg" /></a>
@@ -48,7 +48,7 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 <a href="/book/physical/08-music-angle.s.jpg" target="\_blank"><img src="/book/physical/08-music-angle.s.jpg" /></a>
 <a href="/book/physical/09-back-stack-floor.s.jpg" target="\_blank"><img src="/book/physical/09-back-stack-floor.s.jpg" /></a>
 <a href="/book/physical/10-back-stack-table.s.jpg" target="\_blank"><img src="/book/physical/10-back-stack-table.s.jpg" /></a>
-<a href="/book/physical/11-shelf-steep.s.jpg" target="\_blank"><img src="/book/physical/11-shelf-steep.s.jpg" /></a>
+<!-- <a href="/book/physical/11-shelf-steep.s.jpg" target="\_blank"><img src="/book/physical/11-shelf-steep.s.jpg" /></a> -->
 <a href="/book/physical/12-shelf-shallow.s.jpg" target="\_blank"><img src="/book/physical/12-shelf-shallow.s.jpg" /></a>
 
 ## PDF gallery
