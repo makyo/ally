@@ -9,6 +9,8 @@
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://gum.co/rvof" target="\_blank">Pre-order PDF ebook</a></p>
 
+> We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?
+
 <em class="ally-font">ally</em> is an ergodic, arborescent, semiautobiographical work about identity, mental health, spirituality, and the mutability of the past. A lot of the information contained within is real, some of it isn’t. Each page is structured as a conversation between myself and my ally, a mirror reflection of myself.
 
 Based off the interactive project at [<em class="ally-font">ally.id</em>](https://ally.id), this book explores different facets of my life — some true, some embellished, some wholly fictitious — in a non-linear, ergodic fashion, using color, page-layout, and mixed-media to create a book more experience than memoir.
