@@ -4,7 +4,7 @@
 <img src="/book/cover-front.png" style="margin: 0 auto; display: block; width: 500px; max-width: 100%;" />
 
 <p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://gum.co/VVjeW" target="\_blank">Pre-order paperback</a>
+<a class="gumroad-button" href="https://makyo-ink.square.site/product/ally-preorder-/5" target="\_blank">Pre-order paperback</a>
 &emsp;
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://gum.co/rvof" target="\_blank">Pre-order PDF ebook</a></p>

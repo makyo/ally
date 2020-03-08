@@ -1,6 +1,6 @@
 This is makeindex, version 2.15 [TeX Live 2019/dev] (kpathsea + Thai support).
-Scanning input file book.idx....done (329 entries accepted, 0 rejected).
-Sorting entries......done (3291 comparisons).
+Scanning input file book.idx....done (331 entries accepted, 0 rejected).
+Sorting entries......done (3112 comparisons).
 Generating output file book.ind....
 ## Warning (input = book.idx, line = 2; output = book.ind, line = 5):
    -- Extra range opening operator (.
