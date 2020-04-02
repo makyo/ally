@@ -1,15 +1,16 @@
 % page sizes for trade paperback
+% 8.5x8.5 + bleed of 0.125 per edge minus spine.
+% See https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf page 10
 \usepackage[
-  paperwidth=8.5in,
-  paperheight=8.5in,
-  layoutwidth=8.5in,
-  layoutheight=8.5in,
-  vmargin=0.5in,
-  outer=0.5in,
+  paperwidth=8.625in,
+  paperheight=8.75in,
+  layoutwidth=8.625in,
+  layoutheight=8.75in,
+  vmargin=0.625in,
+  outer=0.625in,
   inner=1in,
   includeheadfoot,
-  twoside,
-  showcrop
+  twoside
 ]{geometry}
 \ifdefined\SetWatermarkHorCenter
   \SetWatermarkHorCenter{3in}
