@@ -18,13 +18,25 @@ Based off the interactive project at [<em class="ally-font">ally.id</em>](https:
 
 ## Buying
 
-The paperback is now available for pre-order. All copies ordered direct are signed. You can also pre-order from <a target="\_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="\_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>
+The paperback is now available for [pre-order](https://gum.co/ally-paperback). All copies ordered direct are signed. You can also pre-order from <a target="\_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="\_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>
 
-You can also pre-order the PDF ebook. I have yet to figure out how to sign those. Sorry.
+You can also [pre-order](https://gum.co/rvof) the PDF ebook. I have yet to figure out how to sign those. Sorry.
 
 ## Content warning
 
 Several sections focus on suicide, self-harm, rape, sexual content, and poor mental health.
+
+## Advance praise
+
+> I feel as though when I was reading this, I was chasing down sparkling fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put all those fractions together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty. A picture I found myself desperately wanting to witness.
+>
+> There were parts of this I identified with so much as a trans woman living with so many queer experiences. These were words I had never been able to put onto paper myself, words I needed to see and read. Words that let me know I wasn't alone in these struggles.
+
+[Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
+
+<div style="text-align: center">
+<strong><a target="\_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
+</div>
 
 ## Paperback gallery
 
