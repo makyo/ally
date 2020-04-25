@@ -28,11 +28,13 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 ## Advance praise
 
-> I feel as though when I was reading this, I was chasing down sparkling fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put all those fractions together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty. A picture I found myself desperately wanting to witness.
->
-> There were parts of this I identified with so much as a trans woman living with so many queer experiences. These were words I had never been able to put onto paper myself, words I needed to see and read. Words that let me know I wasn't alone in these struggles.
+"Cleareyed yet powerfully immediate . . . A fresh, daring exploration of lived experience."
 
-[Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
+> — [Kirkus Reviews](https://www.kirkusreviews.com/book-reviews/madison-scott-clary/allyC/)
+
+"I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incompre-hensible beauty."
+
+> — [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
 
 <div style="text-align: center">
 <strong><a target="\_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
