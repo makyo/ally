@@ -32,7 +32,7 @@ So.
 
 ## <span class="ally-font" style="font-size: 21pt">ally</span> online launch party --- Monday, June 1, 2020
 
-Come, friends, and join me for a small launch party for <span class="ally-font">ally</span> launch party. It will as a matter of course be a BYOB party, but I would love to have you join me live on [Picarto](https://picarto.tv/makyo) and [&#68;&#105;scord](https://makyo.io/2G)! We'll have all sorts.
+Come, friends, and join me for a small launch party for <span class="ally-font">ally</span>. It will as a matter of course be a BYOB party, but I would love to have you join me live on [Picarto](https://picarto.tv/makyo) and [&#68;&#105;scord](https://makyo.io/2G)! We'll have all sorts.
 
 * Meet the author, call her a dork to her face.
 * Take a tour through the book, both a physical copy and a PDF.
