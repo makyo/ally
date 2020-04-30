@@ -1,4 +1,5 @@
 ---
+type: single
 ---
 
 <img src="/book/cover-front.png" style="margin: 0 auto; display: block; width: 500px; max-width: 100%;" />
