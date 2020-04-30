@@ -40,4 +40,4 @@ Come, friends, and join me for a small launch party for <span class="ally-font">
 * Get some discounts on both paperbacks and PDFs!
 * I don't know, there will probably also be cameos from my dogs.
 
-Mark your calendars, for you are formally invited to join me on *Monday, June 1st, 2020* at both *3:00PM* and *7:00PM* Pacific time.
+Mark your calendars, for you are formally invited to join me on *Monday, June 1st, 2020* at both *3:00PM* and *7:00PM* Pacific time for an hour of Books and Chill.
