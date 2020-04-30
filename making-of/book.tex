@@ -1,0 +1,78 @@
+\documentclass[11pt]{memoir}
+
+\def\watermarkloaded{0}
+
+\input{includes/variables}
+\input{includes/draft}
+\input{includes/frame}
+\input{includes/packages}
+\input{includes/geometry}
+\input{includes/toc}
+\input{includes/font}
+\input{includes/pagelayout}
+\input{includes/title}
+\input{includes/secdiv}
+\input{includes/hyphenation}
+
+\begin{document}
+  \frontmatter
+
+  \input{includes/pretitle}
+
+  \pagestyle{plain}
+
+  \doublespacing
+
+  \null
+  \vfill
+  \begin{flushright}
+    {\fontspec{Merriweather Sans}[Scale=1.5,Color=444444FF]\Huge ally}
+
+    \vfill
+    
+    {\fontspec{Merriweather Sans}[Scale=1.5,Color=555555FF]\normalsize from start to finish}
+    \vfill
+    {\Huge Madison Scott-Clary}
+  \end{flushright}
+  % \vfill
+  \thispagestyle{empty}
+
+  \newpage
+
+  \input{includes/copyright}
+
+  % \tableofcontents*
+  \newpage
+  \null
+  \thispagestyle{empty}
+  \cleardoublepage
+
+  \onehalfspacing
+
+  % \input{content/preface}
+  \null
+  \vfill
+  \begin{center}
+    {\allyFont ally} began in the form of an interactive website.
+
+    The project continues at {\allyFont https://ally.id}
+  \end{center}
+  \vfill
+
+  \mainmatter
+
+  \pagestyle{ourbook}
+  \columnratio{0.618}
+  \setlength\columnsep{20pt}
+  \twosided
+  \input{content/001}
+  \input{content/002}
+  \input{content/003}
+  \input{content/004}
+
+  %%%%%
+
+  \backmatter
+  \pagestyle{empty}
+
+\end{document}
