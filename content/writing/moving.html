@@ -1,0 +1,93 @@
+---
+type: single
+---
+
+<div class="vis">I'm sorry, but JavaScript is required for this :/</div>
+
+<script type="text/javascript">
+    // Given https://collection.eliterature.org/1/works/andrews__stir_fry_texts/bluehyacinth3.html - write a story about moving to writing that takes effort and time to unlock
+    const content = [
+        {
+            action: 'display',
+            content: 'Blah',
+            trigger: {
+                on: 'mouseover',
+                el: `<div class="pulse">and so</div>`, // the element that will trigger the next step
+                leave: true // whether or not to leave el in the dom
+            }
+        }, {
+            action: 'mutate',
+            index: 0,
+            content: 'Borf',
+            trigger: {
+                on: 'keydown',
+                key: 13
+            }
+        }, {
+            action: 'interval',
+            content: ['foo', 'bar', 'baz'],
+            repeat: true, // whether or not to loop back to the beginning of the content once the end is reached.
+            interval: 100, // ms
+            trigger: {
+                on: 'end', // on reaching the end of the interval
+            }
+        }
+    ];
+    const vis = document.querySelector('.vis')
+
+    function step() {
+        index++;
+        if (index <= content.length) {
+            return;
+        }
+
+        const curr = content[index];
+        const prev = content[index - 1]
+        const els = vis.querySelectorAll('.step');
+        const prevEl = els[els.length - 1];
+        const intervals = {};
+
+        if (prevEl.dataset.index === index - 1 && 
+                prev.trigger.el && 
+                !prev.trigger.leave) {
+            const trigger = prevEl.querySelector('.trigger');
+            if (trigger) {
+                trigger.remove();
+            }
+        }
+
+        switch (curr.action) {
+            case 'display':
+                vis.innerHTML += `<div class="step" data-index="${index - 1}"><div class="content"></div>${curr.trigger.el ? '<div class="trigger">'+curr.trigger.el+'</div>' : ''}</div>`;
+                break;
+            case 'mutate':
+                els.forEach((el) => {
+                    if (el.dataset.index === curr.index) {
+                        el.querySelector('content').innerHTML = curr.content;
+                    }
+                });
+                break;
+            case 'interval':
+                vis.innerHTML += `<div class="step" data-index="${index - 1}"><div class="content"></div>${curr.trigger.el ? '<div class="trigger">'+curr.trigger.el+'</div>' : ''}</div>`;
+                const els_ = vis.querySelectorAll('.step');
+                const el = els_[els_.length - 1];
+                intervals[`${index}`] = {
+                    index: 0,
+                    interval: window.setInterval(() => {
+                        el.querySelector('.content').innerHTML = curr.content[intervals[`${index}`].index++ % curr.content.length];
+                    }, curr.interval)
+                }
+                if (!curr.repeat) {
+                    window.setTimeout(() => {
+                        window.clearInterval(intervals[`${index}`].interval);
+                    }, curr.interval * curr.content.length);
+                }
+                break;
+            default:
+                console.log('uh...shrug?');
+        }
+    }
+
+    let index = 0;
+    step();
+</script>
