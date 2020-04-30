@@ -12,6 +12,9 @@ type: single
         float: left;
         margin: 0.5rem 0.5rem 0.5rem 0;
     }
+    p img {
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
 }
 </style> <img src="/book/physical/steep-bw.jpg" />
 
