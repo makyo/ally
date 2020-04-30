@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewport="0 0 800 400" style="font-family: 'Gentium Book Basic', serif;">
-    <circle cx="225" cy="200" r="198" style="stroke-width: 2px; stroke: #222; fill: none;" />
-    <circle cx="575" cy="200" r="198" style="stroke-width: 2px; stroke: #222; fill: none;" />
-    <text x="225" y="200" text-anchor="middle" vertical-baseline="center">Healthy</text>
-    <text x="575" y="200" text-anchor="middle" vertical-baseline="center">Mechanically sound</text>
-</svg>
