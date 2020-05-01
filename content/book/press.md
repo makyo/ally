@@ -18,7 +18,7 @@ Memories follow the topics of gender, identity, mental health (including bipolar
 Title
 :   <span class="ally-font">ally</span>
 
-    Note the lower-case 'a'. This is preferable in media where a separate, distinguishable font is allowed, but is not required if that is not possible.
+    Note the lower-case 'a'. This is preferable in media where a separate, distinguishable font is allowed, but is *not required* if that is not possible.
 
 Author
 :   Madison Scott-Clary
