@@ -55,6 +55,9 @@ figure p img {
 a {
   outline-offset: 2px;
 }
+dt {
+  font-weight: bold;
+}
 
 /* Specific stuff */
 body {
