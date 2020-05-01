@@ -37,7 +37,7 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 > — [Kirkus Reviews](https://www.kirkusreviews.com/book-reviews/madison-scott-clary/allyC/)
 
-"I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incompre-hensible beauty."
+"I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty."
 
 > — [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
 

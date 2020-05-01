@@ -67,7 +67,7 @@ The icon used for ally is the logotype at the top of the page, and is available 
 
 [<img src="/og-logo.png" style="width: auto" />](/og-logo.png)
 
-The font used for the logotype and the 'ally' voice is [Merriweather Sans](http://sorkintype.com/fonts.html#mws) and the font used for everything else is [Gentium Book Basic](https://software.sil.org/gentium/)"I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incompre-hensible beauty."
+The font used for the logotype and the 'ally' voice is [Merriweather Sans](http://sorkintype.com/fonts.html#mws) and the font used for everything else is [Gentium Book Basic](https://software.sil.org/gentium/).
 
 -----
 
@@ -86,4 +86,4 @@ There are two available author portraits, one literal and one symbolic. If the s
 ### Selected reviews
 
 * "Cleareyed yet powerfully immediate . . . A fresh, daring exploration of lived experience." --- [*Kirkus Reviews*](https://www.kirkusreviews.com/book-reviews/madison-scott-clary/allyC/)
-* "I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incompre-hensible beauty." --- [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
+* "I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty." --- [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
