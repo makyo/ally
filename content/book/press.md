@@ -73,7 +73,7 @@ The font used for the logotype and the 'ally' voice is [Merriweather Sans](http:
 
 ### About the author
 
-Madison Scott-Clary is a transgender author, poet, and programmer. She is also the editor-in-chief of Hybrid Ink, LLC, a small publisher focused on thoughtful fiction, exploratory poetry, and creative non-fiction. She lives in the Pacific Northwest with her cat and two dogs, as well as her husband, who is also a dog.
+Madison Scott-Clary is a transgender author, poet, and programmer. She is also the editor-in-chief of Hybrid Ink, LLC, a small publisher focused on thoughtful fiction, exploratory poetry, and creative non-fiction. She lives in the Pacific Northwest with her cat and two dogs, as well as her husband, who is also a dog on the internet.
 
 You can find more of her work at [makyo.ink](https://makyo.ink) and more about her at [drab-makyo.com](https://drab-makyo.com). She is on twitter as [@makyo_writes](https://twitter.com/makyo_writes).
 
