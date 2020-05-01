@@ -11,6 +11,8 @@ Like memory, it is disjointed and full of tangents and asides as topics come in 
 
 Memories follow the topics of gender, identity, mental health (including bipolar disorder, medication, and suicidality), and creativity.
 
+-----
+
 ### Fact sheet
 
 Title
@@ -49,9 +51,13 @@ Pricing
     * Physical: suggested retail price of US$50.00, available to retailers from IngramSpark with a 40% discount.
     * Electronic: US$10.00+ (PWYW), direct only.
 
+-----
+
 ### Images
 
 There are images on the [book page](/book), all of which may be downloaded as a [zip file](/book.zip). More are available on request.
+
+-----
 
 ### Logo, icon, and typography.
 
@@ -63,6 +69,8 @@ The icon used for ally is the logotype at the top of the page, and is available 
 
 The font used for the logotype and the 'ally' voice is [Merriweather Sans](http://sorkintype.com/fonts.html#mws) and the font used for everything else is [Gentium Book Basic](https://software.sil.org/gentium/)"I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incompre-hensible beauty."
 
+-----
+
 ### About the author
 
 Madison Scott-Clary is a transgender author, poet, and programmer. She is also the editor-in-chief of Hybrid Ink, LLC, a small publisher focused on thoughtful fiction, exploratory poetry, and creative non-fiction. She lives in the Pacific Northwest with her cat and two dogs, as well as her husband, who is also a dog.
@@ -73,9 +81,7 @@ There are two available author portraits, one literal and one symbolic. If the s
 
 [<img src="https://drab-makyo.com/scraps/self/ia-headshot-s.jpg" style="width: auto; max-width: 450px" />](https://drab-makyo.com/scraps/self/ia-headshot.jpg) [<img src="https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg" style="width: auto; max-width: 450px" />](https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg)
 
-### Awards and recognition
-
-*None yet.*
+-----
 
 ### Selected reviews
 
