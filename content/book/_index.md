@@ -88,4 +88,4 @@ Of course.
 
 -----
 
-* ISBN: 9781948743150
+[Press kit](/book/press)
