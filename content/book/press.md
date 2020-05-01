@@ -79,7 +79,7 @@ You can find more of her work at [makyo.ink](https://makyo.ink) and more about h
 
 There are two available author portraits, one literal and one symbolic. If the symbolic one is used, it must be credited as "art by Julian Norwood --- brushandtea.com".
 
-[<img src="https://drab-makyo.com/scraps/self/ia-headshot-s.jpg" style="width: auto; max-width: 450px" />](https://drab-makyo.com/scraps/self/ia-headshot.jpg) [<img src="https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg" style="width: auto; max-width: 450px" />](https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg)
+[<img src="https://drab-makyo.com/scraps/self/ia-headshot-s.jpg" style="width: auto; width: 450px; max-width: 100%" />](https://drab-makyo.com/scraps/self/ia-headshot.jpg) [<img src="https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg" style="width: auto; width: 450px; max-width: 100%" />](https://drab-makyo.com/commissions/by-character/makyo/cadmiumtea--MurderYourDarlingssm--makyo--G.jpg)
 
 -----
 
