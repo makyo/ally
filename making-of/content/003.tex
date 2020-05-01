@@ -1,5 +1,145 @@
-\chapter*{The ally book}
+\chapter*{The \allyWord\ book}
 
 \label{book}
 
-\XeLaTeX
+\begin{paracol}{2}
+\begin{leftcolumn}
+Okay, tell a lie.
+
+\begin{ally}
+  Oh no.
+\end{ally}
+It's not that bad.
+
+Another benefit that I get out of working with a set of files on the file system is that it is startlingly easy to get the very same data that is published on the web into the eventual book. I don't have to pull data out of a database to do anything, I just have to run a few commands.
+
+As mentioned, I write in Markdown. It's a plain-text format --- meaning I can edit it anywhere without additional software --- with the ability to generate HTML. For instance, the first few lines of this chapter in Markdown look like this:
+
+\begin{verbatim}
+Okay, tell a lie.
+
+> Oh no.
+
+It's not that bad.
+\end{verbatim}
+
+
+Using the \texttt{pandoc} command, it's super easy to translate Markdown to \LaTeX, which is what is used to typeset the book\footnote{Well, a subset of \LaTeX\ called \XeLaTeX\ which allows custom fonts and colors and whatnot.}. For instance, \texttt{pandoc -o out.tex --wrap=none in.md} will do all the translation for me. Had I written this file in Markdown originally, that would have netted me:
+
+\begin{verbatim}
+Okay, tell a lie.
+
+\begin{quote}
+  Oh no.
+\end{quote
+
+It's not that bad.
+\end{verbatim}
+I don't particularly like the look of the quote environment for you.
+
+\begin{ally}
+  Neither do I.
+\end{ally}
+Right. It just looks like this:
+
+\begin{quote}
+  Yar har I'm the \allyWord\ I'm not your friend.
+\end{quote}
+Which is\ldots{}not great.
+
+\begin{ally}
+  Do I really sound like that?
+\end{ally}
+No. But I, of all people, am allowed to poke fun at you.
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{verbatim}
+\newenvironment{ally}{
+\noindent\ignorespaces
+\begin{quotation}
+    \allyFont\itshape
+    \noindent\ignorespaces}{
+\end{quotation}\ignorespacesafterend }
+\end{verbatim}
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+\begin{ally}
+  True enough.
+\end{ally}
+So instead I created an \texttt{ally} environment in \LaTeX\ that closely matches the styling of the blockquotes on \allyId. It's easy enough to search for all instances of \texttt{\textbackslash\textbackslash(begin|end)\textbackslash\{quote\textbackslash\}} and replace it with \texttt{\textbackslash\$1\{ally\}}
+
+To help simplify this process, I made a \texttt{make} target which pandocs all Markdown files in the Hugo site over to \LaTeX\ for the book. 
+
+\begin{ally}
+  Easy, as they say, peasy.
+\end{ally}
+Lemon squeezy.
+\newpage
+
+Deciding what to put into the book was almost as hard as writing the content itself. Deciding what to put in, where to put it, and how to display it when suddenly left without the benefits of clickable links was overwhelming.
+
+\begin{ally}
+  And yet.
+\end{ally}
+And yet.
+
+I toyed with a few ideas. Originally, I considered printing the book wider than it was tall and giving each page five columns that would be filled in as the story branched.
+
+This proved to be largely illegible. The mind can deal with perhaps two columns on a page, and even then, tying them together across pages rather than within a page requires additional visual clues such as different widths or different background colors.
+
+So I took that and ran with it. I gave each page two columns of unequal widths and ensured that I could mess with the background colors separately --- much like these pages here.
+
+Actually \emph{finding} a package that could accomplish this was surprisingly difficult. I was used to the \texttt{multicol} package, but that proved less than flexible. I poked a bit at \texttt{parcolumns}, but that also left much to be desired.
+
+My solution wound up being the \texttt{paracol} package\footnote{When it didn't bitch about being too full --- page \pageref{toofull}}, which had everything that I needed, and much more besides. \emph{Actually} learning it, however, proved to be a bear. Much of the package documentation seemed to be written for those who already had some familiarity with its usage, and that lead to a steep initial learning curve.
+
+In the end, though, I wound up with a setup that worked well for me.
+
+\begin{ally}
+  And me.
+\end{ally}
+Well, yes.
+
+In order of appearance:
+
+\begin{description}
+  \item[Uneven column widths] Before beginning the \texttt{paracol} environment (with the second argument being \texttt{2} for two columns), one needs:
+
+  \begin{verbatim}
+  \columnratio{0.65}
+  \twosided\end{verbatim}
+  
+  Now, the main body of the text can take place in the \texttt{leftcolumn} environment, and the bullshit notes can appear in the \texttt{rightcolumn*} environment\footnote{the starred version begins the switch at the current position in the page, rather than the beginning of the \texttt{paracol} environment}.
+  \item[Column colors] \texttt{paracol} allows you to set the background color of the column as well as the surrounding area, selecting the former with the \texttt{c} option and the latter with the \texttt{C}\footnote{There are some margin issues, granted --- page \pageref{color-margins}} option like so:
+
+  \begin{verbatim}
+  \backgroundcolor{c[1]}[HTML]{eeddff}
+  \backgroundcolor{C[1]}[HTML]{eeddff}\end{verbatim}
+  \item[Font colors] The \texttt{fontspec} package proved to be most useful here. One can specify the color of text to use for the font family as arguments in the font family creation\footnote{Along with some other garbage --- page \pageref{ligatures}}. This often meant I had to renew font families:
+
+  \begin{verbatim}
+  \fontspec{Gentium BookBasic}[Color=222288FF]
+  \renewfontfamily\allyFont{%
+    Merriweather Sans}[Color=4444AAFF]\end{verbatim}
+\end{description}
+
+\newpage
+
+Typesetting funkiness (surgery poem, speaktome)
+
+\newpage
+
+full-page pictures
+
+\newpage
+
+pdftk for attaching covers
+
+\newpage
+
+Generating index\footnote{Aw heck, really? --- page \pageref{indexmunge}}
+
+\newpage
+\end{leftcolumn}
+\end{paracol}
