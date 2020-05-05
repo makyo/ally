@@ -1,15 +1,177 @@
 \chapter*{Gotchas}
 
+\begin{paracol}{2}
+\begin{leftcolumn}
+
 \label{gotchas}
 
-\label{indexmunge}munging the index for page breaks
+\label{hugoversions}\section*{Hugo, snaps, and the treachery of automatic updates}
 
-\label{branchdir}Branches to left or right in dot file
+Look, I \emph{understand} the draw to automatic updates. It means that no security bugs go ignored, that everything can be done unattended, all that wonderful nonsense to avoid users causing problems.
 
-\label{svgfont}Graphviz sets fonts to stupid things
+\begin{ally}
+  But...
+\end{ally}
+Yeah, but.
 
-\label{toofull} paracol environments can only handle so much.
+But the problem comes when a bit of software's API changes, and suddenly your entire setup breaks for reasons unfathomable. Hugo, the software that runs \allyId, is installed via a snap, which is a bit of auto-updating software. It's all well and good, except when Hugo --- still a young project --- decides to change some aspect of how they build the site. The amount of times I push a change to Github only to find that, when it's built on Netlify, the entire homepage is blank, minus the header and footer, is nontrivial.
 
-\label{color-margins} Setting color margins in paracol
+Another problem was when they switched away from one Markdown processing library to another, resulting in a change that disallowed raw HTML, meaning that all of those fancy pages with Javascript and whatnot suddenly didn't work.
 
-\label{ligatures} Needing \texttt{Ligatures=TeX} in fontspec when renewing
+\begin{ally}
+  The things we do for art.
+\end{ally}
+I guess.
+
+The solutions varied, but it mostly meant that I had to stay on top of making changes via PRs on Github rather than pushing directly to the main branch. If things broke, then I could have my little sulk and then go through the Hugo changelog and figure out what fucked up where. Half the time, it simply meant clearing the build cache on Netlify.
+
+\label{branchdir}\section*{Branches to left or right in dot file}
+
+One of the problems I ran into with the map of nodes was that graphviz generally sorts branches from left to right. If I added a new branch of nodes after the main \texttt{ally} branch, they'd be positioned further to the right of all existing branches, leading to an unbalanced tree.
+
+\begin{ally}
+  Does that make me the trunk?
+\end{ally}
+But you're in all the branches.
+
+\begin{ally}
+  Oh, nevermind.
+\end{ally}
+Right.
+
+So.
+
+The solution is to list those nodes before the central axis. You can make all the links later on, but the rank direction is based on when the nodes are defined.
+
+\label{svgfont}\section*{Graphviz sets fonts to stupid things}
+
+When building the SVG version of the map, Graphviz helpfully sets the font of all the nodes to \texttt{Times,serif}, which is\ldots{}well, maybe it's a really set of fonts? Either way, it's a gross set, and it's not cohesive with the rest of the site.
+
+\begin{ally}
+  It's all about the brand, baby.
+\end{ally}
+You're not wrong. And the brand, here, is to use Gentium Basic.
+
+There is no elegant solution to removing the \texttt{font-family} other than a very dumb \texttt{:\%s/ font-family="Times,serif"//g} in Vim. Alas.
+
+\label{toofull}\section*{\texttt{paracol} environments can only handle so much}
+
+A strangly baffling problem that I ran into when switching to \texttt{paracol} was this delightful error:
+
+\newpage
+
+\label{color-margins}\section*{Setting color margins in \texttt{paracol}}
+
+\newpage
+
+\label{indexmunge}\section*{munging the index for page breaks}
+
+\newpage
+
+\label{ligatures}\section*{Needing \texttt{Ligatures=TeX} in fontspec when renewing}
+\newpage
+\end{leftcolumn}
+\begin{rightcolumn}
+  \fontspec{Gentium Book Basic}[Color=AAAAAAFF,Ligatures=TeX]
+  \renewfontfamily\allyFont{Merriweather Sans}[Color=CCCCCCFF,Scale=0.9,]
+  \noindent Alright, are we ready for a gentle dunk-on-myself session?
+  
+  \begin{ally}
+    Can I talk you out of it?
+  \end{ally}
+  I'd prefer not. There's a lot that has come up over the past few months, and I need to get at least a little bit of it off my chest. I need to come up with some way to square a few things that have happened since I started \allyWord\ with much of who I was before.
+
+  \begin{ally}
+    Have at it, then, but fair warning, do not expect me to be anything other than what I am.
+  \end{ally}
+  An ally, not a friend. Right.
+
+  So, I titled this section ``Gotchas'' with the full intent of going into it full steam ahead, bitching about all these tiny problems I ran into along the way that kept me from focusing on the task at hand.
+
+  And I did, too. I think so, at least. There were all of these tiny things that kept me from sitting down, just writing a whole slew of pages, and throwing them up for Patrons or whatever. I kept running into tiny problems that would eat hours of my time with minuscule amounts of payoff, only for them to suddenly resolve, sometimes inexplicably.
+
+  \begin{ally}
+    But\ldots{}?
+  \end{ally}
+  But the biggest problem I came across when working with the project is not really anything technical, but more one of self-worth. More than any one technical problem, the thing that I wasted most of my time on instead of creating was dealing with your\ldots{}your what? Your inverse? Your mirror?
+
+  \begin{ally}
+    Can a mirror have a mirror?
+  \end{ally}
+  \emph{Are} you a mirror?
+
+  \begin{ally}
+    Touché.
+  \end{ally}
+  There is something within me that is the negative of you. Something which, when light is shone through it upon me, makes you, and yet for that bears some level of horror to it. Where you are light, it is dark and vice versa, and you do not realize until you see it the terror that is involved in the inverse of a shadow.
+
+  And this thing, this not-you, does the opposite of what I know you will provide in the future. Where an ally may kick the shit out of me for all those things that I do to self-sabotage, this thing kicks the shit out of me for all of my successes, for everything that I do right. It is \emph{The Tower}, to your \emph{Star}, or perhaps \emph{Moon}.
+
+  The biggest gotcha I ran into is doubt. Doubt as to my worth. Doubt as to my skill. Doubt as to my wisdom in partaking in a project so counter to that which life demands.
+
+  \begin{ally}
+    Not your enemy, but your adversary.
+  \end{ally}
+  Yes, that. I like that. I like the way the word hints at devils and demons. I like that it implies that this adversary is not striving against me that it may succeed, but simply that I fail.
+
+  The adversary would like that I understand, deep down to my core, that I am in all ways unworthy of this project. I am unworthy of the right to talk about myself. I'm unworthy of the words I write and the folks who read it and the reviews I get.
+
+  It is the one who stood before me when I was looking at getting reviews, at asking my friends and partners for feedback on the book, and said, ``Who are \emph{you} to ask such a thing?''
+
+  The number of times I set aside working on this project with the thought \emph{it's right, after all; to ask for someone to engage with me on such a level is to ask for them to consider me as a person, and there is no greater sin} is nontrivial.
+
+  \begin{ally}
+    It feels a little unfair to say because of how trite it sounds, but the biggest `gotcha' with the project was yourself.
+  \end{ally}
+  Oh, one hundred percent.
+
+  It's not totally this project, either. I ran into the same thing with \emph{Restless Town}. Anything I make that is at all meaningful to me --- that is, anything that \emph{I} feel is worth sharing --- is too much to ask others to engage with. ``How dare you,'' it says. ``How dare you ask that others consider your work meaningful.''
+
+  \begin{ally}
+    Master sigh.
+  \end{ally}
+  That's an Andrew Bird song.
+
+  \begin{ally}
+    Does it not encompass the mood of ``I know that this thing is wrong and am able to understand that on an intellectual level, and yet I must still deal with it on a constant basis''?
+  \end{ally}
+  The sigh to end all sighs, yes.
+
+  \begin{ally}
+    So how did you conquer it?
+  \end{ally}
+  Conquer?
+
+  \begin{ally}
+    We are here, after all, yes?
+  \end{ally}
+  I don't know that I'd say conquer. Won a battle, perhaps, but not the war. I suspect the war will end with true-death.
+
+  And as for that victory, I suppose it was through the aid of allies.
+
+  \begin{ally}
+    Me!
+  \end{ally}
+  To an extent, yeah, insofar as you are a manifestation of graphomania, at least in part. But also exocosmic allies. Allies outside of myself. Allies like Robin and JC and Justin. I don't know who else read the site when it was getting regular updates, but I suppose I thank them. I thank those days on Matomo when I would see someone wander through almost the entirety of \allyId, page after page, without stopping.
+
+  And what feedback I did receive (for not enabling comments was an intentional decision) helped push me over the edge. Linnea's review, that anonymous \emph{Kirkus} reviewer, all those little words of, ``This is cool. This is interesting. This is impactful.'' All of those helped push me over the edge and into publication.
+
+  \begin{ally}
+    This reads like a dedication.
+  \end{ally}
+  So?
+
+  \begin{ally}
+    No harm in it, but it bears mentioning. Either way, I'm happy that this became a project that you could believe in enough to turn into something big.
+  \end{ally}
+  ``Happy''? Is that a thing you can be? Has your bailiwick expanded to include additional departments?
+
+  \begin{ally}
+    I'm cross-training.
+  \end{ally}
+  Well, thank you.
+  \vfill
+
+  \noindent And, of course, thank \emph{you}.
+\end{rightcolumn}
+\end{paracol}
