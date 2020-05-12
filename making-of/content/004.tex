@@ -5,7 +5,7 @@
 
 \label{gotchas}
 
-\label{hugoversions}\section*{Hugo, snaps, and the treachery of automatic updates}
+\section*{Hugo, snaps, and the treachery of automatic updates}\label{hugoversions}
 
 Look, I \emph{understand} the draw to automatic updates. It means that no security bugs go ignored, that everything can be done unattended, all that wonderful nonsense to avoid users causing problems.
 
@@ -25,7 +25,7 @@ I guess.
 
 The solutions varied, but it mostly meant that I had to stay on top of making changes via PRs on Github rather than pushing directly to the main branch. If things broke, then I could have my little sulk and then go through the Hugo changelog and figure out what fucked up where. Half the time, it simply meant clearing the build cache on Netlify.
 
-\label{branchdir}\section*{Branches to left or right in dot file}
+\section*{Branches to left or right in dot file}\label{branchdir}
 
 One of the problems I ran into with the map of nodes was that graphviz generally sorts branches from left to right. If I added a new branch of nodes after the main \texttt{ally} branch, they'd be positioned further to the right of all existing branches, leading to an unbalanced tree.
 
@@ -43,7 +43,7 @@ So.
 
 The solution is to list those nodes before the central axis. You can make all the links later on, but the rank direction is based on when the nodes are defined.
 
-\label{svgfont}\section*{Graphviz sets fonts to stupid things}
+\section*{Graphviz sets fonts to stupid things}\label{svgfont}
 
 When building the SVG version of the map, Graphviz helpfully sets the font of all the nodes to \texttt{Times,serif}, which is\ldots{}well, maybe it's a really set of fonts? Either way, it's a gross set, and it's not cohesive with the rest of the site.
 
@@ -54,22 +54,30 @@ You're not wrong. And the brand, here, is to use Gentium Basic.
 
 There is no elegant solution to removing the \texttt{font-family} other than a very dumb \texttt{:\%s/ font-family="Times,serif"//g} in Vim. Alas.
 
-\label{toofull}\section*{\texttt{paracol} environments can only handle so much}
+\section*{\texttt{paracol} environments can only handle so much}\label{toofull}
 
 A strangly baffling problem that I ran into when switching to \texttt{paracol} was this delightful error:
 
-\newpage
+\begin{verbatim}
+! Package paracol Error: Too many unprocessed columns/floats
+\end{verbatim}
+It's one of those problems that, like\ldots{}makes enough sense on its own that I thought it was something that I had done. Had I added an extra column in there? Had I forgotten to add a column somehow?
 
-\label{color-margins}\section*{Setting color margins in \texttt{paracol}}
+Of course, then I read the docs and it turnsout that this is a known problem. The problem crops up when one of the columns gets too long without you either switching to another column environment or just starting a new paracol environment. In the end, it worked out such that, so long as I didn't have more than one \texttt{paracol} environment per file, it'd be fine, whereas initially I'd had a single environment wrapping several files.
 
-\newpage
 
-\label{indexmunge}\section*{munging the index for page breaks}
+\section*{Setting color margins in \texttt{paracol}}\label{color-margins}
 
-\newpage
 
-\label{ligatures}\section*{Needing \texttt{Ligatures=TeX} in fontspec when renewing}
-\newpage
+\section*{munging the index for page breaks}\label{indexmunge}
+
+
+\section*{Needing \texttt{Ligatures=TeX} in fontspec when renewing}\label{ligatures}
+
+
+\section*{Various printing problems}\label{printing}
+
+
 \end{leftcolumn}
 \begin{rightcolumn}
   \fontspec{Gentium Book Basic}[Color=AAAAAAFF,Ligatures=TeX]
