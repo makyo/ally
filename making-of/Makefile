@@ -28,10 +28,6 @@ toc: plain ## full book with ToC re-rendering in case of page changes
 	makeindex book
 	xelatex book.tex
 
-.PHONY: ebook
-ebook: ## render ePub file from LaTeX
-	pandoc Ebook.tex -o ../ebooks/book.epub -t epub3 --wrap=none
-
 .PHONY: frame
 engage-frame: ## turn on frame marking
 	cp includes/_frame.tex includes/frame.tex

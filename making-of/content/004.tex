@@ -68,15 +68,60 @@ Of course, then I read the docs and it turnsout that this is a known problem. Th
 
 \section*{Setting color margins in \texttt{paracol}}\label{color-margins}
 
+It is all well and good to set colors for the column background, but this does not, by default, extend to the limits of the page. Having just a bar of color with text in it to the side surrounded by white is not very pleasing.
 
-\section*{munging the index for page breaks}\label{indexmunge}
+To get around this, the \texttt{paracol} packageallows you to set an extent for the colors surrounding the background area. For the background of the text block, one uses the \texttt{c} selector as above:
 
+\begin{verbatim}
+\backgroundcolor{c[1]}[HTML]{aaaaaa}
+\end{verbatim}
 
-\section*{Needing \texttt{Ligatures=TeX} in fontspec when renewing}\label{ligatures}
+and then for the area surrounding it, one uses the \texttt{C} selector. However, there is an optional set of arguments to that selector for how \emph{far} that area should extend beyond the text block.  A good default was to have it extend 60\% of the way into the gutter between the two columns (50\% risked a thin white stripe between them, and the overlap was still handled gracefully with a higher number), and 10,0000 points on all other sides.
 
+\begin{verbatim}
+\backgroundcolor{C[1](0.6\columnsep,10000pt)(10000pt,10000pt)}
+	[HTML]{aaaaaa}
+\end{verbatim}
+
+I tried to figure out more exact numbers, but it turns out that that is \emph{a)} not trivial and \emph{b)} not worth it because \LaTeX\ does't really care.
+
+\section*{Munging the index for page breaks}\label{indexmunge}
+
+The index is generated blithely. That is, the \texttt{makeindex} command generates a .ind file which contains the basic layout of the index: nested lists of references and page numbers set into columns, each new letter separated by a vertical space as specified by the \texttt{\\indexspace} command.
+
+Unfortunately, without that being any smarter, it's easy to wind up with widows and orphans here, which, when indentation holds semantic content, can cause problems. In the case of \allyWord, the entry for \emph{Mental health}, the first entry under \emph{M}, was the last entry on the page, making the first entry on the next page \emph{anxiety}, which was a sub-entry under \emph{Mental health}. Without that indentation being visible, of course, that was impossible to see.
+
+The solution was, when generating the index, to warn myself that this was the case, and then go into the book.ind file and manually add a \texttt{\\newpage} command right before the \emph{Mental health} entry. Sigh. Such a pain.
+
+\section*{Needing \texttt{Ligatures=TeX} in fontspec when renewing text}\label{ligatures}
+
+That \LaTeX\ provides such fine control over fonts and typesetting is fantastic. It's also a royal pain in the ass.
+
+As mentioned, \allyWord\ uses \XeLaTeX\ specifically for its delightful handling of fonts. When you specify a font in the preamble, it does everything right. However, when you \texttt{\\renewfontfamily} within the document --- say to change the color --- it stops using the proper ligatures. That is \`\` stops displaying as ``.
+
+In order to fix this, one must pass the \texttt{Ligatures=TeX} option to the command:
+
+\begin{verbatim}
+\renewfontfamily\allyFont{Merriweather Sans}[Scale=0.9,
+Color=777777FF,Ligatures=TeX]
+\end{verbatim}
 
 \section*{Various printing problems}\label{printing}
 
+Oh paper, why must you be based in such imperfect reality?
+
+\begin{ally}
+	The treachery of inanimate objects.
+\end{ally}
+Yeah.
+
+There were a few problems with the printing process. The first batch of books came with bleed problems, color saturation problems, and color mismatch problems:
+
+\includegraphics[width=4in]{assets/print-problems.png}
+
+You can see that the ink coverage on some of the pages is so high that it caused the pages to buckle when running through the printer. Additionally, while the intensity of the colors remained much the same as in the PDF, the saturation has been knocked down slightly. The improper bleed is shown by the thin white strips along the colored borders where the printing stopped before where the page was cut.
+
+The last one was on me, but the first two were just due to the mechanics of the printing process. The solution, if I wanted to keep my colors as they were, was to use a thicker paper. This drove up the cost of the book, but I think, in the end, led to a much lovelier product. At \$50 retail, it's steep, but for a book that is more experience than anything, I'm alright with that trade-off.
 
 \end{leftcolumn}
 \begin{rightcolumn}
@@ -181,5 +226,34 @@ Of course, then I read the docs and it turnsout that this is a known problem. Th
   \vfill
 
   \noindent And, of course, thank \emph{you}.
-\end{rightcolumn}
+	\clearpage
+	\end{rightcolumn}
+\end{paracol}
+
+\resetbackgroundcolor
+\begin{paracol}{2}
+\begin{leftcolumn}
+\null
+\vfill
+\noindent So. There it is. A project from start to finish. A story. A file. A book. To start a project is to kill a portion of yourself, and that is what I've done. I've destroyed that bit of me that was there before I began this whole process. It's not there anymore. It's gone.
+
+I feel its loss.
+
+I feel wrung out.
+
+I feel empty.
+
+And for what?
+
+Will this project --- \allyWord\ and this making-of --- go anywhere? Will I somehow gain notoriety of any amount by publishing this? Will they provide others with meaning? With understanding?
+
+I don't know.
+
+\begin{ally}
+	Do you want to?
+\end{ally}
+I don't know. Maybe. Maybe, like everyone else, I just want to be seen.
+\vfill
+\clearpage
+\end{leftcolumn}
 \end{paracol}

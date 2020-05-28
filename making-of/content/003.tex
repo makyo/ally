@@ -75,7 +75,6 @@ To help simplify this process, I made a \texttt{make} target which pandocs all M
   Easy, as they say, peasy.
 \end{ally}
 Lemon squeezy.
-\newpage
 
 Deciding what to put into the book was almost as hard as writing the content itself. Deciding what to put in, where to put it, and how to display it when suddenly left without the benefits of clickable links was overwhelming.
 
@@ -124,22 +123,167 @@ In order of appearance:
     Merriweather Sans}[Color=4444AAFF]\end{verbatim}
 \end{description}
 
-\newpage
+One of the things that I've had a lot of fun with throughout this project is the style of the text, as well as having played around with the colors, as is perhaps obvious with the way I treat you.
 
-Typesetting funkiness (surgery poem, speaktome)
+\begin{ally}
+  You know you love it.
+\end{ally}
+I do.
 
-\newpage
+Another thing I started poking at when working with the site was unique presentation of text beyond just blockquotes.
 
-full-page pictures
+Part of that was to do with poetry. Early on when working with poetry and web publishing, I defined a new block in Markdown that would let me write how I wanted and have it show up (pretty close) to that on the screen. I wrap a block in triple single-quotes and it winds up in a \texttt{<div>} that has the \texttt{white-space: pre-wrap} style set. This lets me insert ridiculous spaces just how I want.
 
-\newpage
+\begin{ally}
+  Ridiculous spaces for the ridiculous Maddy.
+\end{ally}
+It's not all that bad.
 
-pdftk for attaching covers
+And hey, it's easy enough to accomplish in \LaTeX, too. Just stuff it in a \texttt{verse} environment. Indentation is as easy as using the \texttt{\\vin} command, which indents the line by\ldots{}well, however large a space you set the verse indentation length to be.
 
-\newpage
+At one point, however, I decided to fuck with some more complicated spacing. Given how focused \LaTeX\ is on layout, it's maybe no surprised at how much easier this was to accomplish than in HTML.
 
-Generating index\footnote{Aw heck, really? --- page \pageref{indexmunge}}
+\begin{ally}
+  And yet you were.
+\end{ally}
+I suppose, yes. Part of the problem was going from how difficult things were in HTML and just kinda\ldots{}expected they would be here, too.
 
+Anyway, there were two that I wanted to accomplish. First, and easiest, was the spacing for portions of the surgery poem. While most of that poem was fairly simple in structure: sixteen stanzas of the two of us talking, consisting of rhyming couplets with a trailing line. That was all well and good, but, on describing the sensation of anaesthesia, I decided that the text should go all wibbly as well.
+
+In HTML, this required quite a few repetitions of \texttt{\&nbsp;} to space out the words. It was probably not the best way to do it--
+
+\begin{ally}
+  Oh, but the heady intoxication of repetition\ldots{}
+\end{ally}
+--as I could have accomplished much the same as with the \LaTeX\ \texttt{\\phantom} and the verse environment's \texttt{\\vinphantom} commands, which create an amount of horizontal space equal to the length of the text in the argument. That is, just use a set of \texttt{<span>} tags with transparent text to space out the visible words. Bit harsh on screen-readers, as it would mean plenty of the lines would be repeated--
+
+\begin{ally}
+  How appropriate.
+\end{ally}
+--upon reading, but it \emph{is} being used as a visual medium here.
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{ally}
+  And was it?
+\end{ally}
+Was it what?
+
+\begin{ally}
+  Death.
+\end{ally}
+Of a sort, yes. You will have to read the book to see.
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+As mentioned, it's much easier in the print version:
+
+\begin{verse}
+\vinphantom{Nothing.} Was this death?\\*
+Nothing. \phantom{Was this death?} Nothing, death? \phantom{Nothing,} nothing.\\*
+\vinphantom{Nothing. Was this death? Nothing, death?} Nothing,\\
+\vinphantom{Death?} Was this death?\\*
+Death? \phantom{Was this death?} Nothing.\\*
+\vspace{1em}
+\vinphantom{Death? Was this death? Nothing.} There was nothing.\\
+\end{verse}
+
+\noindent This is accomplished with the aforementioned commands:
+
+\begin{verbatim}
+\vinphantom{Nothing.} Was this death?\\*
+Nothing. \phantom{Was this death?} Nothing, death? \phantom{Nothing,} nothing.\\*
+\vinphantom{Nothing. Was this death? Nothing, death?} Nothing,\\
+\vinphantom{Death?} Was this death?\\*
+Death? \phantom{Was this death?} Nothing.\\*
+\vspace{1em}
+\vinphantom{Death? Was this death? Nothing.} There was nothing.\\
+\end{verbatim}
+
+Secondly, I wanted to vastly reduce the line-height for a section of verse. In CSS, I need only set the \texttt{line-height} property to something less than 1. Thankfully, in \LaTeX\ the \texttt{spacing} package exists for this. 
+
+\end{leftcolumn}
+\begin{rightcolumn*}
+\noindent Note that this must be centered or otherwise not indented, or the first line of the paragraph will space itself separately.
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+\begin{verbatim}
+\begin{Spacing}{0}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me...
+\end{Spacing}
+\end{verbatim}
+
+leads to:
+
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{ally}
+  Can you imagine so blinding a sight?
+\end{ally}
+Yes. I could see it with my eyes closed.
+\end{rightcolumn*}
+\begin{leftcolumn}
+\begin{center}
+\begin{Spacing}{0}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me
+
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see
+
+the face of god\\\vspace{-7pt}
+the face of god\\\vspace{-7pt}
+the face of god
+\end{Spacing}
+\end{center}
+
+A few locations in the book require full-page illustrations. This is surprisingly difficult using the usual \texttt{\\includegraphics} command from the \texttt{graphicx} package, as there's a lot of page layout stuff that happens before and after the image itself is included.
+
+Rather than trying to include the image, however, it is startlingly easy to just include a PDF within \LaTeX. Using the \texttt{pdfpages} package, all I need to do is save the image as an appropriately sized (that is, 8.625"x8.625") PDF and then use the \texttt{\\includepdf} command instead. \LaTeX\ will manage all of the page numbers accordingly, and I don't have to worry about splicing it after the fact.
+
+Speaking of, for the digital version (as well as for this PDF), attaching the cover(s) to the final PDF \emph{does} require some splicing. This is made very easy with the \texttt{pdftk} command.
+
+\begin{verbatim}
+pdftk cover-front.pdf cover-back.pdf internal.pdf \
+  output digital-edition.pdf
+\end{verbatim}
+
+\texttt{pdftk} commands are just read from start to finish, so the above says, ``Take these three PDFs and output them all to the single file, digital-edition.pdf.''  As a longer example, providing a sample from the book works like so:
+
+\begin{verbatim}
+pdftk book.pdf cat 1-63 output intro.pdf
+\end{verbatim}
+
+which says, ``Take book.pdf, concatenate pages 1-63 and then output them into intro.pdf.'' It's a pretty neat command.
+
+
+The last step of the process was generating the index.\footnote{Aw heck, really? --- page \pageref{indexmunge}} Back when I was writing \emph{everything} in \LaTeX, I remember this being far harder than it actually turned out to be.
+
+Wherever you want an index entry, all you nened to do is put \texttt{\\index\{...\}} in the text with whatever the entry is. This supports nexting entries (separated with an exclamation point) and page ranges (referenced with a \texttt{|(} and a \texttt{|)}. So, for instance, I indexed poems like so:
+
+\begin{verbatim}
+\index{Writing!samples!poetry|(}
+\begin{verse}
+Blah blah blah\\
+My name's Maddy and I can't stop writing\\
+...
+\end{verse}
+\index{Writing!samples!poetry|)}
+\end{verbatim}
+
+To generate the index, I have to first run \texttt{makeindex book} (given that the filename is book.tex), then I can run the usual \texttt{xelatex book.tex; xelatex book.tex}. I have to run that twice in order for the page references to be correct, of course.
+
+At the beginning of the book in the preamble, I include the \texttt{makeidx} package and immediately run \texttt{\\makeindex}, and at end of book.tex, where I want the index to appear, I call \texttt{\\printindex}.
 \newpage
 \end{leftcolumn}
 \end{paracol}
