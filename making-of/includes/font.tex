@@ -7,6 +7,13 @@
 \newfontfamily\TitleFamily{Inknut Antiqua}
 \newfontface\TitleFont{Inknut Antiqua}
 \newfontfamily\pagenumfont{Gentium Book Basic}
+\newfontfamily\MonoFont{Ubuntu Mono}
+\renewcommand{\ttfamily}{\MonoFont}
+\makeatletter
+\def\verbatim@font{\MonoFont}
+\makeatother
+\newcommand\allyWord{\emph{\allyFont ally}}
+\newcommand\allyId{\emph{\allyFont ally.id}}
 
 \makeatletter
 \let\oldfootnoterule\footnoterule

@@ -1,5 +1,289 @@
-\chapter*{The ally book}
+\chapter*{The \allyWord\ book}
 
 \label{book}
 
-\XeLaTeX
+\begin{paracol}{2}
+\begin{leftcolumn}
+Okay, tell a lie.
+
+\begin{ally}
+  Oh no.
+\end{ally}
+It's not that bad.
+
+Another benefit that I get out of working with a set of files on the file system is that it is startlingly easy to get the very same data that is published on the web into the eventual book. I don't have to pull data out of a database to do anything, I just have to run a few commands.
+
+As mentioned, I write in Markdown. It's a plain-text format --- meaning I can edit it anywhere without additional software --- with the ability to generate HTML. For instance, the first few lines of this chapter in Markdown look like this:
+
+\begin{verbatim}
+Okay, tell a lie.
+
+> Oh no.
+
+It's not that bad.
+\end{verbatim}
+
+
+Using the \texttt{pandoc} command, it's super easy to translate Markdown to \LaTeX, which is what is used to typeset the book\footnote{Well, a subset of \LaTeX\ called \XeLaTeX\ which allows custom fonts and colors and whatnot.}. For instance, \texttt{pandoc -o out.tex --wrap=none in.md} will do all the translation for me. Had I written this file in Markdown originally, that would have netted me:
+
+\begin{verbatim}
+Okay, tell a lie.
+
+\begin{quote}
+  Oh no.
+\end{quote
+
+It's not that bad.
+\end{verbatim}
+I don't particularly like the look of the quote environment for you.
+
+\begin{ally}
+  Neither do I.
+\end{ally}
+Right. It just looks like this:
+
+\begin{quote}
+  Yar har I'm the \allyWord\ I'm not your friend.
+\end{quote}
+Which is\ldots{}not great.
+
+\begin{ally}
+  Do I really sound like that?
+\end{ally}
+No. But I, of all people, am allowed to poke fun at you.
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{verbatim}
+\newenvironment{ally}{
+\noindent\ignorespaces
+\begin{quotation}
+    \allyFont\itshape
+    \noindent\ignorespaces}{
+\end{quotation}\ignorespacesafterend }
+\end{verbatim}
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+\begin{ally}
+  True enough.
+\end{ally}
+So instead I created an \texttt{ally} environment in \LaTeX\ that closely matches the styling of the blockquotes on \allyId. It's easy enough to search for all instances of \texttt{\textbackslash\textbackslash(begin|end)\textbackslash\{quote\textbackslash\}} and replace it with \texttt{\textbackslash\$1\{ally\}}
+
+To help simplify this process, I made a \texttt{make} target which pandocs all Markdown files in the Hugo site over to \LaTeX\ for the book. 
+
+\begin{ally}
+  Easy, as they say, peasy.
+\end{ally}
+Lemon squeezy.
+
+Deciding what to put into the book was almost as hard as writing the content itself. Deciding what to put in, where to put it, and how to display it when suddenly left without the benefits of clickable links was overwhelming.
+
+\begin{ally}
+  And yet.
+\end{ally}
+And yet.
+
+I toyed with a few ideas. Originally, I considered printing the book wider than it was tall and giving each page five columns that would be filled in as the story branched.
+
+This proved to be largely illegible. The mind can deal with perhaps two columns on a page, and even then, tying them together across pages rather than within a page requires additional visual clues such as different widths or different background colors.
+
+So I took that and ran with it. I gave each page two columns of unequal widths and ensured that I could mess with the background colors separately --- much like these pages here.
+
+Actually \emph{finding} a package that could accomplish this was surprisingly difficult. I was used to the \texttt{multicol} package, but that proved less than flexible. I poked a bit at \texttt{parcolumns}, but that also left much to be desired.
+
+My solution wound up being the \texttt{paracol} package\footnote{When it didn't bitch about being too full --- page \pageref{toofull}}, which had everything that I needed, and much more besides. \emph{Actually} learning it, however, proved to be a bear. Much of the package documentation seemed to be written for those who already had some familiarity with its usage, and that lead to a steep initial learning curve.
+
+In the end, though, I wound up with a setup that worked well for me.
+
+\begin{ally}
+  And me.
+\end{ally}
+Well, yes.
+
+In order of appearance:
+
+\begin{description}
+  \item[Uneven column widths] Before beginning the \texttt{paracol} environment (with the second argument being \texttt{2} for two columns), one needs:
+
+  \begin{verbatim}
+  \columnratio{0.65}
+  \twosided\end{verbatim}
+  
+  Now, the main body of the text can take place in the \texttt{leftcolumn} environment, and the bullshit notes can appear in the \texttt{rightcolumn*} environment\footnote{the starred version begins the switch at the current position in the page, rather than the beginning of the \texttt{paracol} environment}.
+  \item[Column colors] \texttt{paracol} allows you to set the background color of the column as well as the surrounding area, selecting the former with the \texttt{c} option and the latter with the \texttt{C}\footnote{There are some margin issues, granted --- page \pageref{color-margins}} option like so:
+
+  \begin{verbatim}
+  \backgroundcolor{c[1]}[HTML]{eeddff}
+  \backgroundcolor{C[1]}[HTML]{eeddff}\end{verbatim}
+  \item[Font colors] The \texttt{fontspec} package proved to be most useful here. One can specify the color of text to use for the font family as arguments in the font family creation\footnote{Along with some other garbage --- page \pageref{ligatures}}. This often meant I had to renew font families:
+
+  \begin{verbatim}
+  \fontspec{Gentium BookBasic}[Color=222288FF]
+  \renewfontfamily\allyFont{%
+    Merriweather Sans}[Color=4444AAFF]\end{verbatim}
+\end{description}
+
+One of the things that I've had a lot of fun with throughout this project is the style of the text, as well as having played around with the colors, as is perhaps obvious with the way I treat you.
+
+\begin{ally}
+  You know you love it.
+\end{ally}
+I do.
+
+Another thing I started poking at when working with the site was unique presentation of text beyond just blockquotes.
+
+Part of that was to do with poetry. Early on when working with poetry and web publishing, I defined a new block in Markdown that would let me write how I wanted and have it show up (pretty close) to that on the screen. I wrap a block in triple single-quotes and it winds up in a \texttt{<div>} that has the \texttt{white-space: pre-wrap} style set. This lets me insert ridiculous spaces just how I want.
+
+\begin{ally}
+  Ridiculous spaces for the ridiculous Maddy.
+\end{ally}
+It's not all that bad.
+
+And hey, it's easy enough to accomplish in \LaTeX, too. Just stuff it in a \texttt{verse} environment. Indentation is as easy as using the \texttt{\\vin} command, which indents the line by\ldots{}well, however large a space you set the verse indentation length to be.
+
+At one point, however, I decided to fuck with some more complicated spacing. Given how focused \LaTeX\ is on layout, it's maybe no surprised at how much easier this was to accomplish than in HTML.
+
+\begin{ally}
+  And yet you were.
+\end{ally}
+I suppose, yes. Part of the problem was going from how difficult things were in HTML and just kinda\ldots{}expected they would be here, too.
+
+Anyway, there were two that I wanted to accomplish. First, and easiest, was the spacing for portions of the surgery poem. While most of that poem was fairly simple in structure: sixteen stanzas of the two of us talking, consisting of rhyming couplets with a trailing line. That was all well and good, but, on describing the sensation of anaesthesia, I decided that the text should go all wibbly as well.
+
+In HTML, this required quite a few repetitions of \texttt{\&nbsp;} to space out the words. It was probably not the best way to do it--
+
+\begin{ally}
+  Oh, but the heady intoxication of repetition\ldots{}
+\end{ally}
+--as I could have accomplished much the same as with the \LaTeX\ \texttt{\\phantom} and the verse environment's \texttt{\\vinphantom} commands, which create an amount of horizontal space equal to the length of the text in the argument. That is, just use a set of \texttt{<span>} tags with transparent text to space out the visible words. Bit harsh on screen-readers, as it would mean plenty of the lines would be repeated--
+
+\begin{ally}
+  How appropriate.
+\end{ally}
+--upon reading, but it \emph{is} being used as a visual medium here.
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{ally}
+  And was it?
+\end{ally}
+Was it what?
+
+\begin{ally}
+  Death.
+\end{ally}
+Of a sort, yes. You will have to read the book to see.
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+As mentioned, it's much easier in the print version:
+
+\begin{verse}
+\vinphantom{Nothing.} Was this death?\\*
+Nothing. \phantom{Was this death?} Nothing, death? \phantom{Nothing,} nothing.\\*
+\vinphantom{Nothing. Was this death? Nothing, death?} Nothing,\\
+\vinphantom{Death?} Was this death?\\*
+Death? \phantom{Was this death?} Nothing.\\*
+\vspace{1em}
+\vinphantom{Death? Was this death? Nothing.} There was nothing.\\
+\end{verse}
+
+\noindent This is accomplished with the aforementioned commands:
+
+\begin{verbatim}
+\vinphantom{Nothing.} Was this death?\\*
+Nothing. \phantom{Was this death?} Nothing, death? \phantom{Nothing,} nothing.\\*
+\vinphantom{Nothing. Was this death? Nothing, death?} Nothing,\\
+\vinphantom{Death?} Was this death?\\*
+Death? \phantom{Was this death?} Nothing.\\*
+\vspace{1em}
+\vinphantom{Death? Was this death? Nothing.} There was nothing.\\
+\end{verbatim}
+
+Secondly, I wanted to vastly reduce the line-height for a section of verse. In CSS, I need only set the \texttt{line-height} property to something less than 1. Thankfully, in \LaTeX\ the \texttt{spacing} package exists for this. 
+
+\end{leftcolumn}
+\begin{rightcolumn*}
+\noindent Note that this must be centered or otherwise not indented, or the first line of the paragraph will space itself separately.
+\end{rightcolumn*}
+\begin{leftcolumn}
+
+\begin{verbatim}
+\begin{Spacing}{0}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me...
+\end{Spacing}
+\end{verbatim}
+
+leads to:
+
+\end{leftcolumn}
+\begin{rightcolumn*}
+\begin{ally}
+  Can you imagine so blinding a sight?
+\end{ally}
+Yes. I could see it with my eyes closed.
+\end{rightcolumn*}
+\begin{leftcolumn}
+\begin{center}
+\begin{Spacing}{0}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me\\\vspace{-7pt}
+speak to me
+
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see\\\vspace{-7pt}
+that i may see
+
+the face of god\\\vspace{-7pt}
+the face of god\\\vspace{-7pt}
+the face of god
+\end{Spacing}
+\end{center}
+
+A few locations in the book require full-page illustrations. This is surprisingly difficult using the usual \texttt{\\includegraphics} command from the \texttt{graphicx} package, as there's a lot of page layout stuff that happens before and after the image itself is included.
+
+Rather than trying to include the image, however, it is startlingly easy to just include a PDF within \LaTeX. Using the \texttt{pdfpages} package, all I need to do is save the image as an appropriately sized (that is, 8.625"x8.625") PDF and then use the \texttt{\\includepdf} command instead. \LaTeX\ will manage all of the page numbers accordingly, and I don't have to worry about splicing it after the fact.
+
+Speaking of, for the digital version (as well as for this PDF), attaching the cover(s) to the final PDF \emph{does} require some splicing. This is made very easy with the \texttt{pdftk} command.
+
+\begin{verbatim}
+pdftk cover-front.pdf cover-back.pdf internal.pdf \
+  output digital-edition.pdf
+\end{verbatim}
+
+\texttt{pdftk} commands are just read from start to finish, so the above says, ``Take these three PDFs and output them all to the single file, digital-edition.pdf.''  As a longer example, providing a sample from the book works like so:
+
+\begin{verbatim}
+pdftk book.pdf cat 1-63 output intro.pdf
+\end{verbatim}
+
+which says, ``Take book.pdf, concatenate pages 1-63 and then output them into intro.pdf.'' It's a pretty neat command.
+
+
+The last step of the process was generating the index.\footnote{Aw heck, really? --- page \pageref{indexmunge}} Back when I was writing \emph{everything} in \LaTeX, I remember this being far harder than it actually turned out to be.
+
+Wherever you want an index entry, all you nened to do is put \texttt{\\index\{...\}} in the text with whatever the entry is. This supports nexting entries (separated with an exclamation point) and page ranges (referenced with a \texttt{|(} and a \texttt{|)}. So, for instance, I indexed poems like so:
+
+\begin{verbatim}
+\index{Writing!samples!poetry|(}
+\begin{verse}
+Blah blah blah\\
+My name's Maddy and I can't stop writing\\
+...
+\end{verse}
+\index{Writing!samples!poetry|)}
+\end{verbatim}
+
+To generate the index, I have to first run \texttt{makeindex book} (given that the filename is book.tex), then I can run the usual \texttt{xelatex book.tex; xelatex book.tex}. I have to run that twice in order for the page references to be correct, of course.
+
+At the beginning of the book in the preamble, I include the \texttt{makeidx} package and immediately run \texttt{\\makeindex}, and at end of book.tex, where I want the index to appear, I call \texttt{\\printindex}.
+\newpage
+\end{leftcolumn}
+\end{paracol}

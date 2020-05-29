@@ -45,6 +45,14 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 <strong><a target="\_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
 </div>
 
+## Making of
+
+<em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
+
+<p style="text-align:center">
+<a class="gumroad-button" href="https://gum.co/ally-making-of" target="\_blank">Pre-order <em>ally from start to finish</a></a>
+</p>
+
 ## Paperback gallery
 
 <!-- <a href="/book/physical/01-front.s.jpg" target="\_blank"><img src="/book/physical/thumbs/01-front.s.jpg" style="width: 200px; margin: 0.5rem;" /></a>

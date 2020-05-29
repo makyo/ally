@@ -1,0 +1,16 @@
+digraph workflow {
+	node[shape="box"];
+
+	start[style=invis];
+	end[style=invis];
+
+	start -> "Get a doofy idea" -> "Check out a doofy branch" ->
+	"Write doofy idea" -> "Commit, push branch" -> "Edit" ->
+	"Create pull request" -> "Get deploy preview from Netlify" ->
+	"Show Patrons deploy preview early" -> "Merge pull request" -> end;
+
+	"Edit" -> "Write doofy idea";
+
+
+	"Merge pull request" -> "Get a doofy idea";
+}

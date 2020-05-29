@@ -1,4 +1,4 @@
-\documentclass[11pt]{memoir}
+\documentclass[11pt,onesided]{memoir}
 
 \def\watermarkloaded{0}
 
@@ -17,6 +17,7 @@
 \begin{document}
   \frontmatter
 
+  \includepdf{cover.pdf}
   \input{includes/pretitle}
 
   \pagestyle{plain}
@@ -53,21 +54,31 @@
   \null
   \vfill
   \begin{center}
-    {\allyFont ally} began in the form of an interactive website.
+    How many layers of remove is enough?
 
-    The project continues at {\allyFont https://ally.id}
+    \vfill
+
+    We ask how, because the question of why must ask itself.
   \end{center}
   \vfill
 
   \mainmatter
 
   \pagestyle{ourbook}
-  \columnratio{0.618}
+  \columnratio{0.65}
   \setlength\columnsep{20pt}
-  \twosided
+  %\twosided
+  \backgroundcolor{c[1]}[HTML]{eeddff}
+  \backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[HTML]{eeddff}
   \input{content/001}
+  \backgroundcolor{c[1]}[HTML]{ffddee}
+  \backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[HTML]{ffddee}
   \input{content/002}
+  \backgroundcolor{c[1]}[HTML]{ddffee}
+  \backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[HTML]{ddffee}
   \input{content/003}
+  \backgroundcolor{c[1]}[HTML]{222222}
+  \backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[HTML]{222222}
   \input{content/004}
 
   %%%%%
