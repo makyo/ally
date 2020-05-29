@@ -5,10 +5,11 @@ help: ## This help.
 
 .PHONY: final
 final: reset toc ## full document of the book for final print
-	@echo
-	@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	@echo "!Ensure that the index page breaks are okay!"
-	@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	# In ally, this warning would inform me to insert a pagebreak as needed.
+	#@echo
+	#@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	#@echo "!Ensure that the index page breaks are okay!"
+	#@echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 .PHONY: single
 single: reset plain ## full document run once, ensuring everything's reset
@@ -25,7 +26,8 @@ plain: ## full document of the book with no proofing marks
 
 .PHONY: toc
 toc: plain ## full book with ToC re-rendering in case of page changes
-	makeindex book
+	# This command generates the index for ally, but there isn't one here, so.
+	#makeindex book
 	xelatex book.tex
 
 .PHONY: frame
