@@ -40,4 +40,11 @@ Come, friends, and join me for a small launch party for <span class="ally-font">
 * Get some discounts on both paperbacks and PDFs!
 * I don't know, there will probably also be cameos from my dogs.
 
+I'll also talk about the making of this project specifically via the making-of companion. <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
+
+<p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/ally-making-of" target="\_blank">Pre-order <em>ally from start to finish</a></a>
+</p>
+
+
 Mark your calendars, for you are formally invited to join me on *Monday, June 1st, 2020* at both [*3:00PM*](https://calendar.google.com/event?action=TEMPLATE&tmeid=YzhyamVjYjU2c3AzMGJiNTZ0aW1hYjlrY29wamViYjI2Z29qZWI5azZncjMwZGo2NjloajZkYjE2YyBtYWt5b0BkcmFiLW1ha3lvLmNvbQ&tmsrc=makyo%40drab-makyo.com) and [*7:00PM*](https://calendar.google.com/event?action=TEMPLATE&tmeid=NjhwMzRjMWw2c3IzZ2I5amNvbzNnYjlrNzRyMzBiOXA2cGlqMGJiNGM0b2phY3I1NjRyNjZlMW02NCBtYWt5b0BkcmFiLW1ha3lvLmNvbQ&tmsrc=makyo%40drab-makyo.com) Pacific time for an hour of Books and Chill.
