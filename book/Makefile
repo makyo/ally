@@ -30,7 +30,9 @@ toc: plain ## full book with ToC re-rendering in case of page changes
 
 .PHONY: ebook
 ebook: ## render ePub file from LaTeX
-	pandoc Ebook.tex -o ../ebooks/book.epub -t epub3 --wrap=none
+	#makeindex ally-digital-edition
+	xelatex ally-digital-edition.tex
+	xelatex ally-digital-edition.tex
 
 .PHONY: frame
 engage-frame: ## turn on frame marking

@@ -1,0 +1,36 @@
+%%% Headers and page styles
+\usepackage[pagestyles]{titlesec}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+
+% ourbook style with fancy headers and chapter headings
+\fancypagestyle{ourbook}{
+  % headers
+  \fancyhf{}
+  %\fancyhf[FRE,FLO]{\pagenumfont\footnotesize\emph{Advance Reader Copy}}
+  \fancyhf[FRE,FRO]{\pagenumfont\thepage}
+  % \fancyhf[HLE]{\chaptertitle}
+  % \fancyhf[HRO]{\AuthorFull}
+  % \renewcommand{\headrulewidth}{0.5pt}
+  \setlength{\parskip}{0pt}
+  % \parindent0pt
+  \setlength{\headheight}{0pt}
+}
+
+% plain style with only page num
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyhf[FRO,FRE]{\pagenumfont\thepage}
+}
+
+% single space after periods
+\frenchspacing
+
+% Attempt justification at all costs
+\sloppy
+
+% Widows and orphans
+\widowpenalty=10000
+\clubpenalty=10000

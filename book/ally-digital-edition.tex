@@ -1,0 +1,211 @@
+\documentclass[11pt,onesided]{memoir}
+
+\def\watermarkloaded{0}
+
+\input{includes/variables}
+\input{includes/draft}
+\input{includes/frame}
+\input{includes/packages}
+\input{includes/geometry-digital}
+\input{includes/toc}
+\input{includes/font}
+\input{includes/pagelayout-digital}
+\input{includes/title}
+\input{includes/secdiv}
+\input{includes/hyphenation}
+
+\begin{document}
+  \includepdf{cover-front.pdf}
+  \includepdf{cover-back-bar.pdf}
+  \frontmatter
+
+  \input{includes/pretitle}
+
+  \pagestyle{plain}
+
+  \doublespacing
+
+  \null
+  \vfill
+  \begin{flushright}
+    {\fontspec{Merriweather Sans}[Scale=1.5,Color=444444FF]\Huge ally}
+    \vfill
+    {\Huge Madison Scott-Clary}
+  \end{flushright}
+  % \vfill
+  \thispagestyle{empty}
+
+  \newpage
+
+  \input{includes/copyright-digital}
+
+  % \tableofcontents*
+  \newpage
+  \null
+  \thispagestyle{empty}
+  \cleardoublepage
+
+  \onehalfspacing
+
+  % \input{content/preface}
+  \null
+  \vfill
+  \begin{center}
+    {\allyFont ally} began in the form of an interactive website.
+
+    The project continues at {\allyFont https://ally.id}
+  \end{center}
+  \vfill
+
+  \mainmatter
+
+  \pagestyle{ourbook}
+  % \input{content/ally001.tex}
+  \columnratio{0.618}
+  \setlength\columnsep{20pt}
+
+  %%%%%
+
+  \input{content/ally/002.tex}
+    \cleardoublepage
+  \input{content/ally/003.tex}
+  \input{content/ally/004.tex}
+    \cleardoublepage
+  \input{content/ally/026.tex}
+    \null
+    \thispagestyle{empty}
+    \cleardoublepage
+  \input{content/ally/027.tex}
+    \cleardoublepage
+  \input{content/ally/005.tex}
+  \input{content/ally/006.tex}
+    \cleardoublepage
+  \input{content/ally/007.tex}
+    \null
+    \thispagestyle{empty}
+    \newpage
+  \input{content/ally/008-digital.tex}
+  \input{content/ally/009.tex}
+  \input{content/ally/010.tex}
+
+  \input{content/poly.tex}
+
+    \cleardoublepage
+
+  \input{content/sex/sex.tex}
+
+    \null
+    \thispagestyle{empty}
+    \cleardoublepage
+
+  \input{content/ally/011.tex}
+
+  \input{content/from-within.tex}
+
+    \cleardoublepage
+
+  \input{content/ally/012.tex}
+  % \input{content/ally/013.tex} % Merged with above.
+
+    \cleardoublepage
+
+  \input{content/furry/furry.tex}
+
+  \input{content/furry/younes.tex}
+
+  \input{content/self-harm/self-harm.tex}
+
+  \input{content/self-harm/suicide.tex}
+
+    \cleardoublepage
+
+  \input{content/gender/gender.tex}
+
+    \cleardoublepage
+
+  \input{content/gender/surgery.tex}
+
+    \cleardoublepage
+
+  \input{content/ally/015.tex}
+
+    \cleardoublepage
+
+  \input{content/liminal.tex}
+
+    \cleardoublepage
+
+  \input{content/dad.tex}
+
+  \input{content/ally/016.tex}
+
+  \input{content/poet-and-mystic-digital.tex}
+
+    \cleardoublepage
+
+  \input{content/ally/023.tex}
+
+    \cleardoublepage
+
+  \input{content/movement.tex}
+
+    \cleardoublepage
+
+  \input{content/ally/017.tex}
+
+  \input{content/writing/writing.tex}
+  \input{content/writing/music.tex}
+
+  \input{content/ally/018.tex}
+
+  \input{content/writing/software.tex}
+
+    \cleardoublepage
+
+
+  \input{content/ally/024.tex}
+  \input{content/ally/025.tex}
+  \input{content/ally/028.tex}
+  \input{content/ally/029.tex}
+
+    \cleardoublepage
+
+  \input{content/burnout.tex}
+
+    \null
+    \thispagestyle{empty}
+    \cleardoublepage
+
+  % \input{content/ally/019.tex}
+  % \input{content/ally/020.tex}
+  % \input{content/ally/021.tex}
+  % \input{content/ally/022.tex}
+  % \input{content/ally/030.tex}
+  % \input{content/ally/031.tex}
+  % \input{content/ally/032.tex}
+  \input{content/ally/long-tail.tex}
+
+    \null
+    \thispagestyle{empty}
+    \cleardoublepage
+
+  \null
+  \vfill
+  \begin{verse}
+    Endings were writ on your face,\\
+    \vin your hands,\\
+    \vin \vin and your steps ---
+
+    your very pace spoke of completion.
+  \end{verse}
+  \vfill
+  \newpage
+  \null
+  \thispagestyle{empty}
+    \cleardoublepage
+
+  \backmatter
+  \pagestyle{empty}
+  \input{content/afterword}
+
+\end{document}

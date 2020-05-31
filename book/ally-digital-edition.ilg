@@ -1,0 +1,30 @@
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file ally-digital-edition.idx....done (331 entries accepted, 0 rejected).
+Sorting entries......done (3127 comparisons).
+Generating output file ally-digital-edition.ind....
+## Warning (input = ally-digital-edition.idx, line = 2; output = ally-digital-edition.ind, line = 5):
+   -- Extra range opening operator (.
+
+## Warning (input = ally-digital-edition.idx, line = 16; output = ally-digital-edition.ind, line = 5):
+   -- Unmatched range closing operator ).
+
+## Warning (input = ally-digital-edition.idx, line = 281; output = ally-digital-edition.ind, line = 7):
+   -- Unmatched range closing operator ).
+
+## Warning (input = ally-digital-edition.idx, line = 288; output = ally-digital-edition.ind, line = 8):
+   -- Unmatched range closing operator ).
+
+## Warning (input = ally-digital-edition.idx, line = 276; output = ally-digital-edition.ind, line = 104):
+   -- Unmatched range closing operator ).
+
+## Warning (input = ally-digital-edition.idx, line = 275; output = ally-digital-edition.ind, line = 105):
+   -- Unmatched range opening operator (.
+
+## Warning (input = ally-digital-edition.idx, line = 92; output = ally-digital-edition.ind, line = 126):
+   -- Unmatched range closing operator ).
+
+## Warning (input = ally-digital-edition.idx, line = 265; output = ally-digital-edition.ind, line = 176):
+   -- Extra range opening operator (.
+done (179 lines written, 8 warnings).
+Output written in ally-digital-edition.ind.
+Transcript written in ally-digital-edition.ilg.
