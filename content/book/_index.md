@@ -4,7 +4,7 @@ type: single
 
 <img src="/book/cover-front.png" style="margin: 0 auto; display: block; width: 500px; max-width: 100%;" />
 
-<p style="text-align:center">
+<p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a>
 &emsp;
 <a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
