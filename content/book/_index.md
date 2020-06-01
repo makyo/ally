@@ -4,11 +4,10 @@ type: single
 
 <img src="/book/cover-front.png" style="margin: 0 auto; display: block; width: 500px; max-width: 100%;" />
 
-<p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
-<!-- <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally-preorder-/5" target="_blank">Pre-order paperback</a> -->
-<a class="gumroad-button" href="https://gum.co/ally-paperback" target="_blank">Pre-order paperback</a>
+<p style="text-align:center">
+<a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a>
 &emsp;
-<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Pre-order PDF ebook</a></p>
+<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
 
 > We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?
 
@@ -24,18 +23,18 @@ You are cordially invited to attend an [online launch party](launch) on June 1st
 
 The paperback is now available for [pre-order](https://gum.co/ally-paperback). All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Makers</a>. You can also pre-order from <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>
 
+<p style="text-align:center">
+<a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a></p>
+
 You can also [pre-order](https://gum.co/rvof) the PDF ebook. I have yet to figure out how to sign those. Sorry.
 
 <p style="text-align:center">
-<!-- <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally-preorder-/5" target="_blank">Pre-order paperback</a> -->
-<a class="gumroad-button" href="https://gum.co/ally-paperback" target="_blank">Pre-order paperback</a>
-&emsp;
-<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Pre-order PDF ebook</a></p>
+<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
 
 <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
 
 <p style="text-align:center">
-<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Pre-order <em>ally from start to finish</a></a>
+<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</a></a>
 </p>
 
 ## Content warning
