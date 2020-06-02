@@ -87,3 +87,15 @@ There are two available author portraits, one literal and one symbolic. If the s
 
 * "Cleareyed yet powerfully immediate . . . A fresh, daring exploration of lived experience." --- [*Kirkus Reviews*](https://www.kirkusreviews.com/book-reviews/madison-scott-clary/allyC/)
 * "I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty." --- [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
+
+---
+
+### Video content
+
+A video from the launch party stream:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RitEVMCP_E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The <span class="ally-font">ally</span> shipping box being cut:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hj8fAzSuzHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
