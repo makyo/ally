@@ -12,5 +12,5 @@ Are you me?
 
 ## New content
 
-* [ally 34](/34)
+* [ally 34](/34) and [35](/35)
 * [Plurality](/plurality)

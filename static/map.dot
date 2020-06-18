@@ -179,7 +179,9 @@ digraph Map {
     "Plurality 3" [href="/plurality/3"]
     "Plurality 4" [href="/plurality/4"]
     "Plurality 5" [href="/plurality/5"]
-    "Plurality 1" -> "Plurality 2" -> "Plurality 3" -> "Plurality 4" -> "Plurality 5"
+    "Plurality 6" [href="/plurality/6"]
+    "Plurality 1" -> "Plurality 2" -> "Plurality 3" -> "Plurality 4" ->
+    "Plurality 5" -> "Plurality 6"
 
     // This is the central axis
     node[group="ally",style="",fontcolor="#111111"] // `core` folder
