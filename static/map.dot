@@ -226,7 +226,8 @@ digraph Map {
     "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" ->
     "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
     "ally 26" -> "ally 27" -> "ally 28" -> "ally 29" -> "ally 30" ->
-    "ally 31" -> "ally 32" -> "ally 33" -> "ally 34" -> "To be continued..."
+    "ally 31" -> "ally 32" -> "ally 33" -> "ally 34" -> "ally 35" ->
+    "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -444,7 +445,7 @@ digraph Map {
     "ally 23" -> "Movement 1"
     "ally 29" -> "Burnout 1"
     "ally 33" -> "Unemployment 1"
-    "ally 34" -> "Plurality 1"
+    "ally 35" -> "Plurality 1"
 
     // Dad
     "As a person 5" -> "ally 16"
