@@ -173,6 +173,16 @@ digraph Map {
     "Burnout 4" [href="/burnout/4"]
     "Burnout 1" -> "Burnout 2" -> "Burnout 3" -> "Burnout 4"
 
+    node[group="plurality",style="filled",fillcolor="#f5eeff",fontcolor="#663366"]
+    "Plurality 1" [href="/plurality"]
+    "Plurality 2" [href="/plurality/2"]
+    "Plurality 3" [href="/plurality/3"]
+    "Plurality 4" [href="/plurality/4"]
+    "Plurality 5" [href="/plurality/5"]
+    "Plurality 6" [href="/plurality/6"]
+    "Plurality 1" -> "Plurality 2" -> "Plurality 3" -> "Plurality 4" ->
+    "Plurality 5" -> "Plurality 6"
+
     // This is the central axis
     node[group="ally",style="",fontcolor="#111111"] // `core` folder
     "ally 1" [href="/"]
@@ -208,6 +218,7 @@ digraph Map {
     "ally 31" [href="/31"]
     "ally 32" [href="/32"]
     "ally 33" [href="/33"]
+    "ally 34" [href="/34"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
@@ -215,7 +226,8 @@ digraph Map {
     "ally 16" -> "ally 17" -> "ally 18" -> "ally 19" -> "ally 20" ->
     "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
     "ally 26" -> "ally 27" -> "ally 28" -> "ally 29" -> "ally 30" ->
-    "ally 31" -> "ally 32" -> "ally 33" -> "To be continued..."
+    "ally 31" -> "ally 32" -> "ally 33" -> "ally 34" -> "ally 35" ->
+    "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -433,6 +445,7 @@ digraph Map {
     "ally 23" -> "Movement 1"
     "ally 29" -> "Burnout 1"
     "ally 33" -> "Unemployment 1"
+    "ally 35" -> "Plurality 1"
 
     // Dad
     "As a person 5" -> "ally 16"
