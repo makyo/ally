@@ -77,9 +77,26 @@ header {
 h1 {
     padding: 0;
     margin: 0;
+    width: 49%;
+    display: inline-block;
 }
 h1 a {
     border: none;
+}
+header nav {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    font-size: 16pt;
+}
+header nav a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0 0 0 1.5rem;
+}
+header nav a:first-of-type {
+    margin: 0;
 }
 main {
     max-width: 960px;
@@ -187,7 +204,8 @@ audio {
 .ally-font {
     font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
-    font-size: 13pt;
+    opacity: 0.9;
+    font-size: 93%;
 }
 
 .modal {
@@ -204,16 +222,18 @@ audio {
     padding: 0.5rem;
     max-height: 90vh;
     overflow: scroll;
+    position: relative;
 }
 .ad * {
     background: #fff;
     color: #111;
 }
 .ad .close {
-    width: 100%;
     background-color: transparent;
     text-align: right;
-    padding: 0px 0.5rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
 }
 .ad a.noborder {
     border: none;
