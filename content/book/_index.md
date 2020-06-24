@@ -37,7 +37,7 @@ You can also [pre-order](https://gum.co/rvof) the PDF ebook. I have yet to figur
 
 Several sections focus on suicide, self-harm, rape, sexual content, and poor mental health.
 
-## Advance praise
+## Praise
 
 "Cleareyed yet powerfully immediate . . . A fresh, daring exploration of lived experience."
 
@@ -46,6 +46,10 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 "I felt I was chasing down fractions of the author's soul. Chasing them not because I got this to read and review, but because I deeply wanted to. So I could put them together and solve an ultimate puzzle whose picture would contain some incomprehensible beauty."
 
 > — [Linnea Capps](https://www.goodreads.com/review/show/3236700737?book_show_action=true)
+
+""That matters to me more than I expected," said about someone else's life, is my summary of this whole book."
+
+> — [Rax](https://rax.dreamwidth.org/164542.html)
 
 <div style="text-align: center">
 <strong><a target="_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
