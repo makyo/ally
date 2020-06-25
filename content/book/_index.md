@@ -17,15 +17,15 @@ Based off the interactive project at [<em class="ally-font">ally.id</em>](https:
 
 ## Buying
 
-The paperback is now available for [pre-order](https://gum.co/ally-paperback). All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Makers</a>. You can also pre-order from <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>
-
 <p style="text-align:center">
 <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a></p>
 
-You can also [pre-order](https://gum.co/rvof) the PDF ebook. I have yet to figure out how to sign those. Sorry.
-
 <p style="text-align:center">
 <a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
+
+The paperback is now available for [order](https://gum.co/ally-paperback). All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Makers</a>. You can also order from <a href="https://www.betterworldbooks.com/product/detail/ally-9781948743150" target="_blank">Better World Books</a>, <a href="https://www.powells.com/SearchResults?keyword=Madison+Scott-Clary" target="_blank">Powell's</a>, or many other fine independent booksellers (and I guess <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a> if you must).
+
+You can also [order](https://gum.co/rvof) the PDF ebook exclusively from me. I have yet to figure out how to sign those. Sorry.
 
 <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
 
