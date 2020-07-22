@@ -17,4 +17,4 @@ I can't help it.
 ### New content
 
 * [ally 37](/37)
-* [Liminence](/liminence)
+* [Limerence](/limerence)
