@@ -1,5 +1,5 @@
 ---
-type: post
+type: news
 title: A liminal sort of love
 date: 2020-07-21
 ---
