@@ -3,11 +3,10 @@ type: news
 title: A liminal sort of love
 date: 2020-07-21
 ---
-<div class="verse">O breathe a word or two of fire!
-
+<pre class="verse">O breathe a word or two of fire!
         Smile, as if those words should burn me,
     Squeeze as lovers should—O kiss
-        And in thy heart inurn me—</div>
+        And in thy heart inurn me—</pre>
 
 > Keats? Now? Really?
 
