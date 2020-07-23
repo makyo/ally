@@ -221,6 +221,7 @@ digraph Map {
     "ally 34" [href="/34"]
     "ally 35" [href="/35"]
     "ally 36" [href="/36"]
+    "ally 37" [href="/37"]
     "To be continued..." [shape="none"]
     "ally 1" -> "ally 2" -> "ally 3" -> "ally 4" -> "ally 5" ->
     "ally 6" -> "ally 7" -> "ally 8" -> "ally 9" -> "ally 10" ->
@@ -229,7 +230,7 @@ digraph Map {
     "ally 21" -> "ally 22" -> "ally 23" -> "ally 24" -> "ally 25" ->
     "ally 26" -> "ally 27" -> "ally 28" -> "ally 29" -> "ally 30" ->
     "ally 31" -> "ally 32" -> "ally 33" -> "ally 34" -> "ally 35" ->
-    "ally 36" -> "To be continued..."
+    "ally 36" -> "ally 37" -> "To be continued..."
 
     node[group="birds",style="",fontcolor="#111111"]
     "Birds 1" [href="/birds"]
@@ -415,6 +416,20 @@ digraph Map {
     "Unemployment 1" -> "Unemployment 2" -> "Unemployment 3" -> "Unemployment 4" -> 
     "Unemployment 5" -> "Unemployment 6"
 
+    node[group="limerence",style="",fontcolor="#111111"]
+    "Limerence 1" [href="/limerence"]
+    "Limerence 2" [href="/limerence/2"]
+    "Limerence 3" [href="/limerence/3"]
+    "Limerence 4" [href="/limerence/4"]
+    "Limerence 5" [href="/limerence/5"]
+    "Limerence 6" [href="/limerence/6"]
+    "Limerence 7" [href="/limerence/7"]
+    "Limerence 8" [href="/limerence/8"]
+    "Limerence 9" [href="/limerence/9"]
+    "Limerence 1" -> "Limerence 2" -> "Limerence 3" -> "Limerence 4" -> 
+    "Limerence 5" -> "Limerence 6" -> "Limerence 7" -> "Limerence 8" -> 
+    "Limerence 9"
+
     /**
      Connections
 
@@ -448,6 +463,7 @@ digraph Map {
     "ally 29" -> "Burnout 1"
     "ally 33" -> "Unemployment 1"
     "ally 35" -> "Plurality 1"
+    "ally 37" -> "Limerence 1"
 
     // Dad
     "As a person 5" -> "ally 16"
