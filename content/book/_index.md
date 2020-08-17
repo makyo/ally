@@ -30,7 +30,7 @@ You can also [order](https://gum.co/rvof) the PDF ebook exclusively from me. I h
 <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
 
 <p style="text-align:center">
-<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</a></a>
+<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
 </p>
 
 ## Content warning
