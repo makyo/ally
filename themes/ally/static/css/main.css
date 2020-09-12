@@ -321,6 +321,40 @@ ul.pagination .page-item.active a {
     cursor: text;
 }
 
+.book-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book-box .book-cover {
+    flex: 2;
+    padding: 0px 1rem;
+}
+
+.book-box .book-cover img {
+    width: 100%;
+    box-shadow: 5px 5px 10px #ccc;
+    min-width: 500px;
+}
+
+.book-box .book-about {
+    flex: 1;
+    min-width: 200px;
+}
+
+.book-box .book-about blockquote {
+    margin: 0px 1rem;
+    text-align: justify;
+    border-bottom: 1px solid #ccc;
+}
+
+.book-box .book-about p {
+    margin: 1rem;
+    text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
     main.fit .page .verse {
         font-size: 10pt;

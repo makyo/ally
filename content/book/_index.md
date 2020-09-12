@@ -2,36 +2,24 @@
 type: single
 ---
 
-<img src="/book/cover-front.png" style="margin: 0 auto; display: block; width: 500px; max-width: 100%;" />
-
+<div class="book-box">
+<div class="book-cover">
+<img src="/book/cover-front.png" />
+</div>
+<div class="book-about">
+<blockquote>We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?</blockquote>
 <p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a>
-&emsp;
+</p>
+<p>
 <a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
-
-> We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?
+<p><em>Also available at many independent booksellers and, of course,</em> <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a>
+</div>
+</div>
 
 <em class="ally-font">ally</em> is an ergodic, arborescent, semiautobiographical work about identity, mental health, spirituality, and the mutability of the past. A lot of the information contained within is real, some of it isn’t. Each page is structured as a conversation between myself and my ally, a mirror reflection of myself.
 
 Based off the interactive project at [<em class="ally-font">ally.id</em>](https://ally.id), this book explores different facets of my life — some true, some embellished, some wholly fictitious — in a non-linear, ergodic fashion, using color, page-layout, and mixed-media to create a book more experience than memoir.
-
-## Buying
-
-<p style="text-align:center">
-<a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a></p>
-
-<p style="text-align:center">
-<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
-
-The paperback is now available for [order](https://gum.co/ally-paperback). All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Makers</a>. You can also order from <a href="https://www.betterworldbooks.com/product/detail/ally-9781948743150" target="_blank">Better World Books</a>, <a href="https://www.powells.com/SearchResults?keyword=Madison+Scott-Clary" target="_blank">Powell's</a>, or many other fine independent booksellers (and I guess <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a> if you must).
-
-You can also [order](https://gum.co/rvof) the PDF ebook exclusively from me. I have yet to figure out how to sign those. Sorry.
-
-<em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
-
-<p style="text-align:center">
-<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
-</p>
 
 ## Content warning
 
@@ -54,6 +42,20 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 <div style="text-align: center">
 <strong><a target="_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
 </div>
+
+## Purchasing options
+
+The paperback is available for [order](https://makyo-ink.square.site/product/ally/5) direct from the author. All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Design</a>. You can also order from <a href="https://www.betterworldbooks.com/product/detail/ally-9781948743150" target="_blank">Better World Books</a>, <a href="https://www.powells.com/SearchResults?keyword=Madison+Scott-Clary" target="_blank">Powell's</a>, or many other fine independent booksellers, as well as <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>.
+
+The PDF ebook is available for [order](https://gum.co/rvof) exclusively from me. I have yet to figure out how to sign those. Sorry.
+
+### Making of
+
+<em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
+
+<p style="text-align:center">
+<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
+</p>
 
 ## Paperback gallery
 
