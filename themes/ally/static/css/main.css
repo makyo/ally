@@ -330,13 +330,14 @@ ul.pagination .page-item.active a {
 
 .book-box .book-cover {
     flex: 2;
-    padding: 0px 1rem;
+    padding: 0px 1rem 0px 0px;
+    max-width: 100%;
 }
 
 .book-box .book-cover img {
     width: 100%;
     box-shadow: 5px 5px 10px #ccc;
-    min-width: 500px;
+    max-width: 100%;
 }
 
 .book-box .book-about {
@@ -361,5 +362,8 @@ ul.pagination .page-item.active a {
     }
     main.fit .page .verse blockquote {
         font-size: 8pt;
+    }
+    .book-box {
+        display: block;
     }
 }
