@@ -39,6 +39,10 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 > — [Rax](https://rax.dreamwidth.org/164542.html)
 
+"A recommended read if you enjoy listening to people tell their story . . . Scott-Clary's writing is clear and creative prose, uniquely presented and powerfully honest."
+
+> — [Morgan Gangwere](https://www.amazon.com/gp/customer-reviews/R1M6LN0WOVUC0A/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=1948743159)
+
 <div style="text-align: center">
 <strong><a target="_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
 </div>
