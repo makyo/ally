@@ -43,6 +43,10 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 > — [Morgan Gangwere](https://www.amazon.com/gp/customer-reviews/R1M6LN0WOVUC0A/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=1948743159)
 
+"*ally* is an incredibly complex and beautiful glimpse into [Madison]'s mind and life. Personal and incomplete in a very intentional way."
+
+> --- [Jay Shirou](https://forums.furrywritersguild.com/t/thoughts-on-ally-by-madison-scott-clary-spoilers/2323)
+
 <div style="text-align: center">
 <strong><a target="_blank" href="https://www.goodreads.com/book/show/51687858-ally">Rate on Goodreads!</a></strong>
 </div>
