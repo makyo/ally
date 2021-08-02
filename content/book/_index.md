@@ -4,7 +4,7 @@ type: single
 
 <div class="book-box">
 <div class="book-cover">
-<img src="/book/cover-front.png" />
+<img src="/book/cover-front.s.png" />
 </div>
 <div class="book-about">
 <blockquote>We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?</blockquote>
@@ -59,11 +59,18 @@ The PDF ebook is available for [order](https://gum.co/rvof) exclusively from me.
 
 ### Making of
 
+<div class="book-box">
+<div class="book-cover">
+<img src="/book/making-of.png" />
+</div>
+<div class="book-about">
 <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
-
 <p style="text-align:center">
 <a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
 </p>
+</div>
+</div>
+
 
 ## Paperback gallery
 
