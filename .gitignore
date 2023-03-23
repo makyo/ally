@@ -11,3 +11,4 @@ _site/*
 /public
 /resources
 /content/sex/kink/unspeakable.md
+.hugo_build.lock

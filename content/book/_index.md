@@ -2,17 +2,30 @@
 type: single
 ---
 
+<style>
+.buy a {
+  display: inline-block;
+  font-size: 14pt;
+  padding: 0.5rem;
+  background-color: #eee;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px #222;
+  text-decoration: none;
+}
+</style>
+
 <div class="book-box">
 <div class="book-cover">
 <img src="/book/cover-front.s.png" />
 </div>
 <div class="book-about">
 <blockquote>We don't experience memory in linear fashion, nor even in a strictly coherent one. It's peppered with tangents and strange loops. It's multithreaded. It's not always made up of words. Why should a memoir strive to strip memory completely of this context?</blockquote>
-<p style="text-align:center"><script src="https://gumroad.com/js/gumroad.js"></script>
+<p style="text-align:center" class="buy">
 <a class="gumroad-button" href="https://makyo-ink.square.site/product/ally/5" target="_blank">Purchase paperback</a>
 </p>
-<p>
-<a class="gumroad-button" href="https://gum.co/rvof" target="_blank">Purchase PDF ebook</a></p>
+<p style="text-align:center" class="buy">
+<a class="gumroad-button" href="https://makyo.itch.io/ally" target="_blank">Purchase PDF ebook</a></p>
 <p><em>Also available at many independent booksellers and, of course,</em> <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a>
 </div>
 </div>
@@ -55,7 +68,7 @@ Several sections focus on suicide, self-harm, rape, sexual content, and poor men
 
 The paperback is available for [order](https://makyo-ink.square.site/product/ally/5) direct from the author. All copies ordered direct are signed and come in a custom-made box by JD at <a href="https://twitter.com/makersdog" target="_blank">Dog Paw Design</a>. You can also order from <a href="https://www.betterworldbooks.com/product/detail/ally-9781948743150" target="_blank">Better World Books</a>, <a href="https://www.powells.com/SearchResults?keyword=Madison+Scott-Clary" target="_blank">Powell's</a>, or many other fine independent booksellers, as well as <a target="_blank" href="https://www.amazon.com/gp/product/1948743159/">Amazon</a> or <a target="_blank" href="https://www.barnesandnoble.com/w/ally-scott-clary-madison/1136517973?ean=9781948743150">Barnes &amp; Noble</a>.
 
-The PDF ebook is available for [order](https://gum.co/rvof) exclusively from me. I have yet to figure out how to sign those. Sorry.
+The PDF ebook is available for [order](https://makyo.itch.io/ally) exclusively from me. I have yet to figure out how to sign those. Sorry.
 
 ### Making of
 
@@ -65,8 +78,8 @@ The PDF ebook is available for [order](https://gum.co/rvof) exclusively from me.
 </div>
 <div class="book-about">
 <em class="ally-font">ally from start to finish</em> is a short companion book explaining how the project was made, both the website ally.id and the book. It talks about the structure, the tools and the pitfalls encountered along the way. It also comes with the source for itself so that you can see some of what goes into producing a book like this (as <span class="ally-font">ally</span> uses much the same structure).
-<p style="text-align:center">
-<a class="gumroad-button" href="https://gum.co/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
+<p style="text-align:center" class="buy">
+<a class="gumroad-button" href="https://makyo.itch.io/ally-making-of" target="_blank">Purchase <em>ally from start to finish</em></a></a>
 </p>
 </div>
 </div>

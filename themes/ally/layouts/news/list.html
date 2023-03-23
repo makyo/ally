@@ -3,7 +3,7 @@
     {{ .Content }}
     {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.date" "!=" nil) 10 }}
     {{ range $paginator.Pages.ByPublishDate.Reverse }}
-    <h2><a href="{{ .URL }}">{{ .Params.title }}</a> </h2>
+    <h2><a href="{{ .Permalink }}">{{ .Params.title }}</a> </h2>
     {{ if (ge .Date.Year 2019) }}<p class="date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
     <div class="news-summary">{{ .Summary }}</div>
     {{ end }}
