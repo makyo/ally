@@ -2,7 +2,9 @@ baseURL = "https://ally.id/"
 languageCode = "en-us"
 title = "ally"
 theme= "ally"
-paginatePath = ""
+
+[pagination]
+  path = ""
 
 [permalinks]
   news = "/:year/:month/:day/:slug/"
