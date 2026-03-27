@@ -531,4 +531,9 @@ digraph Map {
     "Writing 2" -> "Fursoñas 1"
     "Writing 2" -> "Poet and Mystic 1"*/
     "Writing 7" -> "Music 1"
+
+    // I can't believe I'm doing this.
+    node[group="3",style="",fontcolor="#111111"]
+    "Seasons" [href="https://seasons.ally.id"]
+    "3" -> "Seasons"
 }
